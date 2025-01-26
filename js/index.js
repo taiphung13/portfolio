@@ -7,14 +7,17 @@ var swiper = new Swiper('.multiple-slide-carousel', {
 		prevEl: '.multiple-slide-carousel .swiper-button-prev'
 	},
 	breakpoints: {
-		1920: {
-			spaceBetween: 30
-		},
-		1028: {
-			spaceBetween: 30
-		},
-		990: {
-			spaceBetween: 0
+		768: {
+			slidesPerView: (function () {
+				const containerWidth = document.querySelector(
+					'.multiple-slide-carousel'
+				).clientWidth;
+				return Math.floor(containerWidth / 277);
+			})()
 		}
 	}
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+	document.body.style.visibility = 'visible';
 });

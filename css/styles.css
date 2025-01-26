@@ -47,6 +47,10 @@ img {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+
+	.about-container {
+		width: 656px !important;
+	}
 }
 
 .swiper-wrapper {
@@ -59,8 +63,10 @@ img {
 
 .swiper-slide img {
 	height: 169px;
-	width: auto;
+	width: 100%;
 	display: block;
+	border-radius: 8px;
+	object-fit: cover;
 }
 
 .swiper-slide {
