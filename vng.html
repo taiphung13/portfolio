@@ -3,7 +3,32 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Mateee</title>
+		<title>Manh Tai</title>
+
+		<meta
+			name="description"
+			content="Product Design based in the United Kingdom"
+		/>
+		<meta property="og:title" content="Manh Tai" />
+		<meta
+			property="og:description"
+			content="Product Design based in the United Kingdom"
+		/>
+		<meta
+			property="og:image"
+			content="https://manhtaiphung.com/assets/og/thumb.webp"
+		/>
+		<meta property="og:url" content="https://manhtaiphung.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Manh Tai" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Manh Tai" />
+		<meta name="twitter:description" content="Mô tả ngắn gọn về trang." />
+		<meta
+			name="twitter:image"
+			content="https://manhtaiphung.com/assets/og/thumb.webp"
+		/>
+		<meta name="twitter:site" content="@yourtwitterhandle" />
 
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,10 +36,6 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
 			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
 		<style type="text/tailwindcss">
 			@theme {
@@ -25,6 +46,8 @@
 				--color-18: #1890ff;
 				--color-fb: #fbf7ff;
 				--color-f0: #f0f0f0;
+				--color-26: #262626;
+				--color-e6: #e6f7ff;
 			}
 		</style>
 		<style>
@@ -35,13 +58,590 @@
 		</style>
 	</head>
 	<body>
-		<main class="text-sm text-26">
-			<!-- about -->
-			<section class="mt-[72px] mb-[50px]">
-				<h1 class="text-[32px] font-semibold">Algo platform</h1>
+		<main class="text-sm md:text-lg text-26 leading-5 md:leading-7">
+			<!-- algo -->
+			<section class="pt-[72px] md:pt-[110px] pb-[50px] md:pb-[69px]">
+				<h1
+					class="text-[32px] md:text-[48px] font-semibold container vng-container--md vng-container--xl"
+				>
+					Algo platform
+				</h1>
+				<div
+					class="mt-8 md:mt-[57px] flex flex-col md:flex-row gap-5 md:gap-[72px] container vng-container--md vng-container--xl"
+				>
+					<div class="space-y-2">
+						<h2 class="text-base md:text-lg font-medium text-8c">
+							PRODUCT BRIEF
+						</h2>
+						<p>
+							The platform's core objective is create segment and
+							campaign for 10 Game Studio and other Marketing team
+							in VNG.
+						</p>
+					</div>
+					<div class="space-y-2">
+						<h2 class="text-base md:text-lg font-medium text-8c">
+							DURATIONS
+						</h2>
+						<p>1 year</p>
+					</div>
+				</div>
+				<div
+					class="my-8 md:my-[66px] w-full md:!w-[680px] xl:!w-[1127px] mx-auto md:rounded-[8px] md:overflow-hidden"
+				>
+					<img
+						src="./assets/images/vng/du.webp"
+						alt="Algo platform"
+						class="object-cover w-full"
+					/>
+				</div>
+				<div
+					class="space-y-4 md:space-y-[49px] container vng-container--md vng-container--xl"
+				>
+					<h2 class="text-base md:text-[28px] font-semibold">
+						UNDERSTAND AND ANALYSE THE PROBLEM
+					</h2>
+					<div class="space-y-3">
+						<p class="font-medium text-8c">THE OVERALL PROBLEM</p>
+						<ul class="space-y-1 text-xs leading-5">
+							<li class="flex gap-x-2">
+								<span
+									class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+								></span>
+								<span>
+									The current segmentation process faces
+									challenges with speed and efficiency.
+								</span>
+							</li>
+							<li class="flex gap-x-2">
+								<span
+									class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+								></span>
+								<span>
+									Game Studio has to wait more than 12 hours
+									for successful processing of a campaign on
+									the Algo platform.
+								</span>
+							</li>
+							<li class="flex gap-x-2">
+								<span
+									class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+								></span>
+								<span>
+									Need a dashboard to see the overview of the
+									campaign has created before.
+								</span>
+							</li>
+							<li class="flex gap-x-2">
+								<span
+									class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+								></span>
+								<span>
+									The segment and campaign flow are messy and
+									the structure of the data inside is complex
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</section>
+
+			<!-- layout -->
+			<section
+				class="pt-6 md:pt-[42px] pb-[45px] md:pb-[79px] xl:pb-[41px] bg-e6"
+			>
+				<h2
+					class="text-xl md:text-[32px] font-semibold container vng-container--md vng-container--xl"
+				>
+					OLD LAYOUT
+				</h2>
+
+				<div
+					class="flex flex-col xl:flex-row gap-9 md:gap-[49px] xl:gap-[84px] md:flex-col-reverse mt-6 md:mt-[66px] vng-container--md xl:!w-[1200px] xl:!mx-auto"
+				>
+					<figure class="space-y-3 xl:flex-1">
+						<img
+							src="./assets/images/vng/ol1.webp"
+							alt="Old Design"
+							class="object-contain w-full"
+						/>
+						<figcaption class="italic text-center">
+							Old Design - Create Segment
+						</figcaption>
+					</figure>
+
+					<div class="space-y-3 container xl:flex-1">
+						<p class="font-medium text-8c">
+							THE PROBLEM IN CREATE SEGMENT FLOW
+						</p>
+						<ul class="space-y-1 text-xs leading-5">
+							<li class="flex gap-x-2">
+								<span
+									class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+								></span>
+								<span>
+									The segment creation flow is too long and
+									has a lot of information, and the layout is
+									not clear.
+								</span>
+							</li>
+							<li class="flex gap-x-2">
+								<span
+									class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+								></span>
+								<span>
+									Cannot view list of users when selecting
+									segment.
+								</span>
+							</li>
+							<li class="flex gap-x-2">
+								<span
+									class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+								></span>
+								<span>
+									When selecting data types, the system takes
+									a long time to load.
+								</span>
+							</li>
+							<li class="flex gap-x-2">
+								<span
+									class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+								></span>
+								<span> Too much white space. </span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<figure
+					class="vng-container--md xl:!w-[1200px] xl:!mx-auto mt-[26px] md:mt-[49px] xl:mt-8"
+				>
+					<div
+						class="flex flex-col xl:flex-row gap-[22px] md:gap-[54px] xl:gap-[84px]"
+					>
+						<div class="mr-[29px] md:mr-0">
+							<img
+								src="./assets/images/vng/ol2.webp"
+								alt="Old Design 2"
+								class="w-full"
+							/>
+						</div>
+						<div class="ml-[24px] md:ml-0">
+							<img
+								src="./assets/images/vng/ol3.webp"
+								alt="Old Design 3"
+								class="w-full"
+							/>
+						</div>
+					</div>
+					<figcaption class="italic text-center mt-4">
+						Old Design - Create Campaign
+					</figcaption>
+				</figure>
+
+				<div
+					class="mt-10 xl:mt-6 space-y-3 container vng-container--md xl:!w-[1200px] xl:!mx-auto"
+				>
+					<p class="font-medium text-8c">
+						THE PROBLEM IN CREATE CAMPAIGN FLOW
+					</p>
+					<ul class="space-y-1 text-xs leading-5">
+						<li class="flex gap-x-2">
+							<span
+								class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+							></span>
+							<span>
+								Many types of campaigns but not clearly divided.
+							</span>
+						</li>
+						<li class="flex gap-x-2">
+							<span
+								class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+							></span>
+							<span>
+								Segments cannot be created when creating
+								campaigns, they can only be selected.
+							</span>
+						</li>
+						<li class="flex gap-x-2">
+							<span
+								class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+							></span>
+							<span>
+								The fills are not uniform for each campaign.
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- understand -->
+			<section
+				class="container vng-container--md vng-container--xl space-y-3 py-10 md:pt-[55px] xl:pt-[61px] md:pb-[61px] md:pb-[66px]"
+			>
+				<p class="font-medium text-8c">UNDERSTAND THE DATASET</p>
+				<ul class="space-y-2 leading-5 md:leading-7 text-xs md:text-lg">
+					<li class="flex gap-x-2">
+						<span
+							class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+						></span>
+						<span>
+							In this step, I answered questions like - What is
+							the nature and quality of the data? Can we calculate
+							fields to help the trader get better insights?
+						</span>
+					</li>
+					<li class="flex gap-x-2">
+						<div
+							class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+						></div>
+						<div class="space-x-1">
+							<span> I </span>
+							<span class="font-bold">
+								working close with data team
+							</span>
+							<span>
+								to analyse the current data of user to get the
+								Quantitative Data about why the flow, data are
+								messy and why the speed is bad and here what I
+								found:
+							</span>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Overall -->
+			<section
+				class="px-6 md:px-0 md:!mx-0 pt-[34px] md:pt-[71px] xl:pt-[43px] pb-[50px] md:pb-[80px] xl:pb-[41px] bg-e6"
+			>
+				<div
+					class="vng-container--md xl:!w-[1200px] xl:!mx-auto grid grid-cols-1 xl:grid-cols-2"
+				>
+					<div class="col-span-1">
+						<img
+							src="./assets/images/vng/oa.webp"
+							alt="overall"
+							class="object-contain w-full"
+						/>
+						<p class="mt-5 italic xl:text-center">
+							Collabrate with data team to collect quantitative
+							data
+						</p>
+					</div>
+					<div class="col-span-1 hidden xl:block"></div>
+					<div class="col-span-1 hidden xl:block"></div>
+					<div class="col-span-1">
+						<p
+							class="mt-[47px] md:mt-[71px] xl:mt-0 md:text-center mb-[17px] italic"
+						>
+							and key findings..
+						</p>
+						<img
+							src="./assets/images/vng/kf.webp"
+							alt="Key Findings"
+							class="object-contain w-full"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- and here what I found: -->
+			<section
+				class="container vng-container--md vng-container--xl space-y-3 pt-9 xl:py-[70px] pb-6 text-43"
+			>
+				<p class="font-medium text-8c">AND HERE WHAT I FOUND</p>
+				<ul
+					class="space-y-1.5 text-xs md:text-lg leading-5 xl:leading-7"
+				>
+					<li class="flex gap-x-2">
+						<span
+							class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+						></span>
+						<span>
+							If the objective is for the GS
+							department/marketing/UA lead to view team-specific
+							usage and traffic of the Algo app, the current setup
+							may not provide much actionable insight.
+						</span>
+					</li>
+					<li class="flex gap-x-2">
+						<span
+							class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+						></span>
+						<span>
+							We would benefit more from information on campaign
+							and segment performance (revenue, number of users
+							engaged), comparisons between segments, platforms,
+							and conditions (age group, region, in-app
+							events...). This would offer deeper insights and
+							help us identify which factors drive better
+							performance.
+						</span>
+					</li>
+				</ul>
+
+				<p
+					class="mt-6 md:mt-[47px] xl:mt-[70px] uppercase font-medium text-8c"
+				>
+					Understand the stakeholder
+				</p>
+			</section>
+
+			<section class="">
+				<div
+					class="py-6 xl:pb-[14px] bg-e6 md:bg-[#BAE7FF] container md:!w-[690px] xl:!w-[1077px] text-43 md:!px-12 xl:!px-6 space-x-1 md:rounded-[8px]"
+				>
+					<span> “I have </span>
+					<span class="font-bold">
+						interviewed with 2 big game studio team
+					</span>
+					<span>
+						to get the Qualitative Data when making the Dashboard
+						feature”
+					</span>
+				</div>
+			</section>
+
+			<!-- user interview summary -->
+			<section
+				class="container vng-container--md xl:!w-[900px] pt-6 md:pt-[47px]"
+			>
+				<figure>
+					<img
+						src="./assets/images/vng/algo.webp"
+						alt="User Interview Summary"
+						class="object-contain w-full"
+					/>
+					<figcaption
+						class="italic text-center mt-3 md:mt-[22px] xl:mt-8"
+					>
+						User Interview Summary
+					</figcaption>
+				</figure>
+
+				<div class="mt-8 md:mt-[92px] xl:mt-[70px] space-y-5 text-43">
+					<p class="space-x-1">
+						<span>
+							As a continuation of the “Portal Monitoring
+							Dashboard” series of mini-apps,
+						</span>
+						<span class="font-bold">
+							this dashboard will serve 2 key purposes:
+						</span>
+					</p>
+					<ul class="space-y-5 text-xs md:text-lg">
+						<li class="flex gap-x-2">
+							<div
+								class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+							></div>
+							<div>
+								<span class="font-bold">
+									GDS internal monitoring:
+								</span>
+								<span class="leading-5 md:leading-7">
+									From an admin view, GDS members can view
+									overall information about all Algo users.
+									This can help GDS internal team to analyze
+									about Algo traffic trends, understand most
+									common users, and recognize potential
+									latencies in the Algo campaign/segment
+									creating and approval process.
+								</span>
+							</div>
+						</li>
+						<li class="flex gap-x-2">
+							<div
+								class="size-0.5 mt-2.5 bg-26 rounded-full grow-0 shrink-0"
+							></div>
+							<div>
+								<span class="font-bold">
+									To allow dept. heads to understand team
+									usage of Algo functions:
+								</span>
+								<span class="leading-5 md:leading-7">
+									Since the release of the Algo app, there has
+									been no system of sending Algo app reports.
+									This app allows department heads direct
+									access to view team-specific segmentation
+									and campaign usage and traffic.
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- ideation -->
+			<section class="pt-[56px] md:pt-[47px] xl:pt-[81px]">
+				<h2
+					class="container text-base md:text-[32px] font-semibold md:text-center"
+				>
+					IDEATION AND PAPER PROTOTYPES
+				</h2>
+				<figure>
+					<img
+						src="./assets/images/vng/duf.webp"
+						alt="Define User Flow for the function"
+						class="object-contain w-full mt-8 md:mt-[47px] xl:mt-[44px] mb-3 md:mb-5 xl:mb-4"
+					/>
+					<figcaption class="italic text-center">
+						Define User Flow for the function
+					</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="./assets/images/vng/hfm.webp"
+						alt="Hi-fidelity mocks exploring different visualisations"
+						class="object-contain w-full xl:w-[1203px] xl:rounded-[8px] mx-auto mt-8 md:mt-[44px] xl:mt-[67px] mb-3 md:mb-5 xl:mb-4"
+					/>
+					<figcaption class="italic text-center">
+						Hi-fidelity mocks exploring different visualisations
+					</figcaption>
+				</figure>
+			</section>
+
+			<!-- final output -->
+			<section class="pt-[42px] md:pt-[78px] xl:pt-[47px]">
+				<div class="container vng-container--md">
+					<h2 class="text-8c font-medium text-base md:text-lg">
+						FINAL OUTPUT
+					</h2>
+					<h3
+						class="text-2xl mt-[26px] md:mt-[22px] xl:mt-[14px] md:text-[32px] font-semibold"
+					>
+						ALGO
+					</h3>
+					<p class="mt-6 md:mt-[22px] xl:mt-[30px] text-[#1f1f1f]">
+						Representation of the final journey the user would take
+						while using the product.
+					</p>
+				</div>
+
+				<div
+					class="bg-[#40A9FF] mt-8 md:mt-[52px] xl:mt-[90px] pt-8 md:pt-12 xl:pt-[68px] pb-6 md:pb-[44px] xl:pb-12 xl:px-[106px] text-xs md:text-lg text-white w-full xl:!w-[1271px] xl:!mx-auto"
+				>
+					<p
+						class="font-semibold text-sm md:text-lg container w-full md:!w-[583px] xl:!w-[476px] xl:!ml-0"
+					>
+						“The new product has reduce 40% time creating segment
+						and campaign.”
+					</p>
+
+					<div class="mt-8 md:hidden">
+						<div class="w-[193px] mx-auto">
+							User can customize the segment in the selection.
+						</div>
+						<img
+							src="./assets/images/vng/a1.webp"
+							alt="Algo 1"
+							class="object-contain w-full mt-[10px]"
+						/>
+						<div class="ml-7 mt-2 !w-[200px]">
+							User can view the total users in the segment.
+						</div>
+					</div>
+
+					<div class="hidden md:block mt-[58px]">
+						<img
+							src="./assets/images/vng/da1.webp"
+							alt="Algo 1"
+							class="object-contain w-full"
+						/>
+					</div>
+
+					<div class="mt-[22px] md:hidden">
+						<div class="w-[225px] ml-auto text-left">
+							Divide into 2 step when creating campaign
+						</div>
+						<img
+							src="./assets/images/vng/a2.webp"
+							alt="Algo 2"
+							class="object-contain w-full mt-[10px]"
+						/>
+					</div>
+
+					<div class="hidden md:block mt-[83px]">
+						<img
+							src="./assets/images/vng/da2.webp"
+							alt="Algo 2"
+							class="object-contain w-full"
+						/>
+					</div>
+
+					<div class="mt-[47px] md:hidden">
+						<img
+							src="./assets/images/vng/a3.webp"
+							alt="Algo 3"
+							class="object-contain w-full mt-[10px]"
+						/>
+					</div>
+
+					<div class="hidden md:block mt-[83px] xl:mt-[124px]">
+						<img
+							src="./assets/images/vng/da3.webp"
+							alt="Algo 3"
+							class="object-contain w-full"
+						/>
+					</div>
+
+					<div class="mt-[56px] md:mt-[83px] xl:mt-[124px]">
+						<img
+							src="./assets/images/vng/a4.webp"
+							alt="Algo 4"
+							class="object-contain w-full"
+						/>
+					</div>
+
+					<figure
+						class="mt-[56px] md:mt-[79px] xl:mt-[124px] space-y-3 xl:space-y-5"
+					>
+						<img
+							src="./assets/images/vng/chart.webp"
+							alt="Chart"
+							class="object-contain w-full mt-[10px]"
+						/>
+						<figcaption class="italic text-center">
+							Dashboard Feature
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+
+			<footer
+				class="py-8 md:pt-[79px] xl:pt-[46px] md:pb-[77px] xl:pb-[54px] container vng-container--md xl:!w-[1063px] space-y-8 md:space-y-10"
+			>
+				<p class="text-[#1f1f1f] font-medium">Thank for reading</p>
+				<div class="flex justify-between">
+					<a class="flex text-18 items-center gap-x-1" href="/">
+						<img
+							src="./assets/icons/arrow-left.svg"
+							alt="Back"
+							width="16"
+							height="16"
+							class="object-contain"
+						/>
+						<span class="font-medium"> Back To Project </span>
+					</a>
+					<!-- <a class="flex text-18 items-center gap-x-1" href="/vng">
+						<span class="font-medium"> Next Case </span>
+						<img
+							src="./assets/icons/arrow-left.svg"
+							alt="Back"
+							width="16"
+							height="16"
+							class="object-contain rotate-180"
+						/>
+					</a> -->
+				</div>
+			</footer>
 		</main>
+
 		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-		<script src="js/index.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				document.body.style.visibility = 'visible';
+			});
+		</script>
 	</body>
 </html>

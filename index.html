@@ -3,7 +3,32 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Mateee</title>
+		<title>Manh Tai</title>
+
+		<meta
+			name="description"
+			content="Product Design based in the United Kingdom"
+		/>
+		<meta property="og:title" content="Manh Tai" />
+		<meta
+			property="og:description"
+			content="Product Design based in the United Kingdom"
+		/>
+		<meta
+			property="og:image"
+			content="https://manhtaiphung.com/assets/og/thumb.webp"
+		/>
+		<meta property="og:url" content="https://manhtaiphung.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Manh Tai" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Manh Tai" />
+		<meta name="twitter:description" content="Mô tả ngắn gọn về trang." />
+		<meta
+			name="twitter:image"
+			content="https://manhtaiphung.com/assets/og/thumb.webp"
+		/>
+		<meta name="twitter:site" content="@yourtwitterhandle" />
 
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,6 +48,12 @@
 				--color-fb: #fbf7ff;
 			}
 		</style>
+		<style>
+			/* Prevent layout shift */
+			body {
+				visibility: hidden;
+			}
+		</style>
 	</head>
 	<body>
 		<main class="text-sm text-8c">
@@ -40,7 +71,7 @@
 					I'm a Product Designer with over 4 years based in United
 					Kingdom.
 				</h2>
-				<a class="mt-1 flex items-center w-full group" href="/">
+				<a class="mt-1 flex items-center w-full group" href="/vng">
 					<span class="text-7a font-medium group-hover:underline">
 						Read more about me
 					</span>
@@ -55,9 +86,9 @@
 			</section>
 
 			<!-- Background -->
-			<section class="bg-fb lg:w-[856px] lg:mx-auto">
+			<section class="bg-fb xl:w-[856px] xl:mx-auto">
 				<div
-					class="container md:!w-[740px] lg:!w-[776px] py-6 md:py-10"
+					class="container md:!w-[740px] xl:!w-[776px] py-6 md:py-10"
 				>
 					<div class="text-8c font-medium itatlic">Previously,</div>
 					<div
@@ -109,9 +140,13 @@
 								<span>
 									I’m on the way to get a Master's in
 								</span>
-								<span class="text-7a font-medium">
-									User Experience Design
-								</span>
+								<a
+									class="text-7a font-medium"
+									href="https://www.bcu.ac.uk/courses/user-experience-design-msc-2024-25#overview"
+									target="_blank"
+								>
+									> User Experience Design
+								</a>
 								<span> from the </span>
 								<span class="font-medium text-43">
 									Birmingham City University.
@@ -173,7 +208,7 @@
 						</p>
 						<a
 							class="flex block items-center w-full group"
-							href="/"
+							href="/vng"
 						>
 							<span
 								class="text-7a font-medium group-hover:underline"
@@ -223,7 +258,7 @@
 						</p>
 						<a
 							class="flex block items-center w-full group"
-							href="/"
+							href="/vng"
 						>
 							<span
 								class="text-7a font-medium group-hover:underline"
@@ -273,7 +308,7 @@
 						</p>
 						<a
 							class="flex block items-center w-full group"
-							href="/"
+							href="/vng"
 						>
 							<span
 								class="text-7a font-medium group-hover:underline"
@@ -323,7 +358,7 @@
 						</p>
 						<a
 							class="flex block items-center w-full group"
-							href="/"
+							href="/vng"
 						>
 							<span
 								class="text-7a font-medium group-hover:underline"
@@ -343,7 +378,7 @@
 			</section>
 
 			<!-- About me -->
-			<section class="bg-fb lg:w-[856px] lg:mx-auto">
+			<section class="bg-fb xl:w-[856px] xl:mx-auto">
 				<h2 class="font-medium py-10 container md:!w-[740px]">
 					A BIT ABOUT ME
 					<div class="space-y-5 mt-5">
@@ -390,5 +425,10 @@
 			</section>
 		</main>
 		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				document.body.style.visibility = 'visible';
+			});
+		</script>
 	</body>
 </html>

@@ -8,6 +8,7 @@
 	--color-18: #1890ff;
 	--color-fb: #fbf7ff;
 	--color-f0: #f0f0f0;
+	--color-26: #262626;
 }
 
 body,
@@ -50,6 +51,20 @@ img {
 
 	.about-container {
 		width: 656px !important;
+	}
+
+	.vng-container--md {
+		width: 610px !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 1280px) {
+	.vng-container--xl {
+		width: 884px !important;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
