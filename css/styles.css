@@ -22,7 +22,7 @@ html {
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 img {
@@ -102,4 +102,12 @@ button:disabled {
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
 	content: '' !important;
+}
+
+.zoom-in {
+	transition: transform 0.3s ease-in-out;
+}
+
+.zoom-in:hover {
+	transform: scale(1.05);
 }
