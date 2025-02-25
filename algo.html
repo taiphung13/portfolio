@@ -4,8 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Data Project</title>
-		<link rel="icon" href="assets/images/F95C930C-80C1-4909-BD14-A18202B6D4E8.png" type="image/png">
-
+		<link
+			rel="icon"
+			href="assets/images/F95C930C-80C1-4909-BD14-A18202B6D4E8.png"
+			type="image/png"
+		/>
 
 		<meta
 			name="description"
@@ -625,12 +628,15 @@
 				<div
 					class="flex flex-wrap gap-x-4 lg:gap-x-6 gap-y-4 text-[#BFBFBF] font-medium"
 				>
-					<span> All </span>
-					<span class="text-[#1f1f1f]"> Algo </span>
-					<span> Fraud Detection Solution </span>
-					<span> Milk Delivery App </span>
-					<span> Medical Product </span>
-					<span> Mental Health Mobile App </span>
+					<a href="/algo.html" class="text-[#1f1f1f]"> Algo </a>
+					<span class="cursor-pointer">
+						Fraud Detection Solution
+					</span>
+					<span class="cursor-pointer"> Milk Delivery App </span>
+					<span class="cursor-pointer"> Medical Product </span>
+					<a href="/master-case-study.html">
+						Mental Health Mobile App
+					</a>
 				</div>
 			</footer>
 		</main>
@@ -639,6 +645,47 @@
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 				document.body.style.visibility = 'visible';
+
+				const spans = document.querySelectorAll('span');
+				spans.forEach((span) => {
+					if (
+						span.textContent.includes('Fraud Detection Solution') ||
+						span.textContent.includes('Milk Delivery App') ||
+						span.textContent.includes('Medical Product')
+					) {
+						span.addEventListener('click', () => {
+							// Tạo toast
+							const toast = document.createElement('div');
+							toast.innerText =
+								'This project is still working on';
+							toast.style.position = 'fixed';
+							toast.style.top = '10px';
+							toast.style.right = '20px';
+							toast.style.backgroundColor = '#333';
+							toast.style.color = '#fff';
+							toast.style.padding = '10px 20px';
+							toast.style.borderRadius = '5px';
+							toast.style.opacity = '0';
+							toast.style.transition =
+								'opacity 0.5s ease, transform 0.5s ease';
+
+							document.body.appendChild(toast);
+
+							setTimeout(() => {
+								toast.style.opacity = '1';
+								toast.style.transform = 'translateX(0)';
+							}, 100);
+
+							setTimeout(() => {
+								toast.style.opacity = '0';
+								toast.style.transform = 'translateX(100%)';
+								setTimeout(() => {
+									document.body.removeChild(toast);
+								}, 500);
+							}, 3000);
+						});
+					}
+				});
 			});
 		</script>
 	</body>

@@ -1,7 +1,7 @@
 {
 	"rewrites": [
 		{ "source": "/about", "destination": "/about.html" },
-		{ "source": "/vng", "destination": "/vng.html" },
+		{ "source": "/algo", "destination": "/algo.html" },
 		{
 			"source": "/master-case-study",
 			"destination": "/master-case-study.html"
