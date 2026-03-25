@@ -1,513 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Life in update - Matee's note</title>
-		<link
-			rel="icon"
-			href="assets/images/F95C930C-80C1-4909-BD14-A18202B6D4E8.png"
-			type="image/png"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Manh Tai - Home</title>
+	<link rel="icon" href="assets/images/F95C930C-80C1-4909-BD14-A18202B6D4E8.png" type="image/png" />
+	<meta name="description" content="Product Designer based in the United Kingdom" />
+	<meta property="og:title" content="Manh Tai" />
+	<meta property="og:description" content="Product Designer based in the United Kingdom" />
+	<meta property="og:image" content="https://manhtaiphung.com/assets/images/og/thumb.webp" />
+	<meta property="og:url" content="https://manhtaiphung.com" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Manh Tai" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Manh Tai" />
+	<meta name="twitter:description" content="Product Designer based in the United Kingdom" />
+	<meta name="twitter:image" content="https://manhtaiphung.com/assets/images/og/thumb.webp" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="home-page">
+	<header class="home-header">
+		<nav class="home-nav home-nav-frame" aria-label="Main navigation">
+			<div class="home-nav-col home-nav-left">
+				<div class="home-nav-item">
+					<a class="home-nav-link home-nav-link-active" href="#projects">design</a>
+					<div class="home-nav-dropdown" aria-label="Design projects">
+						<a href="/algo.html">U.S Banking System</a>
+						<a href="/algo.html">Marketing &amp; Data Platform</a>
+						<a class="wip-link" href="#">Medical Product</a>
+						<a class="wip-link" href="#">Aperia Design System</a>
+						<a href="/master-case-study.html">Mental Health Mobile App</a>
+					</div>
+				</div>
+				<a class="home-nav-link" href="about.html">about</a>
+			</div>
 
-		<meta
-			name="description"
-			content="Product Design based in the United Kingdom"
-		/>
-		<meta property="og:title" content="Manh Tai" />
-		<meta
-			property="og:description"
-			content="Product Design based in the United Kingdom"
-		/>
-		<meta
-			property="og:image"
-			content="https://manhtaiphung.com/assets/images/og/thumb.webp"
-		/>
-		<meta property="og:url" content="https://manhtaiphung.com" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Manh Tai" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Manh Tai" />
-		<meta name="twitter:description" content="Mô tả ngắn gọn về trang." />
-		<meta
-			name="twitter:image"
-			content="https://manhtaiphung.com/assets/og/thumb.webp"
-		/>
-		<meta name="twitter:site" content="@yourtwitterhandle" />
+			<a class="home-brand home-brand-desktop" href="/" aria-label="Home">
+				<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
+			</a>
 
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-			rel="stylesheet"
-		/>
+			<div class="home-nav-col home-nav-right">
+				<a class="home-nav-link" href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer">linkedin</a>
+				<a class="home-nav-link" href="https://drive.google.com/file/d/1yXxY_KrWEHacyOPtb-ZHlryEgHLfRDnV/view?usp=sharing" target="_blank" rel="noreferrer">resume</a>
+			</div>
 
-		<style type="text/tailwindcss">
-			@theme {
-				--color-8c: #8c8c8c;
-				--color-43: #434343;
-				--color-26: #262626;
-				--color-7a: #7a53f6;
-				--color-18: #1890ff;
-				--color-fb: #fbf7ff;
-			}
-		</style>
-		<style>
-			/* Prevent layout shift */
-			body {
-				visibility: hidden;
-			}
-		</style>
-	</head>
-	<body>
-		<main class="text-sm text-8c">
-			<!-- Info -->
-			<section
-				class="container md:!w-[608px] pt-[64px] pb-[54px] flex flex-col justify-center items-center"
-			>
-				<h1
-					class="text-[32px] md:text-[40px] font-bold flex items-baseline w-full gap-x-1 text-26"
-				>
-					<span class="">Hello, I'm Manh Tai</span>
-					<span class="size-2 bg-7a rounded-full block"></span>
-				</h1>
-				<h2 class="mt-4 w-full md:text-[16px]">
-					I'm a Product Designer and Part-time Developer based in Birmingham, United
-					Kingdom, in love with Design, Data, and Coding.
-				</h2>
-				<a class="mt-1 flex items-center w-full group" href="/about">
-					<span class="text-7a font-medium group-hover:underline">
-						Get to know me
-					</span>
-					<i>
-						<img
-							src="./assets/icons/chevron-right.svg"
-							alt="chevron right"
-							class="object-contain"
-						/>
-					</i>
-				</a>
-			</section>
+			<a class="home-brand home-brand-mobile" href="/" aria-label="Home">
+				<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
+			</a>
 
-			<!-- Background -->
-			<section class="bg-fb xl:w-[856px] xl:mx-auto">
-				<div
-					class="container md:!w-[740px] xl:!w-[776px] py-6 md:py-10"
-				>
-					<div class="text-8c font-medium itatlic">My life wrap,</div>
-					<div
-						class="mt-12 flex flex-col gap-6 md:flex-row md:gap-10"
-					>
-						<div class="flex flex-1 gap-x-3">
-							<img
-								src="./assets/icons/home/vng-logo.svg"
-								alt="VNG logo"
-								class="object-contain"
-								width="36"
-								height="36"
-							/>
-							<div class="">
-								<div class="">
-									<span> I’m a Product Design at </span>
-									<span class="text-43 font-medium">
-										VNG Corporation.
-									</span>
-								</div>
-								<a
-									class="mt-1 flex items-center w-full group"
-									href="/algo.html"
-								>
-									<span
-										class="text-7a font-medium group-hover:underline"
-									>
-										Read about my work there
-									</span>
-									<i>
-										<img
-											src="./assets/icons/chevron-right.svg"
-											alt="chevron right"
-											class="object-contain"
-										/>
-									</i>
-								</a>
+			<button id="home-menu-button" class="home-menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="home-mobile-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</nav>
+
+		<div id="home-backdrop" class="home-backdrop"></div>
+		<aside id="home-mobile-menu" class="home-mobile-menu" aria-hidden="true">
+			<button id="home-menu-close" class="home-menu-close" type="button" aria-label="Close menu">&times;</button>
+			<a class="home-brand" href="/" aria-label="Home">
+				<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
+			</a>
+			<nav class="home-mobile-links" aria-label="Mobile navigation">
+				<a href="#projects">design</a>
+				<a href="about.html">about</a>
+				<a href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer">linkedin</a>
+				<a href="https://drive.google.com/file/d/1yXxY_KrWEHacyOPtb-ZHlryEgHLfRDnV/view?usp=sharing" target="_blank" rel="noreferrer">resume</a>
+			</nav>
+			<div class="home-mobile-footer">
+				<p>THANKS FOR STOPPING BY!</p>
+				<p>Ping me: <a href="mailto:manhtaiphung@gmail.com">manhtaiphung@gmail.com</a></p>
+			</div>
+		</aside>
+	</header>
+
+	<main class="home-main">
+		<section class="home-hero home-intro-frame home-reveal">
+			<h1>Hello! I'm Manh Tai<span class="home-hero-dot"></span></h1>
+			<p>Product Design who turning complex systems into intuitive experiences that create impact for users and businesses.</p>
+			<a class="home-cta" href="about.html">Read more about me</a>
+		</section>
+
+		<section class="home-history home-history-top home-reveal">
+			<p class="home-history-label">Previously,</p>
+			<div class="home-history-grid">
+				<article class="home-history-item">
+					<div class="home-history-icon"><img src="assets/icons/home/figma_edu.png" alt="Education" /></div>
+					<p>I hold a Master’s degree in User Experience Design from the Birmingham City University.</p>
+				</article>
+				<article class="home-history-item">
+					<div class="home-history-icon"><img src="assets/icons/home/figma_vng.png" alt="VNG" /></div>
+					<p>I’m a Product Design at VNG Corporation, designing through research, product thinking, and data-driven.</p>
+				</article>
+				<article class="home-history-item">
+					<div class="home-history-icon"><img src="assets/icons/home/figma_exp.png" alt="Experience" /></div>
+					<p>I design for 5 years, focused on creating solutions that deliver value for users and businesses.</p>
+				</article>
+				<article class="home-history-item">
+					<div class="home-history-icon"><img src="assets/icons/home/figma_ars.png" alt="Football" /></div>
+					<p>Outside of design and coding, I spend my time watching football — proudly supporting Arsenal.</p>
+				</article>
+			</div>
+			<p class="home-history-footnote">More details are in my <a href="https://drive.google.com/file/d/1yXxY_KrWEHacyOPtb-ZHlryEgHLfRDnV/view?usp=sharing" target="_blank" rel="noreferrer">resume</a>.</p>
+		</section>
+
+		<section id="projects" class="home-projects home-project-frame">
+			<h2 class="home-section-title home-reveal">Here are my projects</h2>
+			<div class="home-project-list">
+				<article id="project-marketing" class="home-project home-project-large home-reveal">
+					<div class="home-project-content">
+						<div class="home-project-head">
+							<h3>TRANSFORMING A COMPLEX MARKETING SAAS WORKFLOW INTO A SCALABLE, DATA-DRIVEN EXPERIENCE</h3>
+							<span class="home-badge">Shipped</span>
+						</div>
+						<p>Reduced manual processing by 40% (~200 hours/month saved) and improved operational decision-making via reporting.</p>
+						</div>
+						<div class="home-project-thumb home-thumb-orange"><img src="assets/images/home/a.png" alt="Marketing SaaS platform" /></div>
+					</article>
+
+				<article id="project-banking" class="home-project home-project-large home-reveal">
+					<div class="home-project-content">
+						<div class="home-project-head">
+							<h3>BUILDING SCALABLE UX SYSTEMS FOR BANKING PRODUCTS HANDLING 12,000 TRANSACTIONS PER SECOND</h3>
+							<span class="home-badge">Shipped</span>
+						</div>
+						<p>Building Scalable UX Systems for Banking Products Handling 12,000 Transactions per Second</p>
+						</div>
+						<div class="home-project-thumb home-thumb-blue"><img src="assets/images/home/fds.png" alt="U.S Banking System" /></div>
+					</article>
+
+					<article id="project-medical-mobile" class="home-project home-project-medium home-project-mobile-only home-reveal">
+						<div class="home-project-thumb home-thumb-violet"><img src="assets/images/home/figma_4789_37656.png" alt="Medical Product" /></div>
+						<div class="home-project-content">
+							<div class="home-project-head">
+								<h3>Medical Product</h3>
+								<span class="home-badge">Shipped</span>
 							</div>
+							<p>Helping users to easy find pill, drug store in nearby, get directed advise from Doctor.</p>
 						</div>
-						<div class="flex flex-1 gap-x-3">
-							<img
-								src="./assets/icons/home/education.svg"
-								alt="Education"
-								class="object-contain"
-								width="36"
-								height="45"
-							/>
-							<div class="space-x-1">
-								<span>
-									I have a Master's degree in
-								</span>
-								<a
-									class="text-7a font-medium"
-									href="https://www.bcu.ac.uk/courses/user-experience-design-msc-2024-25#overview"
-									target="_blank"
-								>
-									User Experience Design
-								</a>
-								<span> from the </span>
-								<span class="font-medium text-43">
-									Birmingham City University.
-								</span>
+					</article>
+
+				<article id="project-mental" class="home-project home-project-large home-reveal">
+					<div class="home-project-content">
+						<div class="home-project-head">
+							<h3>HEALTH MOBILE APP</h3>
+						</div>
+						<p>Internal marketing platform for departments in VNG games.</p>
+						</div>
+						<div class="home-project-thumb home-thumb-sky"><img src="assets/images/home/mhma.png" alt="Mental Health Mobile App" /></div>
+					</article>
+
+				<div class="home-project-duo home-project-duo-a home-reveal">
+					<article id="project-medical" class="home-project home-project-compact home-project-medical-desktop">
+						<div class="home-project-content">
+							<div class="home-project-head">
+								<h3>IMPROVING SAAS PRODUCT ADOPTION THROUGH END-TO-END ONBOARDING DESIGN</h3>
 							</div>
-						</div>
-					</div>
-					<div class="mt-8 space-x-1 text-43">
-						<span> More details are in </span>
-						<a
-							class="text-link hover:underline"
-							href="https://drive.google.com/file/d/1yXxY_KrWEHacyOPtb-ZHlryEgHLfRDnV/view?usp=sharing"
-							target="_blank"
-						>
-							resume.
-						</a>
-					</div>
+							<p>Using for customers in Viet nam.</p>
+							</div>
+							<div class="home-project-thumb home-thumb-violet">
+								<picture>
+									<source media="(min-width: 768px) and (max-width: 1199px)" srcset="assets/images/home/figma_4789_32771.png" />
+									<img src="assets/images/home/figma_4789_27369.png" alt="Medical Product" />
+								</picture>
+							</div>
+						</article>
+					<article class="home-project home-project-compact" id="project-apperia">
+						<div class="home-project-content">
+							<div class="home-project-head">
+								<h3>IMPROVING SAAS PRODUCT ADOPTION THROUGH END-TO-END ONBOARDING DESIGN</h3>
+							</div>
+							<p>An app deliver quality milk to people at their convenience.</p>
+							</div>
+							<div class="home-project-thumb home-thumb-cream">
+								<picture>
+									<source media="(max-width: 767px)" srcset="assets/images/home/figma_4789_37721.png" />
+									<source media="(min-width: 768px) and (max-width: 1199px)" srcset="assets/images/home/figma_4789_32833.png" />
+									<img src="assets/images/home/figma_4789_27431.png" alt="Milk Delivery App" />
+								</picture>
+							</div>
+						</article>
 				</div>
-			</section>
 
-			<!-- Projects -->
-			<section
-				class="container md:!w-[608px] pt-[26px] md:pt-[60px] pb-[44.09px] md:pb-[56.09px]"
-			>
-				<h2 class="text-[14px] font-medium">HERE ARE MY PROJECTS</h2>
-				<div class="mt-8 space-y-[64px]">
-					<div class="space-y-2">
-						<div
-							class="overflow-hidden w-fit rounded-[4px] cursor-pointer"
-						>
-							<img
-								src="./assets/images/home/a.webp"
-								alt="Algo"
-								width="237"
-								height="113"
-								class="object-contain transition duration-800 hover:scale-150"
-							/>
-						</div>
-						<h3 class="text-lg text-26 font-semibold">Algo</h3>
-						<p>
-							Internal marketing platform for departments in VNG
-							games
-						</p>
-						<p class="font-medium text-43">
-							Help users efficiently analyze data and collaborate
-							with their team.
-						</p>
-						<a
-							class="flex block items-center w-full group"
-							href="/algo.html"
-						>
-							<span
-								class="text-7a font-medium group-hover:underline"
-							>
-								View project
-							</span>
-							<i>
-								<img
-									src="./assets/icons/chevron-right.svg"
-									alt="chevron right"
-									class="object-contain"
-								/>
-							</i>
-						</a>
-					</div>
-					<div class="space-y-2">
-						<div
-							class="overflow-hidden w-fit rounded-[4px] cursor-pointer"
-						>
-							<img
-								src="./assets/images/home/mhma.webp"
-								alt="Mental Health Mobile App"
-								width="237"
-								height="113"
-								class="object-contain transition duration-800 hover:scale-150"
-							/>
-						</div>
-						<h3 class="text-lg text-26 font-semibold">
-							Mental Health Mobile App
-						</h3>
-						<p>Master Course’s Case Study</p>
-						<p class="font-medium text-43">
-							Making apps to improve user's mood by tracking mood
-							and activity.
-						</p>
-						<a
-							class="flex block items-center w-full group"
-							href="/master-case-study.html"
-						>
-							<span
-								class="text-7a font-medium group-hover:underline"
-							>
-								View project
-							</span>
-							<i>
-								<img
-									src="./assets/icons/chevron-right.svg"
-									alt="chevron right"
-									class="object-contain"
-								/>
-							</i>
-						</a>
-					</div>
-					<div class="space-y-2">
-						<div
-							class="overflow-hidden w-fit rounded-[4px] cursor-pointer"
-						>
-							<img
-								src="./assets/images/home/fds.webp"
-								alt="Fraud Detection Solution"
-								width="237"
-								height="113"
-								class="object-contain transition duration-800 hover:scale-150"
-							/>
-						</div>
-						<h3 class="text-lg text-26 font-semibold">
-							Fraud Detection Solution
-						</h3>
-						<p>Banking/Financial Project</p>
-						<p class="font-medium text-43">
-							A website in order to manage dispute cases for users
-						</p>
-						<span
-							class="flex block items-center w-full group cursor-pointer"
-						>
-							<span
-								class="text-7a font-medium group-hover:underline"
-							>
-								View project
-							</span>
-							<i>
-								<img
-									src="./assets/icons/chevron-right.svg"
-									alt="chevron right"
-									class="object-contain"
-								/>
-							</i>
-						</span>
-					</div>
-					<div class="space-y-2">
-						<div
-							class="overflow-hidden w-fit rounded-[4px] cursor-pointer"
-						>
-							<img
-								src="./assets/images/home/mp.webp"
-								alt="Medical Product"
-								width="237"
-								height="113"
-								class="object-contain transition duration-800 hover:scale-150"
-							/>
-						</div>
-						<h3 class="text-lg text-26 font-semibold">
-							Medical Product
-						</h3>
-						<p>Using for customers in Viet Nam.</p>
-						<p class="font-medium text-43">
-							Helping users to easily find pill, drug stores in
-							nearby, get directed advice from the  Doctor.
-						</p>
-						<span
-							class="flex block items-center w-full group cursor-pointer"
-						>
-							<span
-								class="text-7a font-medium group-hover:underline"
-							>
-								View project
-							</span>
-							<i>
-								<img
-									src="./assets/icons/chevron-right.svg"
-									alt="chevron right"
-									class="object-contain"
-								/>
-							</i>
-						</s>
-					</div>
-					<div class="space-y-2">
-						<div
-							class="overflow-hidden w-fit rounded-[4px] cursor-pointer"
-						>
-							<img
-								src="./assets/images/home/mda.webp"
-								alt="Milk Delivery App"
-								width="237"
-								height="113"
-								class="object-contain transition duration-800 hover:scale-150"
-							/>
-						</div>
-						<h3 class="text-lg text-26 font-semibold">
-							Milk Delivery App
-						</h3>
-						<p>
-							An app delivers quality milk to people at their
-							convenience.
-						</p>
-						<p class="font-medium text-43">
-							Help us interact with the app and decrease the time to
-							visits to the physical store.
-						</p>
-						<span
-							class="flex block items-center w-full group cursor-pointer"
-						>
-							<span
-								class="text-7a font-medium group-hover:underline"
-							>
-								View project
-							</span>
-							<i>
-								<img
-									src="./assets/icons/chevron-right.svg"
-									alt="chevron right"
-									class="object-contain"
-								/>
-							</i>
-						</spa>
-					</div>
-				</div>
-			</section>
+			</div>
+		</section>
 
-			<!-- About me -->
-			<section class="bg-fb xl:w-[856px] xl:mx-auto">
-				<h2 class="font-medium py-10 container md:!w-[740px]">
-					A BIT ABOUT ME
-					<div class="space-y-5 mt-5">
-						<div class="space-y-3">
-							<h3>What kind of work do I do?</h3>
-							<p class="text-43 italic">
-								I like to work within complex spaces to create
-								simple experiences for users. My work always
-								focuses on the end-to-end experience for users
-								that addresses all touchpoints. I enjoy and
-								often find myself optimizing processes within
-								the team.
-							</p>
-						</div>
-						<div class="space-y-3">
-							<h3>What do I do other than my full-time job?</h3>
-							<p class="text-43 italic">
-								I volunteer as a designer and developer in my
-								home country - I taught my friend design on
-								Figma, designed a basic website, features also
-								the mobile app, and help out however else I can.
-							</p>
-						</div>
-						<div class="space-y-3">
-							<h3>
-								What am I doing when I am not in front of a
-								screen?
-							</h3>
-							<p class="text-43 italic">
-								Outside of design, my evolving interests include
-								I dabble in photography and film, indie
-								alternative rock music, travel adventures,
-								gaming, homemade recipes, hip-hop, and being a
-								Pottermore.
-							</p>
-						</div>
-					</div>
-				</h2>
-			</section>
+		<section class="home-history home-history-about home-reveal">
+			<h2 class="home-section-title">A BIT ABOUT ME</h2>
+			<div class="home-about-grid">
+				<article>
+					<h3>What kind of work do I do?</h3>
+					<p>I like to work within complex spaces to create simple experiences for users. My work always focuses on the end-to-end experience for users that addresses all touchpoints. I enjoy and often find myself optimizing processes within the team.</p>
+				</article>
+				<article>
+					<h3>What do I do other than my full-time job?</h3>
+					<p>I volunteer as a designer and developer in my home country - I taught my friend design on Figma, designed a basic website, feature also mobile app and help out however else I can.</p>
+				</article>
+				<article>
+					<h3>What am I doing when I am not in front of a screen?</h3>
+					<p>Outside of design, my evolving interests include I dabble in photography and film, indie alternative rock music, travel adventures, gaming, homemade recipes, hip-hop and being a Pottermore.</p>
+				</article>
+			</div>
+		</section>
+	</main>
 
-			<!-- Footer -->
-			<section
-				class="container md:!w-[608px] pt-8 pb-[64px] font-medium flex justify-between items-center"
-			>
-				<div class="span">THANKS FOR STOPPING BY!</div>
-				<div class="space-x-2 flex">
-					<a
-						href="https://www.linkedin.com/in/manh-t-626076100"
-						target="_blank"
-					>
-						<img
-							src="./assets/icons/linkedin.svg"
-							alt="linkedin"
-							class="object-contain size-5 md:size-6 lg:size-7"
-						/>
-					</a>
-					<a href="https://github.com/taiphung13" target="_blank">
-						<img
-							src="./assets/icons/github.svg"
-							alt="github"
-							class="object-contain size-5 md:size-6 lg:size-7"
-						/>
-					</a>
-					<a
-						href="https://www.instagram.com/mateeeeeee13"
-						target="_blank"
-					>
-						<img
-							src="./assets/icons/instagram.svg"
-							alt="instagram"
-							class="object-contain size-5 md:size-6 lg:size-7"
-						/>
-					</a>
-					<a href="https://www.behance.net/tiphng1" target="_blank">
-						<img
-							src="./assets/icons/behance.svg"
-							alt="behance"
-							class="object-contain size-5 md:size-6 lg:size-7"
-						/>
-					</a>
-				</div>
-			</section>
-		</main>
-		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				document.body.style.visibility = 'visible';
-		
-				const projectNames = ['Fraud Detection Solution', 'Milk Delivery App', 'Medical Product'];
-		
-				const projectLinks = document.querySelectorAll('.group-hover\\:underline');
-		
-				projectLinks.forEach((link) => {
-					const parentDiv = link.closest('.space-y-2'); 
-					if (!parentDiv) return;
-		
-					const titleElement = parentDiv.querySelector('h3'); 
-					if (!titleElement) return;
-		
-					const projectTitle = titleElement.textContent.trim(); 
-		
-					if (projectNames.includes(projectTitle)) {
-						link.addEventListener('click', function (event) {
-							event.preventDefault(); 
-		
-							const toast = document.createElement('div');
-							toast.innerText = 'This project is still working on';
-							toast.style.position = 'fixed';
-							toast.style.top = '10px';
-							toast.style.right = '20px';
-							toast.style.backgroundColor = '#333';
-							toast.style.color = '#fff';
-							toast.style.padding = '10px 20px';
-							toast.style.borderRadius = '5px';
-							toast.style.opacity = '0';
-							toast.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-		
-							document.body.appendChild(toast);
-		
-							setTimeout(() => {
-								toast.style.opacity = '1';
-								toast.style.transform = 'translateX(0)';
-							}, 100);
-		
-							setTimeout(() => {
-								toast.style.opacity = '0';
-								toast.style.transform = 'translateX(100%)';
-								setTimeout(() => {
-									document.body.removeChild(toast);
-								}, 500);
-							}, 3000);
-						});
-					}
-				});
-			});
-		</script>
-	</body>
+	<footer class="home-footer home-footer-frame">
+		<div>
+			<p class="home-footer-title">THANKS FOR STOPPING BY!</p>
+			<p>Design and Develop by Tai</p>
+			<p>Ping me: <a href="mailto:manhtaiphung@gmail.com">manhtaiphung@gmail.com</a></p>
+		</div>
+		<div class="home-socials" aria-label="Social links">
+			<a href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer"><img src="assets/icons/linkedin.svg" alt="LinkedIn" /></a>
+			<a href="https://github.com/taiphung13" target="_blank" rel="noreferrer"><img src="assets/icons/github.svg" alt="GitHub" /></a>
+		</div>
+	</footer>
+
+	<script src="js/index.js"></script>
+</body>
 </html>
