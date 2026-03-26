@@ -26,13 +26,13 @@
 		<nav class="home-nav home-nav-frame" aria-label="Main navigation">
 			<div class="home-nav-col home-nav-left">
 				<div class="home-nav-item">
-					<a class="home-nav-link" href="/#projects">design</a>
+					<a class="home-nav-link home-design-trigger" data-design-trigger href="/#projects">design</a>
 					<div class="home-nav-dropdown" aria-label="Design projects">
-						<a href="/algo.html">U.S Banking System</a>
-						<a href="/algo.html">Marketing &amp; Data Platform</a>
+						<a data-design-option href="/algo.html#us-banking">U.S Banking System</a>
+						<a data-design-option href="/algo.html#marketing-data">Marketing &amp; Data Platform</a>
 						<a class="wip-link" href="#">Medical Product</a>
 						<a class="wip-link" href="#">Aperia Design System</a>
-						<a href="/master-case-study.html">Mental Health Mobile App</a>
+						<a data-design-option href="/master-case-study.html#mental-health">Mental Health Mobile App</a>
 					</div>
 				</div>
 				<a class="home-nav-link home-nav-link-active" href="/about.html">about</a>
@@ -65,7 +65,16 @@
 				<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
 			</a>
 			<nav class="home-mobile-links" aria-label="Mobile navigation">
-				<a href="/#projects">design</a>
+				<div class="home-mobile-group" id="home-mobile-design-group">
+					<button id="home-mobile-design-toggle" class="home-mobile-parent" type="button" aria-expanded="false" aria-controls="home-mobile-design-submenu">design</button>
+					<div id="home-mobile-design-submenu" class="home-mobile-submenu">
+						<a data-design-option href="/algo.html#us-banking">U.S Banking System</a>
+						<a data-design-option href="/algo.html#marketing-data">Marketing &amp; Data Platform</a>
+						<a class="wip-link" href="#">Medical Product</a>
+						<a class="wip-link" href="#">Aperia Design System</a>
+						<a data-design-option href="/master-case-study.html#mental-health">Mental Health Mobile App</a>
+					</div>
+				</div>
 				<a href="/about.html">about</a>
 				<a href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer">linkedin</a>
 				<a href="https://drive.google.com/file/d/1yXxY_KrWEHacyOPtb-ZHlryEgHLfRDnV/view?usp=sharing" target="_blank" rel="noreferrer">resume</a>
@@ -105,11 +114,11 @@
 					<h2 class="about-section-title">My Design Space</h2>
 					<div class="about-design-copy">
 						<p>I work at the intersection of interaction design and data visualisation. I often engage in:</p>
-						<p>Research - 1:1 interviews, focus groups, survey and A/B tests.</p>
-						<p class="about-design-analysis">Analysis - Using design thinking tools like Personas, Workflows, Information Architecture  to come up with product ideas.</p>
-						<p>Design - Converting the workflows into mocks that align with heuristics. Take usability test do measure the design</p>
-						<p>Data Visualisation - Finding out what questions need to be answered by the data to create appropriate interactive visualizations.</p>
-						<p>Collaboration - Working ross-functionally with product managers, engineers, and stakeholders to navigate complexity, build alignment, and deliver better product outcomes.</p>
+						<p><b>Research</b> - 1:1 interviews, focus groups, survey and A/B tests.</p>
+						<p class="about-design-analysis"><b>Analysis</b> - Using design thinking tools like Personas, Workflows, Information Architecture  to come up with product ideas.</p>
+						<p><b>Design</b> - Converting the workflows into mocks that align with heuristics. Take usability test do measure the design</p>
+						<p><b>Data Visualisation</b> - Finding out what questions need to be answered by the data to create appropriate interactive visualizations.</p>
+						<p><b>Collaboration</b> - Working ross-functionally with product managers, engineers, and stakeholders to navigate complexity, build alignment, and deliver better product outcomes.</p>
 					</div>
 				</div>
 
