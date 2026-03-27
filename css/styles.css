@@ -296,7 +296,7 @@ button:disabled {
 
 .home-intro-frame {
 	width: 856px;
-	margin: 16px auto 0;
+	margin: 4px auto 0;
 	text-align: center;
 }
 
@@ -324,7 +324,7 @@ button:disabled {
 	margin-top: 16px;
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: 450;
+	font-weight: 400;
 	color: var(--color-accent);
 	text-decoration: none;
 }
@@ -421,7 +421,7 @@ button:disabled {
 
 .home-project-frame {
 	width: 1280px;
-	margin: 89px auto 0;
+	margin: 50px auto 0;
 }
 
 .home-project-list {
