@@ -296,7 +296,7 @@ button:disabled {
 
 .home-intro-frame {
 	width: 856px;
-	margin: 24px auto 0;
+	margin: 16px auto 0;
 	text-align: center;
 }
 
@@ -321,7 +321,7 @@ button:disabled {
 }
 
 .home-hero p {
-	margin: 16px 0 0;
+	margin: 8px 0 0;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -349,7 +349,7 @@ button:disabled {
 
 .home-history-top {
 	width: 856px;
-	margin: 35px auto 0;
+	margin: 24px auto 0;
 	padding: 40px;
 }
 
