@@ -305,8 +305,8 @@ button:disabled {
 	display: inline-flex;
 	align-items: flex-start;
 	gap: 6px;
-	font-size: 32px;
-	line-height: 52px;
+	font-size: 28px;
+	line-height: 46px;
 	font-weight: 700;
 	color: var(--grey-10);
 }
@@ -322,7 +322,7 @@ button:disabled {
 
 .home-hero p {
 	margin: 16px 0 0;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 28px;
 	font-weight: 400;
 	color: var(--grey-8);
