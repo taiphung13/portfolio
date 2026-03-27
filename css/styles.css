@@ -421,7 +421,7 @@ button:disabled {
 
 .home-project-frame {
 	width: 1280px;
-	margin: 50px auto 0;
+	margin: 70px auto 0;
 }
 
 .home-project-list {
@@ -449,8 +449,8 @@ button:disabled {
 
 .home-project-head h3 {
 	margin: 0;
-	font-size: 22px;
-	line-height: 28.6px;
+	font-size: 28px;
+	line-height: 40px;
 	font-weight: 600;
 	text-transform: uppercase;
 	color: var(--grey-10);
@@ -458,8 +458,8 @@ button:disabled {
 
 .home-project-content p {
 	margin: 0;
-	font-size: 18px;
-	line-height: 23.4px;
+	font-size: 16px;
+	line-height: 24px;
 	font-weight: 400;
 	color: var(--grey-8);
 }
