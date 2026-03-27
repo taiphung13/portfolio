@@ -12,7 +12,7 @@ Key decisions:
 - Use a single git commit for the full set of edits.
 
 State:
-- In progress.
+- Done.
 
 Done:
 - Checked `git status` and confirmed modified files:
@@ -20,12 +20,14 @@ Done:
   - `index.html`
   - `js/index.js`
   - `http/CONTINUITY.md`
+- Created commit `c8e707d` with message `Update portfolio design links`.
+- Pushed `main` to `origin/main`.
 
 Now:
-- Stage all changes, commit, and push to remote.
+- Waiting for any follow-up request.
 
 Next:
-- Report the commit hash after push.
+- None.
 
 Open questions (UNCONFIRMED if needed):
 - None.
