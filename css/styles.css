@@ -305,8 +305,8 @@ button:disabled {
 	display: inline-flex;
 	align-items: flex-start;
 	gap: 6px;
-	font-size: 20px;
-	line-height: 36px;
+	font-size: 22px;
+	line-height: 40px;
 	font-weight: 700;
 	color: var(--grey-10);
 }
