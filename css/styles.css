@@ -322,7 +322,7 @@ button:disabled {
 
 .home-hero p {
 	margin: 8px 0 0;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 24px;
 	font-weight: 400;
 	color: var(--grey-8);
@@ -330,10 +330,10 @@ button:disabled {
 
 .home-cta {
 	display: inline-flex;
-	margin-top: 20px;
+	margin-top: 16px;
 	font-size: 14px;
 	line-height: 20px;
-	font-weight: 400;
+	font-weight: 450;
 	color: var(--color-accent);
 	text-decoration: none;
 }
