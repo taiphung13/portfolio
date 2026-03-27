@@ -65,6 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
+	designTriggers.forEach(function (trigger) {
+		trigger.addEventListener('click', function (event) {
+			event.preventDefault();
+		});
+	});
+
 	function openMenu() {
 		if (!mobileMenu || !backdrop || !menuButton) return;
 		mobileMenu.classList.add('is-open');
@@ -137,39 +143,77 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
+	function showToast(message) {
+		const toast = document.createElement('div');
+		toast.textContent = message;
+		Object.assign(toast.style, {
+			position: 'fixed',
+			top: '16px',
+			right: '16px',
+			zIndex: '1000',
+			padding: '12px 16px',
+			borderRadius: '10px',
+			background: '#1f1f1f',
+			color: '#ffffff',
+			fontSize: '13px',
+			fontFamily: 'IBM Plex Sans, sans-serif',
+			opacity: '0',
+			transform: 'translateY(-6px)',
+			transition: 'opacity 0.2s ease, transform 0.2s ease'
+		});
+		document.body.appendChild(toast);
+		requestAnimationFrame(function () {
+			toast.style.opacity = '1';
+			toast.style.transform = 'translateY(0)';
+		});
+
+		setTimeout(function () {
+			toast.style.opacity = '0';
+			toast.style.transform = 'translateY(-6px)';
+			setTimeout(function () {
+				toast.remove();
+			}, 220);
+		}, 2200);
+	}
+
+	function resolveProjectLink(projectLink) {
+		if (!projectLink) return '';
+		if (window.location.protocol === 'file:' && projectLink.startsWith('/')) {
+			return projectLink.slice(1);
+		}
+		return projectLink;
+	}
+
+	document.querySelectorAll('[data-project-link], [data-project-coming-soon]').forEach(function (card) {
+		const projectLink = resolveProjectLink(card.getAttribute('data-project-link'));
+		card.setAttribute('role', 'link');
+		card.setAttribute('tabindex', '0');
+		card.style.cursor = 'pointer';
+
+		function activateCard() {
+			if (projectLink) {
+				window.location.href = projectLink;
+				return;
+			}
+			showToast('Coming soon');
+		}
+
+		card.addEventListener('click', function (event) {
+			if (event.target.closest('a, button')) return;
+			activateCard();
+		});
+
+		card.addEventListener('keydown', function (event) {
+			if (event.key !== 'Enter' && event.key !== ' ') return;
+			event.preventDefault();
+			activateCard();
+		});
+	});
+
 	document.querySelectorAll('.wip-link, a[href="#"]').forEach(function (link) {
 		link.addEventListener('click', function (event) {
 			event.preventDefault();
-			const toast = document.createElement('div');
-			toast.textContent = 'This project is still being worked on.';
-			Object.assign(toast.style, {
-				position: 'fixed',
-				top: '16px',
-				right: '16px',
-				zIndex: '1000',
-				padding: '12px 16px',
-				borderRadius: '10px',
-				background: '#1f1f1f',
-				color: '#ffffff',
-				fontSize: '13px',
-				fontFamily: 'IBM Plex Sans, sans-serif',
-				opacity: '0',
-				transform: 'translateY(-6px)',
-				transition: 'opacity 0.2s ease, transform 0.2s ease'
-			});
-			document.body.appendChild(toast);
-			requestAnimationFrame(function () {
-				toast.style.opacity = '1';
-				toast.style.transform = 'translateY(0)';
-			});
-
-			setTimeout(function () {
-				toast.style.opacity = '0';
-				toast.style.transform = 'translateY(-6px)';
-				setTimeout(function () {
-					toast.remove();
-				}, 220);
-			}, 2200);
+			showToast('Coming soon');
 		});
 	});
 });
