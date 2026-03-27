@@ -349,7 +349,7 @@ button:disabled {
 	margin: 0;
 	font-size: 16px;
 	line-height: 20.8px;
-	font-weight: 500;
+	font-weight: 400;
 	letter-spacing: 0;
 	color: var(--grey-7);
 	text-transform: none;
