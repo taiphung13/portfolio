@@ -612,7 +612,7 @@ button:disabled {
 }
 
 .home-footer p:not(.home-footer-title) {
-	margin: 4;
+	margin: 2;
 	font-size: 16px;
 	line-height: 20.8px;
 	font-weight: 400;
