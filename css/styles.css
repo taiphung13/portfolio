@@ -307,7 +307,7 @@ button:disabled {
 	gap: 6px;
 	font-size: 22px;
 	line-height: 40px;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--grey-10);
 }
 
