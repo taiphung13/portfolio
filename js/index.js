@@ -143,6 +143,59 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
+	/* Hero state interactions: default -> name / creative / impact */
+	var hero = document.querySelector('.home-hero[data-hero-state]');
+	if (hero) {
+		var heroTriggers = hero.querySelectorAll('[data-hero-trigger]');
+		var defaultHeroState = hero.getAttribute('data-hero-default') || hero.getAttribute('data-hero-state') || 'default';
+		var heroState = hero.getAttribute('data-hero-state') || defaultHeroState;
+
+		function setHeroState(nextState) {
+			heroState = nextState || 'default';
+			hero.setAttribute('data-hero-state', heroState);
+			heroTriggers.forEach(function (trigger) {
+				var triggerState = trigger.getAttribute('data-hero-trigger');
+				trigger.setAttribute('aria-pressed', triggerState === heroState ? 'true' : 'false');
+			});
+		}
+
+		setHeroState(heroState);
+
+		heroTriggers.forEach(function (trigger) {
+			var triggerState = trigger.getAttribute('data-hero-trigger');
+
+			trigger.addEventListener('mouseenter', function () {
+				if (window.innerWidth > 767) {
+					setHeroState(triggerState);
+				}
+			});
+
+			trigger.addEventListener('focus', function () {
+				if (window.innerWidth > 767) {
+					setHeroState(triggerState);
+				}
+			});
+
+			trigger.addEventListener('click', function () {
+				if (window.innerWidth <= 767) {
+					setHeroState(heroState === triggerState ? defaultHeroState : triggerState);
+				}
+			});
+		});
+
+		hero.addEventListener('mouseleave', function () {
+			if (window.innerWidth > 767) {
+				setHeroState(defaultHeroState);
+			}
+		});
+
+		hero.addEventListener('focusout', function (event) {
+			if (window.innerWidth > 767 && !hero.contains(event.relatedTarget)) {
+				setHeroState(defaultHeroState);
+			}
+		});
+	}
+
 	function showToast(message) {
 		const toast = document.createElement('div');
 		toast.textContent = message;

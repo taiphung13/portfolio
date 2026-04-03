@@ -87,33 +87,87 @@
 	</header>
 
 	<main class="home-main">
-		<section class="home-hero home-intro-frame home-reveal">
-			<h1>Hello! I'm Manh Tai<span class="home-hero-dot"></span></h1>
-			<p>Product Design who turning complex systems into intuitive experiences that create impact for users and businesses.</p>
-			<a class="home-cta" href="about.html">Read more about me</a>
-		</section>
-
-		<section class="home-history home-history-top home-reveal">
-			<p class="home-history-label">Previously,</p>
-			<div class="home-history-grid">
-				<article class="home-history-item">
-					<div class="home-history-icon"><img src="assets/icons/home/figma_edu.png" alt="Education" /></div>
-					<p>I hold a Master’s degree in <b>User Experience Design</b> from the Birmingham City University.</p>
+		<section class="home-hero home-reveal" id="hero" data-hero-state="default" data-hero-default="default">
+			<div class="hero-state-layer hero-state-impact" aria-hidden="true">
+				<article class="hero-stat hero-stat-1">
+					<div class="hero-stat-icon">
+						<img src="assets/icons/home/hero-state/wallet-shape.svg" alt="" loading="lazy" />
+						<img src="assets/icons/home/hero-state/wallet-path.svg" alt="" loading="lazy" />
+					</div>
+					<p class="hero-stat-value">80%</p>
+					<div class="hero-stat-copy">
+						<p class="hero-stat-change">increase</p>
+						<p>in time spent</p>
+					</div>
 				</article>
-				<article class="home-history-item">
-					<div class="home-history-icon"><img src="assets/icons/home/figma_vng.png" alt="VNG" /></div>
-					<p>I was a Product Design at <b>VNG Corporation</b>, designing through research, product thinking, and data-driven.</p>
+				<article class="hero-stat hero-stat-2">
+					<div class="hero-stat-icon">
+						<img src="assets/icons/home/hero-state/wallet-shape.svg" alt="" loading="lazy" />
+						<img src="assets/icons/home/hero-state/wallet-path.svg" alt="" loading="lazy" />
+					</div>
+					<p class="hero-stat-value">70%</p>
+					<div class="hero-stat-copy">
+						<p class="hero-stat-change">increase</p>
+						<p>in time spent</p>
+					</div>
 				</article>
-				<article class="home-history-item">
-					<div class="home-history-icon"><img src="assets/icons/home/figma_exp.png" alt="Experience" /></div>
-					<p>I design for 5 years, focused on creating solutions that deliver value for <b>users</b> and <b>businesses</b>.</p>
+				<article class="hero-stat hero-stat-3">
+					<div class="hero-stat-icon">
+						<img src="assets/icons/home/hero-state/wallet-shape.svg" alt="" loading="lazy" />
+						<img src="assets/icons/home/hero-state/wallet-path.svg" alt="" loading="lazy" />
+					</div>
+					<p class="hero-stat-value">85%</p>
+					<div class="hero-stat-copy">
+						<p class="hero-stat-change hero-stat-change-red">decrease</p>
+						<p>in time spent</p>
+					</div>
 				</article>
-				<article class="home-history-item">
-					<div class="home-history-icon"><img src="assets/icons/home/figma_ars.png" alt="Football" /></div>
-					<p>Outside of design and coding, I spend my time watching football — proudly supporting <b>Arsenal</b>.</p>
+				<article class="hero-stat hero-stat-4">
+					<div class="hero-stat-icon">
+						<img src="assets/icons/home/hero-state/wallet-shape.svg" alt="" loading="lazy" />
+						<img src="assets/icons/home/hero-state/wallet-path.svg" alt="" loading="lazy" />
+					</div>
+					<p class="hero-stat-value">120%</p>
+					<div class="hero-stat-copy">
+						<p class="hero-stat-change hero-stat-change-red">decrease</p>
+						<p>in time spent</p>
+					</div>
 				</article>
 			</div>
-			<p class="home-history-footnote">More details are in my <a href="https://drive.google.com/file/d/1yXxY_KrWEHacyOPtb-ZHlryEgHLfRDnV/view?usp=sharing" target="_blank" rel="noreferrer">resume</a>.</p>
+			<div class="hero-state-layer hero-state-creative" aria-hidden="true">
+				<img class="hero-icon hero-icon-1" src="assets/icons/home/hero-state/icon-1.svg" alt="" loading="lazy" />
+				<img class="hero-icon hero-icon-2" src="assets/icons/home/hero-state/icon-2.svg" alt="" loading="lazy" />
+				<img class="hero-icon hero-icon-3" src="assets/icons/home/hero-state/icon-3.svg" alt="" loading="lazy" />
+				<img class="hero-icon hero-icon-4" src="assets/icons/home/hero-state/icon-4.svg" alt="" loading="lazy" />
+				<img class="hero-icon hero-icon-5" src="assets/icons/home/hero-state/icon-5.svg" alt="" loading="lazy" />
+				<img class="hero-icon hero-icon-6" src="assets/icons/home/hero-state/icon-6.svg" alt="" loading="lazy" />
+				<img class="hero-icon hero-icon-7" src="assets/icons/home/hero-state/icon-7.svg" alt="" loading="lazy" />
+				<img class="hero-icon hero-icon-8" src="assets/icons/home/hero-state/icon-8.svg" alt="" loading="lazy" />
+			</div>
+			<div class="hero-state-layer hero-state-name" aria-hidden="true">
+				<div class="hero-photo hero-photo-1"><img src="assets/images/home/hero-state/photo-1.jpg" alt="" loading="lazy" /></div>
+				<div class="hero-photo hero-photo-2"><img src="assets/images/home/hero-state/photo-2.jpg" alt="" loading="lazy" /></div>
+				<div class="hero-photo hero-photo-3"><img src="assets/images/home/hero-state/photo-3.jpg" alt="" loading="lazy" /></div>
+				<div class="hero-photo hero-photo-4"><img src="assets/images/home/hero-state/photo-4.jpg" alt="" loading="lazy" /></div>
+				<div class="hero-photo hero-photo-5"><img src="assets/images/home/hero-state/photo-5.jpg" alt="" loading="lazy" /></div>
+				<div class="hero-photo hero-photo-6"><img src="assets/images/home/hero-state/photo-6.jpg" alt="" loading="lazy" /></div>
+			</div>
+			<div class="hero-text">
+				<h1 class="hero-headline">
+					<span class="hero-line">
+						<button class="hero-trigger hero-trigger-name" type="button" data-hero-trigger="name">Manh Tai</button>
+						<span class="hero-dim"> is a</span>
+					</span>
+					<span class="hero-line">
+						<button class="hero-trigger hero-trigger-creative" type="button" data-hero-trigger="creative">creative</button>
+						<span class="hero-dim hero-dim-amp">&amp;</span>
+						<button class="hero-trigger hero-trigger-impact" type="button" data-hero-trigger="impact">impact-driven</button>
+					</span>
+					<span class="hero-line">problem solver.</span>
+				</h1>
+			</div>
+			<div class="hero-divider"></div>
+			<p class="hero-sub">Hi there! Nice to meet you. I'm a Product Design who turning complex systems into intuitive experiences that create impact for users and businesses.</p>
 		</section>
 
 		<section id="projects" class="home-projects home-project-frame">
