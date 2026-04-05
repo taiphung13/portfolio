@@ -460,15 +460,15 @@ button:disabled {
 }
 
 /* Scattered arc — left side (bottom to top) */
-.hero-icon-1 { left: calc(50% - 420px); top: 150px; }
-.hero-icon-2 { left: calc(50% - 360px); top: 100px; }
-.hero-icon-3 { left: calc(50% - 280px); top: 30px; }
-.hero-icon-4 { left: calc(50% - 170px); top: 10px; }
+.hero-icon-1 { left: calc(50% - 340px); top: 170px; }
+.hero-icon-2 { left: calc(50% - 310px); top: 80px; }
+.hero-icon-3 { left: calc(50% - 200px); top: 12px; }
+.hero-icon-4 { left: calc(50% - 80px); top: 10px; }
 /* Scattered arc — right side (top to bottom) */
-.hero-icon-5 { left: calc(50% + 130px); top: 10px; }
-.hero-icon-6 { left: calc(50% + 240px); top: 30px; }
-.hero-icon-7 { left: calc(50% + 330px); top: 100px; }
-.hero-icon-8 { left: calc(50% + 390px); top: 150px; }
+.hero-icon-5 { left: calc(50% + 80px); top: 10px; }
+.hero-icon-6 { left: calc(50% + 220px); top: 30px; }
+.hero-icon-7 { left: calc(50% + 300px); top: 80px; }
+.hero-icon-8 { left: calc(50% + 320px); top: 175px; max-width: 18px;}
 
 .hero-stat {
 	position: absolute;
