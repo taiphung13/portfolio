@@ -165,32 +165,27 @@ document.addEventListener('DOMContentLoaded', function () {
 			var triggerState = trigger.getAttribute('data-hero-trigger');
 
 			trigger.addEventListener('mouseenter', function () {
-				if (window.innerWidth > 767) {
+				if (window.innerWidth >= 1280) {
 					setHeroState(triggerState);
 				}
 			});
 
 			trigger.addEventListener('focus', function () {
-				if (window.innerWidth > 767) {
+				if (window.innerWidth >= 1280) {
 					setHeroState(triggerState);
 				}
 			});
 
-			trigger.addEventListener('click', function () {
-				if (window.innerWidth <= 767) {
-					setHeroState(heroState === triggerState ? defaultHeroState : triggerState);
-				}
-			});
 		});
 
 		hero.addEventListener('mouseleave', function () {
-			if (window.innerWidth > 767) {
+			if (window.innerWidth >= 1280) {
 				setHeroState(defaultHeroState);
 			}
 		});
 
 		hero.addEventListener('focusout', function (event) {
-			if (window.innerWidth > 767 && !hero.contains(event.relatedTarget)) {
+			if (window.innerWidth >= 1280 && !hero.contains(event.relatedTarget)) {
 				setHeroState(defaultHeroState);
 			}
 		});
