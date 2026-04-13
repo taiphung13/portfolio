@@ -65,14 +65,94 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body class="study-page">
+		<header class="home-header">
+			<nav class="home-nav home-nav-frame" aria-label="Main navigation">
+				<div class="home-nav-col home-nav-left">
+					<div class="home-nav-item">
+						<a class="home-nav-link home-design-trigger home-nav-link-active" data-design-trigger href="/#projects">design</a>
+						<div class="home-nav-dropdown" aria-label="Design projects">
+							<a data-design-option href="algo.html">U.S Banking System</a>
+							<a class="wip-link" href="#">Marketing &amp; Data Platform</a>
+							<a class="wip-link" href="#">Medical Product</a>
+							<a class="wip-link" href="#">Aperia Design System</a>
+							<a data-design-option href="master-case-study.html">Mental Health Mobile App</a>
+						</div>
+					</div>
+					<a class="home-nav-link" href="about.html">about</a>
+				</div>
+
+				<a class="home-brand home-brand-desktop" href="index.html" aria-label="Home">
+					<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
+				</a>
+
+				<div class="home-nav-col home-nav-right">
+					<a class="home-nav-link" href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer">linkedin</a>
+					<a class="home-nav-link" href="https://drive.google.com/file/d/1yXxY_KrWEHacyOPtb-ZHlryEgHLfRDnV/view?usp=sharing" target="_blank" rel="noreferrer">resume</a>
+				</div>
+
+				<a class="home-brand home-brand-mobile" href="index.html" aria-label="Home">
+					<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
+				</a>
+
+				<button id="home-menu-button" class="home-menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="home-mobile-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</nav>
+
+			<div id="home-backdrop" class="home-backdrop"></div>
+			<aside id="home-mobile-menu" class="home-mobile-menu" aria-hidden="true">
+				<button id="home-menu-close" class="home-menu-close" type="button" aria-label="Close menu">&times;</button>
+				<a class="home-brand" href="index.html" aria-label="Home">
+					<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
+				</a>
+				<nav class="home-mobile-links" aria-label="Mobile navigation">
+					<div class="home-mobile-group" id="home-mobile-design-group">
+						<button id="home-mobile-design-toggle" class="home-mobile-parent" type="button" aria-expanded="false" aria-controls="home-mobile-design-submenu">design</button>
+						<div id="home-mobile-design-submenu" class="home-mobile-submenu">
+							<a data-design-option href="algo.html">U.S Banking System</a>
+							<a class="wip-link" href="#">Marketing &amp; Data Platform</a>
+							<a class="wip-link" href="#">Medical Product</a>
+							<a class="wip-link" href="#">Aperia Design System</a>
+							<a data-design-option href="master-case-study.html">Mental Health Mobile App</a>
+						</div>
+					</div>
+					<a href="about.html">about</a>
+					<a href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer">linkedin</a>
+					<a href="https://drive.google.com/file/d/1yXxY_KrWEHacyOPtb-ZHlryEgHLfRDnV/view?usp=sharing" target="_blank" rel="noreferrer">resume</a>
+				</nav>
+				<div class="home-mobile-footer">
+					<p>THANKS FOR STOPPING BY!</p>
+					<p>Ping me: <a href="mailto:manhtaiphung@gmail.com">manhtaiphung@gmail.com</a></p>
+				</div>
+			</aside>
+		</header>
+
+		<nav id="side-nav" class="side-nav hidden xl:block" aria-label="Page Sections">
+			<ul>
+				<li><a href="#nav-overview" data-spy="nav-overview"><span>Overview</span></a></li>
+				<li><a href="#nav-background" data-spy="nav-background"><span>Background</span></a></li>
+				<li><a href="#nav-research" data-spy="nav-research"><span>Research</span></a></li>
+				<li><a href="#nav-affinity" data-spy="nav-affinity"><span>Affinity Mapping</span></a></li>
+				<li><a href="#nav-competitive" data-spy="nav-competitive"><span>Competitive Analysis</span></a></li>
+				<li><a href="#nav-features" data-spy="nav-features"><span>Defining Features</span></a></li>
+				<li><a href="#nav-wireframes" data-spy="nav-wireframes"><span>Wireframes</span></a></li>
+				<li><a href="#nav-mockups" data-spy="nav-mockups"><span>Mockups</span></a></li>
+				<li><a href="#nav-testing" data-spy="nav-testing"><span>Usability Testing</span></a></li>
+				<li><a href="#nav-user-test" data-spy="nav-user-test"><span>User Interview Test</span></a></li>
+				<li><a href="#nav-result" data-spy="nav-result"><span>Result</span></a></li>
+			</ul>
+		</nav>
+
 		<main class="text-sm md:text-lg text-26 leading-5 md:leading-7">
 			<img
 				src="./assets/images/master-case-study/cover.webp"
 				alt="Cover"
 				class="mt-[72px] lg:mt-[118px] h-[333.47px] md:!h-[702px] lg:!h-[747px] w-full lg:!w-[1095px] lg:mx-auto lg:rounded-[12px] object-contain"
 			/>
-			<div class="">
+			<div id="nav-overview" class="scroll-spy-section">
 				<section
 					class="mt-9 md:mt-[52px] pb-6 border-b border-d9 mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto"
 				>
@@ -180,7 +260,8 @@
 				class="w-full lg:!w-[1015px] lg:mx-auto h-[183px] md:!h-[381px] lg:!h-[381px] lg:mt-[92px] lg:rounded-[12px]"
 			/>
 			<div
-				class="mt-5 mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto pt-6 border-t border-f0 space-y-[16px]"
+				id="nav-background"
+				class="scroll-spy-section mt-5 mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto pt-6 border-t border-f0 space-y-[16px]"
 			>
 				<div
 					class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[101px] h-10 font-medium grid place-items-center"
@@ -260,7 +341,8 @@
 				<div class="mt-5 md:mt-8 space-y-5 md:space-y-8">
 					<!-- Interviews & Surveys -->
 					<div
-						class="space-y-4 lg:space-y-[16px] mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
+						id="nav-research"
+						class="scroll-spy-section space-y-4 lg:space-y-[16px] mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
 					>
 						<div
 							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[101px] h-10 font-medium grid place-items-center"
@@ -285,7 +367,8 @@
 					</div>
 					<!-- Affinity Mapping -->
 					<div
-						class="space-y-4 lg:space-y-10 mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
+						id="nav-affinity"
+						class="scroll-spy-section space-y-4 lg:space-y-10 mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
 					>
 						<h3 class="text-base md:text-2xl font-semibold lg:space-y-[16px]">
 							Affinity Mapping
@@ -342,7 +425,8 @@
 					</div>
 					<!-- Competitive Analysis -->
 					<div
-						class="mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-4 pb-3 border-b border-f0"
+						id="nav-competitive"
+						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-4 pb-3 border-b border-f0"
 					>
 						<h3 class="text-base md:text-2xl font-semibold">
 							Competitive Analysis
@@ -401,7 +485,8 @@
 					</div>
 					<!-- Defining features -->
 					<div
-						class="mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-4 pb-8 border-b border-f0"
+						id="nav-features"
+						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-4 pb-8 border-b border-f0"
 					>
 						<div
 							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[134px] h-10 font-medium grid place-items-center whitespace-nowrap"
@@ -497,7 +582,8 @@
 					</div>
 					<!-- Early User flows, sketching, and wireframes -->
 					<div
-						class="mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-5 pb-7 border-b border-f0"
+						id="nav-wireframes"
+						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-5 pb-7 border-b border-f0"
 					>
 						<div
 							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[101px] h-10 font-medium grid place-items-center"
@@ -532,7 +618,8 @@
 					</div>
 					<!-- High fidelity mocks -->
 					<div
-						class="mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-5 pb-3"
+						id="nav-mockups"
+						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-5 pb-3"
 					>
 						<div
 							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[82px] h-[49px] font-medium grid place-items-center"
@@ -665,7 +752,8 @@
 					</div>
 					<!-- Take the usability test -->
 					<div
-						class="mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 md:space-y-5 pt-4 pb-3"
+						id="nav-testing"
+						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 md:space-y-5 pt-4 pb-3"
 					>
 						<div
 							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[71px] h-[40px] font-medium grid place-items-center"
@@ -777,7 +865,8 @@
 					</div>
 					<!-- User Interview Test -->
 					<div
-						class="mx-4 md:!w-[675px] lg:!w-[1239px] 1239px md:mx-auto space-y-4 pb-3"
+						id="nav-user-test"
+						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1239px] 1239px md:mx-auto space-y-4 pb-3"
 					>
 						<h3
 							class="text-base md:text-2xl font-semibold lg:!w-[1015px] lg:mx-auto"
@@ -820,7 +909,8 @@
 					</div>
 					<!-- Result -->
 					<div
-						class="mx-4 md:!w-[675px] lg:!w-[1239px] md:mx-auto space-y-4 pb-3 lg:-mt-24"
+						id="nav-result"
+						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1239px] md:mx-auto space-y-4 pb-3 lg:-mt-24"
 					>
 						<h3 class="text-base md:text-2xl font-semibold">
 							Result:
@@ -930,101 +1020,26 @@
 				</div>
 			</section>
 
-			<footer
-				class="py-8 md:pt-[79px] xl:pt-[46px] md:pb-[77px] xl:pb-[54px] container vng-container--md xl:!w-[1063px] space-y-10 md:space-y-10"
-			>
-				<div class="flex flex-col gap-4 md:flex-row md:justify-between">
-					<p class="text-[#1f1f1f] font-medium">Thank for reading</p>
-					<div class="flex justify-between">
-						<!-- <a class="flex text-18 items-center gap-x-1" href="/">
-						<img
-							src="./assets/icons/arrow-left.svg"
-							alt="Back"
-							width="16"
-							height="16"
-							class="object-contain"
-						/>
-						<span class="font-medium"> Back To Project </span>
-					</a> -->
-						<a
-							class="flex text-18 items-center gap-x-1"
-							href="https://drive.google.com/file/d/14jWW0n9DyVQEKSWP2cyE37rSARoHvxNP/view?usp=sharing" target="_blank"
-						>
-							<span class="font-medium">
-								Read the Full Case Study here
-							</span>
-							<img
-								src="./assets/icons/arrow-left.svg"
-								alt="Back"
-								width="16"
-								height="16"
-								class="object-contain rotate-180"
-							/>
-						</a>
-					</div>
-				</div>
-				<div
-					class="flex flex-wrap gap-x-4 lg:gap-x-6 gap-y-4 text-[#BFBFBF] font-medium"
-				>
-					<a href="/index.html"> All </a>
-					<a href="/algo.html"> Algo </a>
-					<span class="cursor-pointer">
-						Fraud Detection Solution
-					</span>
-					<span class="cursor-pointer"> Milk Delivery App </span>
-					<span class="cursor-pointer"> Medical Product </span>
-					<a href="/master-case-study.html" class="text-[#1f1f1f]">
-						Mental Health Mobile App
-					</a>
-				</div>
-			</footer>
 		</main>
+
+		<footer class="home-footer home-footer-frame">
+			<div>
+				<p class="home-footer-title">THANKS FOR STOPPING BY!</p>
+				<p>Design and Develop by Tai</p>
+				<p>Ping me: <a href="mailto:manhtaiphung@gmail.com">manhtaiphung@gmail.com</a></p>
+			</div>
+			<div class="home-socials" aria-label="Social links">
+				<a href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer"><img src="assets/icons/linkedin.svg" alt="LinkedIn" /></a>
+				<a href="https://github.com/taiphung13" target="_blank" rel="noreferrer"><img src="assets/icons/github.svg" alt="GitHub" /></a>
+			</div>
+		</footer>
 
 		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 				document.body.style.visibility = 'visible';
-
-				const spans = document.querySelectorAll('span');
-				spans.forEach((span) => {
-					if (
-						span.textContent.includes('Fraud Detection Solution') ||
-						span.textContent.includes('Milk Delivery App') ||
-						span.textContent.includes('Medical Product')
-					) {
-						span.addEventListener('click', () => {
-							const toast = document.createElement('div');
-							toast.innerText =
-								'This project is still working on';
-							toast.style.position = 'fixed';
-							toast.style.top = '10px';
-							toast.style.right = '20px';
-							toast.style.backgroundColor = '#333';
-							toast.style.color = '#fff';
-							toast.style.padding = '10px 20px';
-							toast.style.borderRadius = '5px';
-							toast.style.opacity = '0';
-							toast.style.transition =
-								'opacity 0.5s ease, transform 0.5s ease';
-
-							document.body.appendChild(toast);
-
-							setTimeout(() => {
-								toast.style.opacity = '1';
-								toast.style.transform = 'translateX(0)';
-							}, 100);
-
-							setTimeout(() => {
-								toast.style.opacity = '0';
-								toast.style.transform = 'translateX(100%)';
-								setTimeout(() => {
-									document.body.removeChild(toast);
-								}, 500);
-							}, 3000);
-						});
-					}
-				});
 			});
 		</script>
+		<script src="js/index.js"></script>
 	</body>
 </html>

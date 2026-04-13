@@ -264,4 +264,61 @@ document.addEventListener('DOMContentLoaded', function () {
 			showToast('Coming soon');
 		});
 	});
+
+	/* Scroll Spy Navigation */
+	const spySections = document.querySelectorAll('.scroll-spy-section');
+	const navLinks = document.querySelectorAll('.side-nav a[data-spy]');
+	
+	if (spySections.length > 0 && navLinks.length > 0 && 'IntersectionObserver' in window) {
+		let currentActiveId = null;
+
+		const spyObserver = new IntersectionObserver(
+			function (entries) {
+				// Find all currently intersecting entries. Since multiple could theoretically
+				// intersect at once, we generally prefer the one taking up the most space
+				// or the first one in the viewport.
+				entries.forEach(function (entry) {
+					if (entry.isIntersecting) {
+						if (currentActiveId !== entry.target.id) {
+							currentActiveId = entry.target.id;
+							
+							// Update nav active state
+							navLinks.forEach(function (link) {
+								if (link.getAttribute('href') === '#' + currentActiveId) {
+									link.classList.add('is-active');
+								} else {
+									link.classList.remove('is-active');
+								}
+							});
+						}
+					}
+				});
+			},
+			{ 
+				// The rootMargin adjusts the "active window" area. We set it so section is
+				// considered "in view" when it hits the middle of the screen.
+				rootMargin: '-20% 0px -60% 0px',
+				threshold: 0
+			}
+		);
+
+		spySections.forEach(function (section) {
+			spyObserver.observe(section);
+		});
+
+		// Add smooth scroll behavior to click on side-nav
+		navLinks.forEach(function(link) {
+			link.addEventListener('click', function(e) {
+				e.preventDefault();
+				const targetId = this.getAttribute('href').substring(1);
+				const targetElement = document.getElementById(targetId);
+				
+				if (targetElement) {
+					// We smooth scroll.
+					targetElement.scrollIntoView({ behavior: 'smooth' });
+				}
+			});
+		});
+	}
+
 });
