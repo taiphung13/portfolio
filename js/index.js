@@ -266,38 +266,61 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	/* Scroll Spy Navigation */
-	const spySections = document.querySelectorAll('.scroll-spy-section');
 	const navLinks = document.querySelectorAll('.side-nav a[data-spy]');
-	
-	if (spySections.length > 0 && navLinks.length > 0 && 'IntersectionObserver' in window) {
+
+	if (navLinks.length > 0 && 'IntersectionObserver' in window) {
+		// Collect spy targets: old .scroll-spy-section or any element with matching id
+		const spyIds = Array.from(navLinks).map(function(l) {
+			return l.getAttribute('href').substring(1);
+		});
+		const spySections = spyIds
+			.map(function(id) { return document.getElementById(id); })
+			.filter(Boolean);
+		
+		// Also pick up legacy .scroll-spy-section elements
+		document.querySelectorAll('.scroll-spy-section').forEach(function(el) {
+			if (!spySections.includes(el)) spySections.push(el);
+		});
+
 		let currentActiveId = null;
+
+		function updateNavActive(activeId) {
+			if (currentActiveId === activeId) return;
+			currentActiveId = activeId;
+
+			// Determine active parent: use the link's own data-parent if it's a child
+			var activeLink = document.querySelector('.side-nav a[data-spy="' + activeId + '"]');
+			var activeParentId = activeLink && activeLink.getAttribute('data-parent');
+
+			navLinks.forEach(function (link) {
+				var linkId = link.getAttribute('href').substring(1);
+				var isActive = linkId === activeId;
+				var isParent = linkId === activeParentId;
+				var isChildOfActive = link.getAttribute('data-parent') === activeParentId && activeParentId;
+
+				link.classList.toggle('active', isActive);
+				link.classList.toggle('is-active', isActive);
+				link.classList.toggle('is-parent-active', !isActive && isParent);
+
+				// Show child links when their parent or a sibling child is active
+				var linkParent = link.getAttribute('data-parent');
+				if (link.classList.contains('side-nav-child')) {
+					var shouldShow = linkParent === activeParentId || linkParent === activeId;
+					link.classList.toggle('visible', shouldShow);
+				}
+			});
+		}
 
 		const spyObserver = new IntersectionObserver(
 			function (entries) {
-				// Find all currently intersecting entries. Since multiple could theoretically
-				// intersect at once, we generally prefer the one taking up the most space
-				// or the first one in the viewport.
 				entries.forEach(function (entry) {
 					if (entry.isIntersecting) {
-						if (currentActiveId !== entry.target.id) {
-							currentActiveId = entry.target.id;
-							
-							// Update nav active state
-							navLinks.forEach(function (link) {
-								if (link.getAttribute('href') === '#' + currentActiveId) {
-									link.classList.add('is-active');
-								} else {
-									link.classList.remove('is-active');
-								}
-							});
-						}
+						updateNavActive(entry.target.id);
 					}
 				});
 			},
 			{ 
-				// The rootMargin adjusts the "active window" area. We set it so section is
-				// considered "in view" when it hits the middle of the screen.
-				rootMargin: '-20% 0px -60% 0px',
+				rootMargin: '-15% 0px -55% 0px',
 				threshold: 0
 			}
 		);
@@ -306,7 +329,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			spyObserver.observe(section);
 		});
 
-		// Add smooth scroll behavior to click on side-nav
 		navLinks.forEach(function(link) {
 			link.addEventListener('click', function(e) {
 				e.preventDefault();
@@ -314,8 +336,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				const targetElement = document.getElementById(targetId);
 				
 				if (targetElement) {
-					// We smooth scroll.
-					targetElement.scrollIntoView({ behavior: 'smooth' });
+					targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 				}
 			});
 		});

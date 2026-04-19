@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Aperia Design System | Manh Tai</title>
+	<link rel="icon" href="assets/images/F95C930C-80C1-4909-BD14-A18202B6D4E8.png" type="image/png" />
+	<meta name="description" content="Aperia Design System case study" />
+	<meta property="og:title" content="Aperia Design System" />
+	<meta property="og:description" content="Design systems for speed at scale." />
+	<meta property="og:image" content="https://manhtaiphung.com/assets/images/aperia/case-study-desktop.png" />
+	<meta property="og:url" content="https://manhtaiphung.com/aperia-design-system.html" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Manh Tai" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Aperia Design System" />
+	<meta name="twitter:description" content="Design systems for speed at scale." />
+	<meta name="twitter:image" content="https://manhtaiphung.com/assets/images/aperia/case-study-desktop.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
+		rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="aperia-page study-page">
+	<header class="home-header">
+		<nav class="home-nav home-nav-frame" aria-label="Main navigation">
+			<div class="home-nav-col home-nav-left">
+				<div class="home-nav-item">
+					<a class="home-nav-link home-design-trigger home-nav-link-active" data-design-trigger href="/#projects">design</a>
+					<div class="home-nav-dropdown" aria-label="Design projects">
+						<a data-design-option href="marketing-data-platform.html">Marketing &amp; Data Platform</a>
+						<a data-design-option class="current-page" href="aperia-design-system.html">Aperia Design System</a>
+						<a class="wip-link" href="#">U.S Banking System</a>
+						<a data-design-option href="master-case-study.html">Mental Health Mobile App</a>
+						<a class="wip-link" href="#">Medical Product</a>
+					</div>
+				</div>
+				<a class="home-nav-link" href="about.html">about</a>
+			</div>
+
+			<a class="home-brand home-brand-desktop" href="index.html" aria-label="Home">
+				<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
+			</a>
+
+			<div class="home-nav-col home-nav-right">
+				<a class="home-nav-link" href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer">linkedin</a>
+				<a class="home-nav-link" href="https://drive.google.com/file/d/1yXxY_KrWEHacyOPtb-ZHlryEgHLfRDnV/view?usp=sharing" target="_blank" rel="noreferrer">resume</a>
+			</div>
+
+			<a class="home-brand home-brand-mobile" href="index.html" aria-label="Home">
+				<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
+			</a>
+
+			<button id="home-menu-button" class="home-menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="home-mobile-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</nav>
+
+		<div id="home-backdrop" class="home-backdrop"></div>
+		<aside id="home-mobile-menu" class="home-mobile-menu" aria-hidden="true">
+			<button id="home-menu-close" class="home-menu-close" type="button" aria-label="Close menu">&times;</button>
+			<a class="home-brand" href="index.html" aria-label="Home">
+				<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
+			</a>
+			<nav class="home-mobile-links" aria-label="Mobile navigation">
+				<div class="home-mobile-group" id="home-mobile-design-group">
+					<button id="home-mobile-design-toggle" class="home-mobile-parent" type="button" aria-expanded="false" aria-controls="home-mobile-design-submenu">design</button>
+					<div id="home-mobile-design-submenu" class="home-mobile-submenu">
+						<a data-design-option href="marketing-data-platform.html">Marketing &amp; Data Platform</a>
+						<a data-design-option class="current-page" href="aperia-design-system.html">Aperia Design System</a>
+						<a class="wip-link" href="#">U.S Banking System</a>
+						<a data-design-option href="master-case-study.html">Mental Health Mobile App</a>
+						<a class="wip-link" href="#">Medical Product</a>
+					</div>
+				</div>
+				<a href="about.html">about</a>
+				<a href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer">linkedin</a>
+				<a href="https://drive.google.com/file/d/1yXxY_KrWEHacyOPtb-ZHlryEgHLfRDnV/view?usp=sharing" target="_blank" rel="noreferrer">resume</a>
+			</nav>
+			<div class="home-mobile-footer">
+				<p>THANKS FOR STOPPING BY!</p>
+				<p>Ping me: <a href="mailto:manhtaiphung@gmail.com">manhtaiphung@gmail.com</a></p>
+			</div>
+		</aside>
+	</header>
+
+	<nav id="side-nav" class="side-nav" aria-label="Page Sections">
+		<ul>
+			<li><a href="#nav-overview" data-spy="nav-overview" class="side-nav-parent"><span>Overview</span></a></li>
+			<li><a href="#nav-challenge" data-spy="nav-challenge" class="side-nav-parent"><span>Challenge</span></a></li>
+			<li><a href="#nav-goals" data-spy="nav-goals" class="side-nav-parent"><span>Goals</span></a></li>
+			<li><a href="#nav-roadmap" data-spy="nav-roadmap" class="side-nav-parent"><span>Road Map</span></a></li>
+			<li><a href="#nav-tokens" data-spy="nav-tokens" class="side-nav-parent"><span>Building out of Tokens</span></a></li>
+			<li><a href="#nav-grid-system" data-spy="nav-grid-system" class="side-nav-parent"><span>8-Grid System</span></a></li>
+			<li><a href="#nav-building-sample" data-spy="nav-building-sample" class="side-nav-parent"><span>Building Sample</span></a></li>
+			<li><a href="#nav-foundation" data-spy="nav-foundation" class="side-nav-parent"><span>Building Foundation</span></a></li>
+			<li><a href="#nav-components" data-spy="nav-components" class="side-nav-parent"><span>Building Components</span></a></li>
+			<li><a href="#nav-copywriting" data-spy="nav-copywriting" class="side-nav-parent"><span>Copy Writing</span></a></li>
+			<li><a href="#nav-documentations" data-spy="nav-documentations" class="side-nav-parent"><span>Documentations</span></a></li>
+			<li><a href="#nav-update-interfaces" data-spy="nav-update-interfaces" class="side-nav-parent"><span>Update Interfaces</span></a></li>
+			<li><a href="#nav-accessibility" data-spy="nav-accessibility" class="side-nav-parent"><span>Accessibility</span></a></li>
+			<li><a href="#nav-feedback" data-spy="nav-feedback" class="side-nav-parent"><span>Client Feedback</span></a></li>
+			<li><a href="#nav-key-takeaways" data-spy="nav-key-takeaways" class="side-nav-parent"><span>Key Takeaways</span></a></li>
+			<li><a href="#nav-other-works" data-spy="nav-other-works" class="side-nav-parent"><span>My Other Works</span></a></li>
+		</ul>
+	</nav>
+
+	<main class="case-study-image-main" aria-label="Aperia Case Study">
+		<div class="case-study-image-content">
+			<div id="nav-overview" class="scroll-spy-section case-study-spy-anchor aperia-anchor-overview"></div>
+			<div id="nav-challenge" class="scroll-spy-section case-study-spy-anchor aperia-anchor-challenge"></div>
+			<div id="nav-goals" class="scroll-spy-section case-study-spy-anchor aperia-anchor-goals"></div>
+			<div id="nav-roadmap" class="scroll-spy-section case-study-spy-anchor aperia-anchor-roadmap"></div>
+			<div id="nav-tokens" class="scroll-spy-section case-study-spy-anchor aperia-anchor-tokens"></div>
+			<div id="nav-grid-system" class="scroll-spy-section case-study-spy-anchor aperia-anchor-grid-system"></div>
+			<div id="nav-building-sample" class="scroll-spy-section case-study-spy-anchor aperia-anchor-building-sample"></div>
+			<div id="nav-foundation" class="scroll-spy-section case-study-spy-anchor aperia-anchor-foundation"></div>
+			<div id="nav-components" class="scroll-spy-section case-study-spy-anchor aperia-anchor-components"></div>
+			<div id="nav-copywriting" class="scroll-spy-section case-study-spy-anchor aperia-anchor-copywriting"></div>
+			<div id="nav-documentations" class="scroll-spy-section case-study-spy-anchor aperia-anchor-documentations"></div>
+			<div id="nav-update-interfaces" class="scroll-spy-section case-study-spy-anchor aperia-anchor-update-interfaces"></div>
+			<div id="nav-accessibility" class="scroll-spy-section case-study-spy-anchor aperia-anchor-accessibility"></div>
+			<div id="nav-feedback" class="scroll-spy-section case-study-spy-anchor aperia-anchor-feedback"></div>
+			<div id="nav-key-takeaways" class="scroll-spy-section case-study-spy-anchor aperia-anchor-key-takeaways"></div>
+			<div id="nav-other-works" class="scroll-spy-section case-study-spy-anchor aperia-anchor-other-works"></div>
+
+			<picture class="case-study-image-wrap">
+				<source media="(max-width: 767px)" srcset="assets/images/aperia/case-study-mobile.png" />
+				<source media="(max-width: 1199px)" srcset="assets/images/aperia/case-study-tablet.png" />
+				<img class="case-study-image" src="assets/images/aperia/case-study-desktop.png" alt="Aperia Design System case study" />
+			</picture>
+
+			<nav class="case-study-footer-links case-study-footer-links--aperia" aria-label="Footer social links">
+				<a class="case-study-footer-link" href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer" aria-label="LinkedIn"></a>
+				<a class="case-study-footer-link" href="https://github.com/taiphung13" target="_blank" rel="noreferrer" aria-label="GitHub"></a>
+			</nav>
+			<a class="case-study-footer-email case-study-footer-email--aperia" href="mailto:manhtaiphung@gmail.com" aria-label="Email Manh Tai"></a>
+		</div>
+	</main>
+
+	<script src="js/index.js"></script>
+</body>
+</html>
