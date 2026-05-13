@@ -1,0 +1,32 @@
+{
+  "page": "marketing-data-platform.html",
+  "url": "http://localhost:4174/marketing-data-platform.html",
+  "tolerancePx": 2,
+  "changedRatioThreshold": 0.01,
+  "breakpoints": {
+    "desktop": { "width": 1440, "height": 900 },
+    "tablet": { "width": 820, "height": 1180 },
+    "mobile": { "width": 390, "height": 844 }
+  },
+  "sections": {
+    "other-work": {
+      "name": "My Other Works",
+      "selector": ".apl-other-work",
+      "order": 999,
+      "breakpoints": {
+        "desktop": {
+          "source": "assets/images/apollo/other-work-cards-desktop.png",
+          "expectedBox": { "x": 80, "y": 16751, "width": 1280, "height": 504 }
+        },
+        "tablet": {
+          "source": "assets/images/apollo/other-work-cards-tablet.png",
+          "expectedBox": { "x": 40, "y": 17012, "width": 740, "height": 967 }
+        },
+        "mobile": {
+          "source": "assets/images/apollo/other-work-cards-mobile.png",
+          "expectedBox": { "x": 16, "y": 14167, "width": 358, "height": 482 }
+        }
+      }
+    }
+  }
+}
