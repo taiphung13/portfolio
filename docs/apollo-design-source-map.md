@@ -23,9 +23,9 @@ Do not start MCP source reads until the user has provided all three full-page Fi
 
 | Breakpoint | Figma URL | File Key | Node ID | Status |
 |---|---|---|---|---|
-| Desktop | Waiting for user-provided full-page link | Not parsed | Not parsed | Waiting |
-| Tablet | Waiting for user-provided full-page link | Not parsed | Not parsed | Waiting |
-| Mobile | Waiting for user-provided full-page link | Not parsed | Not parsed | Waiting |
+| Desktop | `https://www.figma.com/design/ehkXrfmxPaRqlKYrlMFOa2/Mateee--Copy-?node-id=4789-42050&m=dev` | `ehkXrfmxPaRqlKYrlMFOa2` | `4789:42050` | Parsed |
+| Tablet | `https://www.figma.com/design/ehkXrfmxPaRqlKYrlMFOa2/Mateee--Copy-?node-id=5342-39642&m=dev` | `ehkXrfmxPaRqlKYrlMFOa2` | `5342:39642` | Parsed |
+| Mobile | `https://www.figma.com/design/ehkXrfmxPaRqlKYrlMFOa2/Mateee--Copy-?node-id=5362-56942&m=dev` | `ehkXrfmxPaRqlKYrlMFOa2` | `5362:56942` | Parsed |
 
 ## MCP Budget Rules
 
@@ -57,3 +57,4 @@ Do not start MCP source reads until the user has provided all three full-page Fi
 | Date | Section | MCP Calls Used | Local Evidence | Result |
 |---|---|---:|---|---|
 | 2026-05-13 | Workflow setup | 0 | Spec approved | Ready for link input |
+| 2026-05-13 | Full-page source registration | 0 | `scripts/extract-figma-links.py` output parsed Desktop/Tablet/Mobile source nodes | Ready for MCP source reads |
