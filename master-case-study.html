@@ -31,7 +31,7 @@
 		<meta name="twitter:description" content="Mô tả ngắn gọn về trang." />
 		<meta
 			name="twitter:image"
-			content="https://manhtaiphung.com/assets/og/thumb.webp"
+			content="https://manhtaiphung.com/assets/images/og/thumb.webp"
 		/>
 		<meta name="twitter:site" content="@yourtwitterhandle" />
 
@@ -130,19 +130,27 @@
 			</aside>
 		</header>
 
-		<nav id="side-nav" class="side-nav hidden xl:block" aria-label="Page Sections">
+		<nav id="side-nav" class="side-nav mental-health-side-nav hidden xl:block" aria-label="Page Sections">
 			<ul>
-				<li><a href="#nav-overview" data-spy="nav-overview"><span>Overview</span></a></li>
-				<li><a href="#nav-background" data-spy="nav-background"><span>Background</span></a></li>
-				<li><a href="#nav-research" data-spy="nav-research"><span>Research</span></a></li>
-				<li><a href="#nav-affinity" data-spy="nav-affinity"><span>Affinity Mapping</span></a></li>
-				<li><a href="#nav-competitive" data-spy="nav-competitive"><span>Competitive Analysis</span></a></li>
-				<li><a href="#nav-features" data-spy="nav-features"><span>Defining Features</span></a></li>
-				<li><a href="#nav-wireframes" data-spy="nav-wireframes"><span>Wireframes</span></a></li>
-				<li><a href="#nav-mockups" data-spy="nav-mockups"><span>Mockups</span></a></li>
-				<li><a href="#nav-testing" data-spy="nav-testing"><span>Usability Testing</span></a></li>
-				<li><a href="#nav-user-test" data-spy="nav-user-test"><span>User Interview Test</span></a></li>
-				<li><a href="#nav-result" data-spy="nav-result"><span>Result</span></a></li>
+				<li><a href="#nav-overview" data-spy="nav-overview" class="side-nav-parent is-active active"><span>Overview</span></a></li>
+				<li><a href="#nav-research" data-spy="nav-research" class="side-nav-parent"><span>Research</span></a></li>
+				<li><a href="#nav-interviews-surveys" data-spy="nav-interviews-surveys" class="side-nav-child" data-parent="nav-research"><span>Interview &amp; Surveys</span></a></li>
+				<li><a href="#nav-affinity" data-spy="nav-affinity" class="side-nav-child" data-parent="nav-research"><span>Affinity Mapping</span></a></li>
+				<li><a href="#nav-competitive" data-spy="nav-competitive" class="side-nav-child" data-parent="nav-research"><span>Competitive Analysis</span></a></li>
+				<li><a href="#nav-features" data-spy="nav-features" class="side-nav-parent"><span>Defining features</span></a></li>
+				<li><a href="#nav-wireframes" data-spy="nav-wireframes" class="side-nav-parent"><span>Wireframes</span></a></li>
+				<li><a href="#nav-early-flows" data-spy="nav-early-flows" class="side-nav-child" data-parent="nav-wireframes"><span>Early User flows, sketching and wireframes</span></a></li>
+				<li><a href="#nav-mockups" data-spy="nav-mockups" class="side-nav-parent"><span>Mockups</span></a></li>
+				<li><a href="#nav-high-fidelity-mocks" data-spy="nav-high-fidelity-mocks" class="side-nav-child" data-parent="nav-mockups"><span>High fidelity mocks</span></a></li>
+				<li><a href="#nav-designing-code" data-spy="nav-designing-code" class="side-nav-child" data-parent="nav-mockups"><span>Designing and code for the app</span></a></li>
+				<li><a href="#nav-testing" data-spy="nav-testing" class="side-nav-parent"><span>Testing</span></a></li>
+				<li><a href="#nav-take-usability-test" data-spy="nav-take-usability-test" class="side-nav-child" data-parent="nav-testing"><span>Take the usability test</span></a></li>
+				<li><a href="#nav-sus-results" data-spy="nav-sus-results" class="side-nav-child" data-parent="nav-testing"><span>Usability (SUS) Test Results Analysis</span></a></li>
+				<li><a href="#nav-user-interview-test" data-spy="nav-user-interview-test" class="side-nav-child" data-parent="nav-testing"><span>User Interview Test</span></a></li>
+				<li><a href="#nav-usability-scenario-1" data-spy="nav-usability-scenario-1" class="side-nav-child" data-parent="nav-testing"><span>Usability Test Scenarios &amp; Results #1</span></a></li>
+				<li><a href="#nav-usability-scenario-2" data-spy="nav-usability-scenario-2" class="side-nav-child" data-parent="nav-testing"><span>Usability Test Scenarios &amp; Results #2</span></a></li>
+				<li><a href="#nav-usability-scenario-3" data-spy="nav-usability-scenario-3" class="side-nav-child" data-parent="nav-testing"><span>Usability Test Scenarios &amp; Results #3</span></a></li>
+				<li><a href="#nav-reflection" data-spy="nav-reflection" class="side-nav-parent"><span>Reflection</span></a></li>
 			</ul>
 		</nav>
 
@@ -257,8 +265,61 @@
 			<img
 				src="./assets/images/master-case-study/process.webp"
 				alt="Process"
-				class="w-full lg:!w-[1015px] lg:mx-auto h-[183px] md:!h-[381px] lg:!h-[381px] lg:mt-[92px] lg:rounded-[12px]"
+				class="mental-process-image w-full lg:!w-[1015px] lg:mx-auto h-[183px] md:!h-[381px] lg:!h-[381px] lg:mt-[92px] lg:rounded-[12px]"
 			/>
+			<section class="mental-process-panel" aria-labelledby="mental-process-title">
+				<h2 id="mental-process-title" class="mental-process-title">
+					Our Process Details
+				</h2>
+				<div class="mental-process-grid" aria-label="Project process details">
+					<article class="mental-process-column mental-process-column--discovery">
+						<h3>Discovery</h3>
+						<ul>
+							<li>Surveys</li>
+							<li>User Interview</li>
+							<li>Affinity Mapping</li>
+						</ul>
+					</article>
+					<article class="mental-process-column mental-process-column--ideate">
+						<h3>Ideate</h3>
+						<ul>
+							<li>Personas</li>
+							<li>Storyboard</li>
+							<li>User Scenario</li>
+							<li>Hierarchical Task Analysis</li>
+							<li>Competitive Analysis</li>
+						</ul>
+					</article>
+					<article class="mental-process-column mental-process-column--define">
+						<h3>Define</h3>
+						<ul>
+							<li>Key Feature</li>
+							<li>User Journey Map</li>
+							<li>Card Sorting</li>
+							<li>Information Architecture</li>
+							<li>User Flow</li>
+						</ul>
+					</article>
+					<article class="mental-process-column mental-process-column--design">
+						<h3>Design</h3>
+						<ul>
+							<li>Sketching</li>
+							<li>Wireframe</li>
+							<li>Low Fidelity Design</li>
+							<li>Design System</li>
+							<li>High Fidelity Wireframes</li>
+						</ul>
+					</article>
+					<article class="mental-process-column mental-process-column--test">
+						<h3>Test</h3>
+						<ul>
+							<li>Prototying</li>
+							<li>Measure Design</li>
+							<li>Usability Testing</li>
+						</ul>
+					</article>
+				</div>
+			</section>
 			<div
 				id="nav-background"
 				class="scroll-spy-section mt-5 mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto pt-6 border-t border-f0 space-y-[16px]"
@@ -332,18 +393,19 @@
 			</div>
 
 			<!-- Process -->
-			<section class="mt-5">
-				<div
-					class="text-xl md:text-[32px] lg:text-[36px] font-semibold pb-4 border-b border-f0 mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
-				>
-					Process start here
-				</div>
-				<div class="mt-5 md:mt-8 space-y-5 md:space-y-8">
-					<!-- Interviews & Surveys -->
+				<section class="mt-5">
 					<div
-						id="nav-research"
-						class="scroll-spy-section space-y-4 lg:space-y-[16px] mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
+						class="text-xl md:text-[32px] lg:text-[36px] font-semibold pb-4 border-b border-f0 mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
 					>
+						Process start here
+					</div>
+					<div class="mt-5 md:mt-8 space-y-5 md:space-y-8">
+						<div id="nav-research" class="scroll-spy-section h-px" aria-hidden="true"></div>
+						<!-- Interviews & Surveys -->
+						<div
+							id="nav-interviews-surveys"
+							class="scroll-spy-section space-y-4 lg:space-y-[16px] mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
+						>
 						<div
 							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[101px] h-10 font-medium grid place-items-center"
 						>
@@ -579,12 +641,13 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Early User flows, sketching, and wireframes -->
-					<div
-						id="nav-wireframes"
-						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-5 pb-7 border-b border-f0"
-					>
+						</div>
+						<div id="nav-wireframes" class="scroll-spy-section h-px" aria-hidden="true"></div>
+						<!-- Early User flows, sketching, and wireframes -->
+						<div
+							id="nav-early-flows"
+							class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-5 pb-7 border-b border-f0"
+						>
 						<div
 							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[101px] h-10 font-medium grid place-items-center"
 						>
@@ -614,13 +677,14 @@
 								alt="Early User flows 2"
 								class="w-full md:!w-1/2 max-w-full h-[456px] md:!h-[647px] object-contain"
 							/>
+							</div>
 						</div>
-					</div>
-					<!-- High fidelity mocks -->
-					<div
-						id="nav-mockups"
-						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-5 pb-3"
-					>
+						<div id="nav-mockups" class="scroll-spy-section h-px" aria-hidden="true"></div>
+						<!-- High fidelity mocks -->
+						<div
+							id="nav-high-fidelity-mocks"
+							class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-5 pb-3"
+						>
 						<div
 							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[82px] h-[49px] font-medium grid place-items-center"
 						>
@@ -728,10 +792,11 @@
 							</p>
 						</div>
 					</div>
-					<!-- Designing and code for the app -->
-					<div
-						class="mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 pb-3"
-					>
+						<!-- Designing and code for the app -->
+						<div
+							id="nav-designing-code"
+							class="mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 pb-3"
+						>
 						<h3 class="text-base md:text-2xl font-semibold">
 							Designing and coding for the app
 						</h3>
@@ -748,13 +813,14 @@
 							src="./assets/images/master-case-study/dac.webp"
 							alt="Designing and code for the app"
 							class="w-full md:!w-[678px] lg:!w-[1006px] md:mx-auto h-[196px] md:!h-[351px] lg:!h-[521px] object-contain"
-						/>
-					</div>
-					<!-- Take the usability test -->
-					<div
-						id="nav-testing"
-						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 md:space-y-5 pt-4 pb-3"
-					>
+							/>
+						</div>
+						<div id="nav-testing" class="scroll-spy-section h-px" aria-hidden="true"></div>
+						<!-- Take the usability test -->
+						<div
+							id="nav-take-usability-test"
+							class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 md:space-y-5 pt-4 pb-3"
+						>
 						<div
 							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[71px] h-[40px] font-medium grid place-items-center"
 						>
@@ -803,10 +869,11 @@
 							</figure>
 						</div>
 					</div>
-					<!-- Usability (SUS) Test Results Analysis -->
-					<div
-						class="mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 pb-3"
-					>
+						<!-- Usability (SUS) Test Results Analysis -->
+						<div
+							id="nav-sus-results"
+							class="mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 pb-3"
+						>
 						<h3 class="text-base md:text-2xl font-semibold">
 							Usability (SUS) Test Results Analysis
 						</h3>
@@ -863,11 +930,11 @@
 							</div>
 						</div>
 					</div>
-					<!-- User Interview Test -->
-					<div
-						id="nav-user-test"
-						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1239px] 1239px md:mx-auto space-y-4 pb-3"
-					>
+						<!-- User Interview Test -->
+						<div
+							id="nav-user-interview-test"
+							class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1239px] 1239px md:mx-auto space-y-4 pb-3"
+						>
 						<h3
 							class="text-base md:text-2xl font-semibold lg:!w-[1015px] lg:mx-auto"
 						>
@@ -921,10 +988,11 @@
 							class="w-full lg:!w-[812px] h-[155px] lg:!h-[369.09px] object-contain"
 						/>
 					</div>
-					<!-- Usability Test Scenarios & Results #1 -->
-					<div
-						class="mx-4 md:!w-[675px] lg:!w-[997.33px] lg:!w-[997.33px] md:mx-auto space-y-4 pb-3"
-					>
+						<!-- Usability Test Scenarios & Results #1 -->
+						<div
+							id="nav-usability-scenario-1"
+							class="mx-4 md:!w-[675px] lg:!w-[997.33px] lg:!w-[997.33px] md:mx-auto space-y-4 pb-3"
+						>
 						<h3 class="text-base md:text-2xl font-semibold">
 							Usability Test Scenarios & Results #1
 						</h3>
@@ -953,10 +1021,11 @@
 							</figcaption>
 						</figure>
 					</div>
-					<!-- Usability Test Scenarios & Results #2 -->
-					<div
-						class="mx-4 md:!w-[675px] lg:!w-[997.33px] md:mx-auto space-y-4 pb-3"
-					>
+						<!-- Usability Test Scenarios & Results #2 -->
+						<div
+							id="nav-usability-scenario-2"
+							class="mx-4 md:!w-[675px] lg:!w-[997.33px] md:mx-auto space-y-4 pb-3"
+						>
 						<h3 class="text-base md:text-2xl font-semibold">
 							Usability Test Scenarios & Results #2
 						</h3>
@@ -985,10 +1054,11 @@
 							</figcaption>
 						</figure>
 					</div>
-					<!-- Usability Test Scenarios & Results #3 -->
-					<div
-						class="mx-4 md:!w-[675px] lg:!w-[997.33px] md:mx-auto space-y-4 pb-3"
-					>
+						<!-- Usability Test Scenarios & Results #3 -->
+						<div
+							id="nav-usability-scenario-3"
+							class="mx-4 md:!w-[675px] lg:!w-[997.33px] md:mx-auto space-y-4 pb-3"
+						>
 						<h3 class="text-base md:text-2xl font-semibold">
 							Usability Test Scenarios & Results #3
 						</h3>
@@ -1015,22 +1085,39 @@
 							>
 								The solution
 							</figcaption>
-						</figure>
+							</figure>
+						</div>
+						<section
+							id="nav-reflection"
+							class="mental-health-reflection scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto pt-16 md:pt-20 lg:pt-[96px] pb-20 md:pb-28 lg:pb-[132px]"
+						>
+							<div
+								class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[20px] w-[126px] h-[56px] font-medium grid place-items-center"
+							>
+								Reflection
+							</div>
+							<p
+								class="mt-12 md:mt-14 lg:mt-[56px] text-[16px] md:text-[20px] lg:text-[24px] leading-[1.6] text-[#303030]"
+							>
+								This project strengthened my ability to design through ambiguity, translate research into product decisions, and iterate with technical constraints in mind. Working end to end from discovery to testing helped me move beyond feature thinking and focus on building a solution that was both usable and feasible. It also reinforced the value of structured collaboration, where design decisions are grounded not only in user insight, but also in delivery realities and measurable outcomes.
+							</p>
+						</section>
 					</div>
-				</div>
-			</section>
+				</section>
 
 		</main>
 
-		<footer class="home-footer home-footer-frame">
-			<div>
-				<p class="home-footer-title">THANKS FOR STOPPING BY!</p>
-				<p>Design and Develop by Tai</p>
-				<p>Ping me: <a href="mailto:manhtaiphung@gmail.com">manhtaiphung@gmail.com</a></p>
-			</div>
-			<div class="home-socials" aria-label="Social links">
-				<a href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer"><img src="assets/icons/linkedin.svg" alt="LinkedIn" /></a>
-				<a href="https://github.com/taiphung13" target="_blank" rel="noreferrer"><img src="assets/icons/github.svg" alt="GitHub" /></a>
+		<footer class="about-footer mental-health-footer">
+			<div class="about-shell about-footer-inner">
+				<div class="about-footer-copy">
+					<p class="about-footer-title">THANKS FOR STOPPING BY!</p>
+					<p>Design and Develop by Tai</p>
+					<p>Ping me: <a href="mailto:manhtaiphung@gmail.com">manhtaiphung@gmail.com</a></p>
+				</div>
+				<div class="about-footer-icons" aria-label="Social links">
+					<a href="https://www.linkedin.com/in/manh-t-626076100" target="_blank" rel="noreferrer"><img src="assets/icons/linkedin.svg" alt="LinkedIn" /></a>
+					<a href="https://github.com/taiphung13" target="_blank" rel="noreferrer"><img src="assets/icons/github.svg" alt="GitHub" /></a>
+				</div>
 			</div>
 		</footer>
 

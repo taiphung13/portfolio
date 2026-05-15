@@ -1,3 +1,9 @@
-# Antigravity Kit - AI Agent templates (local only)
 .agent/
+http/
+.superpowers/
+test-results/
+.gitnexus/
+.claude/
+AGENTS.md
+CLAUDE.md
 CONTINUITY.md

@@ -51,12 +51,16 @@ document.addEventListener('DOMContentLoaded', function () {
 	matchingPathOptions.forEach(function (item) {
 		if (currentHash && item.hash && item.hash === currentHash) {
 			item.link.classList.add('is-active');
+			item.link.setAttribute('aria-current', 'page');
 			hasSpecificMatch = true;
 		}
 	});
 
-	if (!hasSpecificMatch && matchingPathOptions.length === 1) {
-		matchingPathOptions[0].link.classList.add('is-active');
+	if (!hasSpecificMatch) {
+		matchingPathOptions.forEach(function (item) {
+			item.link.classList.add('is-active');
+			item.link.setAttribute('aria-current', 'page');
+		});
 	}
 
 	if (isOnDesignOptionPage) {
@@ -284,9 +288,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		let currentActiveId = null;
 
-		function updateNavActive(activeId) {
-			if (currentActiveId === activeId) return;
-			currentActiveId = activeId;
+			function updateNavActive(activeId) {
+				if (currentActiveId === activeId) return;
+				currentActiveId = activeId;
 
 			// Determine active parent: use the link's own data-parent if it's a child
 			var activeLink = document.querySelector('.side-nav a[data-spy="' + activeId + '"]');
@@ -308,38 +312,86 @@ document.addEventListener('DOMContentLoaded', function () {
 					var shouldShow = linkParent === activeParentId || linkParent === activeId;
 					link.classList.toggle('visible', shouldShow);
 				}
+				});
+			}
+
+			function bindNavScrollLinks() {
+				navLinks.forEach(function(link) {
+					link.addEventListener('click', function(e) {
+						e.preventDefault();
+						const targetId = this.getAttribute('href').substring(1);
+						const targetElement = document.getElementById(targetId);
+
+						if (targetElement) {
+							updateNavActive(targetId);
+							targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+						}
+					});
+				});
+			}
+
+			if (document.body.classList.contains('aperia-page')) {
+				const navTargets = spyIds
+					.map(function(id) {
+						return { id: id, element: document.getElementById(id) };
+					})
+					.filter(function(item) {
+						return item.element;
+					});
+				let isSyncQueued = false;
+
+				function syncAperiaNavActive() {
+					isSyncQueued = false;
+					if (navTargets.length === 0) return;
+
+					const activationLine = Math.min(window.innerHeight * 0.1, 96);
+					let activeId = navTargets[0].id;
+
+					navTargets.forEach(function(item) {
+						if (item.element.getBoundingClientRect().top <= activationLine) {
+							activeId = item.id;
+						}
+					});
+
+					if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+						activeId = navTargets[navTargets.length - 1].id;
+					}
+
+					updateNavActive(activeId);
+				}
+
+				function queueAperiaNavSync() {
+					if (isSyncQueued) return;
+					isSyncQueued = true;
+					window.requestAnimationFrame(syncAperiaNavActive);
+				}
+
+				window.addEventListener('scroll', queueAperiaNavSync, { passive: true });
+				window.addEventListener('resize', queueAperiaNavSync);
+				bindNavScrollLinks();
+				syncAperiaNavActive();
+				return;
+			}
+
+			const spyObserver = new IntersectionObserver(
+				function (entries) {
+					entries.forEach(function (entry) {
+						if (entry.isIntersecting) {
+							updateNavActive(entry.target.id);
+						}
+					});
+				},
+				{
+					rootMargin: '-15% 0px -55% 0px',
+					threshold: 0
+				}
+			);
+
+			spySections.forEach(function (section) {
+				spyObserver.observe(section);
 			});
+
+			bindNavScrollLinks();
 		}
 
-		const spyObserver = new IntersectionObserver(
-			function (entries) {
-				entries.forEach(function (entry) {
-					if (entry.isIntersecting) {
-						updateNavActive(entry.target.id);
-					}
-				});
-			},
-			{ 
-				rootMargin: '-15% 0px -55% 0px',
-				threshold: 0
-			}
-		);
-
-		spySections.forEach(function (section) {
-			spyObserver.observe(section);
-		});
-
-		navLinks.forEach(function(link) {
-			link.addEventListener('click', function(e) {
-				e.preventDefault();
-				const targetId = this.getAttribute('href').substring(1);
-				const targetElement = document.getElementById(targetId);
-				
-				if (targetElement) {
-					targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-				}
-			});
-		});
-	}
-
-});
+	});

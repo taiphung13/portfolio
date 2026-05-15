@@ -1,7 +1,14 @@
 {
 	"rewrites": [
 		{ "source": "/about", "destination": "/about.html" },
-		{ "source": "/algo", "destination": "/algo.html" },
+		{
+			"source": "/marketing-data-platform",
+			"destination": "/marketing-data-platform.html"
+		},
+		{
+			"source": "/aperia-design-system",
+			"destination": "/aperia-design-system.html"
+		},
 		{
 			"source": "/master-case-study",
 			"destination": "/master-case-study.html"
