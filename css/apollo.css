@@ -214,7 +214,7 @@
 	padding-bottom: 24px;
 	border-bottom: 1px solid var(--apl-line);
 	color: var(--apl-muted);
-	font-size: 16px;
+	font-size: var(--apl-font-body);
 	line-height: 24px;
 }
 
@@ -244,7 +244,7 @@
 
 .apl-meta-value {
 	color: var(--apl-ink);
-	font-size: 16px;
+	font-size: var(--apl-font-body);
 	line-height: 24px;
 }
 
@@ -273,7 +273,7 @@
 
 .apl-overview-copy p {
 	color: #595959;
-	font-size: 16px;
+	font-size: var(--apl-font-body);
 	line-height: 24px;
 }
 
@@ -951,7 +951,7 @@
 .apl-decision-one .apl-copy-block > p:not(.apl-kicker) {
 	margin: 12px 0 0;
 	color: #595959;
-	font-size: 16px;
+	font-size: var(--apl-font-body);
 	font-weight: 400;
 	line-height: 1.5;
 }
@@ -1028,9 +1028,9 @@
 .apl-decision-one .apl-decision-cards p {
 	max-width: 420px;
 	color: #595959;
-	font-size: 13px;
+	font-size: var(--apl-font-body);
 	font-weight: 400;
-	line-height: 1.25;
+	line-height: 1.4;
 }
 
 .apl-before-label {
@@ -1055,7 +1055,7 @@
 	max-width: 1030px;
 	margin: 0;
 	color: #595959;
-	font-size: 16px;
+	font-size: var(--apl-font-body);
 	font-weight: 400;
 	line-height: 1.5;
 }
@@ -1940,7 +1940,7 @@
 .apl-results-section .apl-copy-block p:not(.apl-kicker) {
 	margin-top: 12px;
 	color: #595959;
-	font-size: 16px;
+	font-size: var(--apl-font-body);
 	line-height: 24px;
 }
 
@@ -1999,7 +1999,7 @@
 
 .apl-result-card-grid p {
 	color: #595959;
-	font-size: 16px;
+	font-size: var(--apl-font-body);
 	line-height: 24px;
 }
 
@@ -2064,7 +2064,7 @@
 .apl-client-card > p {
 	margin: 0;
 	color: #595959;
-	font-size: 16px;
+	font-size: var(--apl-font-body);
 	line-height: 24px;
 }
 
@@ -2217,7 +2217,7 @@
 
 	.apl-problem-section .apl-copy-block p:not(.apl-kicker),
 	.apl-problem-list {
-		font-size: 16px;
+		font-size: var(--apl-font-body);
 		line-height: 24px;
 	}
 
@@ -2351,7 +2351,7 @@
 
 	.apl-decision-one .apl-decision-cards p {
 		max-width: 692px;
-		font-size: 16px;
+		font-size: var(--apl-font-body);
 		line-height: normal;
 	}
 
@@ -2859,7 +2859,7 @@
 	}
 
 	.apl-research-section {
-		--apl-font-body: 12px;
+		--apl-font-body: var(--normal-copy-font-size);
 		padding-top: 20px;
 		padding-bottom: 0;
 	}
