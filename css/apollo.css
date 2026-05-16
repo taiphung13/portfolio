@@ -2133,7 +2133,7 @@
 	display: block;
 	width: 100%;
 	height: auto;
-	border-radius: 0;
+	border-radius: 12px;
 }
 
 .apl-other-work-card h3 {
