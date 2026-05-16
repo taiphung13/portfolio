@@ -4511,11 +4511,18 @@ button:disabled {
 
 .aperia-page .aperia-real-hero-art {
 	position: relative;
-	aspect-ratio: 1360 / 584;
+	aspect-ratio: 1360 / 657;
 	min-height: 0;
 	padding: 0;
 	overflow: hidden;
-	background: #d9ddcf url("../assets/images/aperia/slices/banner-hero-desktop.png") center top / 100% 100% no-repeat;
+	border-radius: 8px;
+	background-color: #d9ddcf;
+	background-image:
+		url("../assets/images/aperia/slices/banner-hero-desktop.png"),
+		url("../assets/images/aperia/slices/banner-hero-desktop.png");
+	background-position: center top, center center;
+	background-size: 100% auto, 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .aperia-page .aperia-real-case-card,
@@ -4601,33 +4608,41 @@ button:disabled {
 }
 
 .aperia-page .aperia-real-ribbons {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
 	display: flex;
 	align-items: stretch;
-	margin-top: -1px;
+	margin-top: 0;
 	text-transform: uppercase;
 	color: #fff;
-	font-size: 14px;
+	font-size: 24px;
 	font-weight: 700;
-	line-height: 1;
+	line-height: normal;
+	letter-spacing: 0;
 }
 
 .aperia-page .aperia-real-ribbons span {
 	display: inline-flex;
 	align-items: center;
-	min-height: 64px;
-	padding: 0 28px;
+	justify-content: center;
+	min-height: 0;
+	padding: 16px 20px;
 	white-space: nowrap;
+	flex: 0 0 auto;
 }
 
 .aperia-page .aperia-real-ribbons span:first-child {
 	background: #f28b3d;
-	width: 320px;
+	width: auto;
+	border-bottom-left-radius: 8px;
 }
 
 .aperia-page .aperia-real-ribbons span:last-child {
 	background: #6152ff;
-	width: 575px;
-	flex: 0 0 auto;
+	width: auto;
+	border-top-right-radius: 8px;
 }
 
 .aperia-page .aperia-real-result {
@@ -5277,9 +5292,12 @@ button:disabled {
 	}
 
 	.aperia-page .aperia-real-hero-art {
-		aspect-ratio: 756 / 333;
+		aspect-ratio: 740 / 357;
 		min-height: 0;
-		background-image: url("../assets/images/aperia/slices/banner-hero-tablet.png");
+		border-radius: 4.353px;
+		background-image:
+			url("../assets/images/aperia/slices/banner-hero-tablet.png"),
+			url("../assets/images/aperia/slices/banner-hero-tablet.png");
 	}
 
 	.aperia-page .aperia-real-case-card {
@@ -5328,15 +5346,19 @@ button:disabled {
 	}
 
 	.aperia-page .aperia-real-ribbons span {
-		min-height: 50px;
+		padding: 8.706px 10.882px;
+		font-size: 13.059px;
 	}
 
 	.aperia-page .aperia-real-ribbons span:first-child {
-		width: 220px;
+		width: auto;
+		border-bottom-left-radius: 4.353px;
 	}
 
 	.aperia-page .aperia-real-ribbons span:last-child {
-		width: 390px;
+		width: auto;
+		min-width: 0;
+		border-top-right-radius: 4.353px;
 	}
 
 	.aperia-page .aperia-real-meta {
@@ -5427,10 +5449,17 @@ button:disabled {
 	}
 
 	.aperia-page .aperia-real-hero-art {
-		aspect-ratio: 716 / 323;
+		aspect-ratio: 358 / 173;
 		min-height: 0;
 		padding: 0;
-		background: #d9ddcf url("../assets/images/aperia/slices/banner-hero-mobile.png") center top / 100% 100% no-repeat;
+		border-radius: 2.106px;
+		background-color: #d9ddcf;
+		background-image:
+			url("../assets/images/aperia/slices/banner-hero-mobile.png"),
+			url("../assets/images/aperia/slices/banner-hero-mobile.png");
+		background-position: center top, center center;
+		background-size: 100% auto, 100% 100%;
+		background-repeat: no-repeat;
 	}
 
 	.aperia-page .aperia-real-case-card,
@@ -5493,20 +5522,23 @@ button:disabled {
 	}
 
 	.aperia-page .aperia-real-ribbons {
-		font-size: 6px;
+		font-size: 6.318px;
 	}
 
 	.aperia-page .aperia-real-ribbons span {
-		min-height: 17px;
-		padding: 0 7px;
+		padding: 4.212px 5.265px;
+		font-size: 6.318px;
 	}
 
 	.aperia-page .aperia-real-ribbons span:first-child {
-		width: 84px;
+		width: auto;
+		border-bottom-left-radius: 2.106px;
 	}
 
 	.aperia-page .aperia-real-ribbons span:last-child {
-		width: 150px;
+		width: auto;
+		min-width: 0;
+		border-top-right-radius: 2.106px;
 	}
 
 	.aperia-page .aperia-real-result {
