@@ -148,6 +148,19 @@
 	height: auto;
 }
 
+.apl-problem-image img,
+.apl-goal-media img,
+.apl-journey-map img,
+.apl-interview-media img,
+.apl-persona-card img,
+.apl-decision-section .apl-wide-media img,
+.apl-decision-two-before-media img,
+.apl-segment-create-details img,
+.apl-segment-screen,
+.apl-mobile-compare img {
+	filter: contrast(1.06);
+}
+
 .apl-hero {
 	padding: 0 0 72px;
 	border-bottom: 0;
@@ -225,9 +238,14 @@
 
 .apl-meta-grid {
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-	gap: 80px;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, .7fr);
+	column-gap: 80px;
+	row-gap: 40px;
 	margin-top: 40px;
+}
+
+.apl-meta-item--skills {
+	grid-column: span 2;
 }
 
 .apl-meta-item {
@@ -735,6 +753,32 @@
 	white-space: nowrap;
 }
 
+.apl-process-stage {
+	padding-top: 16px;
+	border-top: 1px solid var(--apl-line);
+	color: #595959;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.apl-process-stage--inside {
+	width: 100%;
+	margin: 0 0 32px;
+}
+
+.apl-journey-map {
+	width: 904px;
+	max-width: calc(100% - 160px);
+	margin: 0 auto 90px;
+}
+
+.apl-journey-map picture,
+.apl-journey-map img {
+	display: block;
+	width: 100%;
+}
+
 .apl-research-section {
 	padding-top: 24px;
 	padding-bottom: 0;
@@ -780,6 +824,30 @@
 	line-height: normal;
 }
 
+.apl-interview-findings {
+	max-width: none;
+	margin-bottom: 32px;
+}
+
+.apl-interview-findings h2 {
+	margin: 0 0 8px;
+	color: #262626;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 31px;
+}
+
+.apl-interview-media-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0;
+	margin: 0 -20px 24px;
+}
+
+.apl-interview-media-grid .apl-interview-media {
+	margin: 0;
+}
+
 .apl-interview-intro {
 	margin: 0;
 	color: #595959;
@@ -817,6 +885,13 @@
 	display: grid;
 	gap: 12px;
 	margin-top: 4px;
+}
+
+.apl-problem-summary-intro {
+	margin: 4px 0 16px;
+	color: var(--apl-muted);
+	font-size: var(--apl-font-body);
+	line-height: 1.5;
 }
 
 .apl-finding-list p {
@@ -904,6 +979,69 @@
 	max-width: 1286px;
 }
 
+.apl-persona-card--head,
+.apl-persona-card--member {
+	width: 100%;
+	max-width: none;
+}
+
+.apl-opportunities {
+	margin-top: 40px;
+}
+
+.apl-opportunities-heading {
+	max-width: 648px;
+	margin-bottom: 24px;
+}
+
+.apl-opportunities-heading .apl-kicker {
+	margin-bottom: 8px;
+	color: #ec8846;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.apl-opportunities-heading h2 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 31px;
+}
+
+.apl-opportunity-list {
+	display: grid;
+	gap: 20px;
+}
+
+.apl-opportunity-list article {
+	min-height: 113px;
+	padding: 24px;
+	border: 1px solid #d9d9d9;
+	border-radius: 8px;
+	background: #f5f5f5;
+}
+
+.apl-opportunity-list h3,
+.apl-future-grid h3 {
+	margin: 0 0 4px;
+	color: #262626;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.apl-opportunity-list p,
+.apl-future-grid p,
+.apl-opportunities-summary {
+	margin: 0;
+	color: #595959;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.apl-opportunities-summary {
+	margin-top: 24px;
+}
+
 .apl-decision-section {
 	padding-top: 40px;
 }
@@ -946,6 +1084,7 @@
 	font-size: 24px;
 	font-weight: 600;
 	line-height: normal;
+	text-transform: capitalize;
 }
 
 .apl-decision-one .apl-copy-block > p:not(.apl-kicker) {
@@ -986,7 +1125,7 @@
 
 .apl-decision-one .apl-decision-cards article {
 	display: flex;
-	min-height: 87px;
+	min-height: 156px;
 	padding: 24px;
 	flex-direction: column;
 	align-items: center;
@@ -1010,8 +1149,8 @@
 .apl-decision-one .apl-decision-cards h3 {
 	margin: 0 0 12px;
 	color: #262626;
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 24px;
+	font-weight: 600;
 	line-height: normal;
 	text-transform: uppercase;
 }
@@ -1116,10 +1255,14 @@
 }
 
 .apl-decision-two-before-media {
-	width: min(1440px, 100vw);
-	max-width: none;
-	margin-left: calc((100% - min(1440px, 100vw)) / 2);
-	margin-right: calc((100% - min(1440px, 100vw)) / 2);
+	width: min(1280px, 100%);
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.apl-decision-two-before-media picture {
+	display: block;
 }
 
 .apl-decision-one .apl-wide-media img {
@@ -1402,7 +1545,21 @@
 }
 
 .apl-feedback-note--segment-before {
+	margin-top: 58px;
+}
+
+.apl-feedback-note--segment-preview {
 	margin-top: 38px;
+}
+
+.apl-segment-create-details {
+	width: 100%;
+	margin: 50px 0 0;
+}
+
+.apl-segment-create-details img {
+	display: block;
+	width: 100%;
 }
 
 .apl-mini-feedback {
@@ -1931,6 +2088,15 @@
 	line-height: 21px;
 }
 
+.apl-process-label {
+	margin: 0 0 8px;
+	color: #ec8846;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+
 .apl-results-section .apl-copy-block h2 {
 	font-size: 24px;
 	font-weight: 600;
@@ -2112,6 +2278,33 @@
 	line-height: 24px;
 }
 
+.apl-future-development {
+	margin-top: 40px;
+}
+
+.apl-future-development .apl-copy-block {
+	max-width: 914px;
+}
+
+.apl-future-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+	margin-top: 40px;
+}
+
+.apl-future-grid article {
+	min-height: 196px;
+	padding: 24px 12px;
+	border-radius: 8px;
+	background: linear-gradient(180deg, rgba(244, 162, 255, .58) 0%, rgba(244, 162, 255, .08) 100%);
+}
+
+.apl-future-grid h3 {
+	font-size: 24px;
+	line-height: 31px;
+}
+
 .apl-other-title {
 	margin-top: 40px;
 }
@@ -2166,6 +2359,10 @@
 	.apl-shell,
 	.apl-narrow {
 		width: calc(100% - 80px);
+	}
+
+	.apl-decision-two-before-media {
+		width: min(740px, 100%);
 	}
 
 	.apl-section {
@@ -2256,6 +2453,20 @@
 		padding-bottom: 40px;
 	}
 
+	.apl-journey-map {
+		width: 622px;
+		max-width: calc(100% - 80px);
+		margin-bottom: 100px;
+	}
+
+	.apl-opportunity-list {
+		gap: 12px;
+	}
+
+	.apl-opportunity-list article {
+		padding: 16px;
+	}
+
 	.apl-goal-section .apl-narrow {
 		padding-top: 4px;
 		width: min(640px, calc(100% - 80px));
@@ -2275,7 +2486,20 @@
 	.apl-decision-cards,
 	.apl-duo-media,
 	.apl-result-card-grid,
-	.apl-reflection-grid {
+	.apl-reflection-grid,
+	.apl-future-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.apl-future-grid {
+		gap: 24px;
+	}
+
+	.apl-future-grid article {
+		min-height: 0;
+	}
+
+	.apl-other-work-grid {
 		grid-template-columns: 1fr;
 	}
 
@@ -2373,6 +2597,16 @@
 
 	.apl-interview-media {
 		margin-bottom: 24px;
+	}
+
+	.apl-interview-media-grid {
+		grid-template-columns: 1fr;
+		gap: 37px;
+		margin: 0 0 24px;
+	}
+
+	.apl-interview-media-grid .apl-interview-media {
+		margin: 0;
 	}
 
 	.apl-interview-label {
@@ -2486,6 +2720,10 @@
 	.apl-feedback-note--segment-after {
 		max-width: 430px;
 		margin: 0 auto 40px;
+	}
+
+	.apl-segment-create-details {
+		margin-top: 40px;
 	}
 
 	.apl-segment-connector {
@@ -2682,6 +2920,10 @@
 		width: calc(100% - 32px);
 	}
 
+	.apl-decision-two-before-media {
+		width: min(358px, 100%);
+	}
+
 	.apl-section {
 		padding: 56px 0;
 	}
@@ -2739,6 +2981,10 @@
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: 16px;
 		margin-top: 30px;
+	}
+
+	.apl-meta-item--skills {
+		grid-column: 1 / -1;
 	}
 
 	.apl-meta-label {
@@ -2824,6 +3070,27 @@
 		padding-bottom: 12px;
 	}
 
+	.apl-journey-map {
+		display: none;
+	}
+
+	.apl-opportunity-list {
+		gap: 12px;
+	}
+
+	.apl-opportunity-list article {
+		padding: 12px;
+	}
+
+	.apl-opportunity-list p {
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.apl-opportunities-summary {
+		display: none;
+	}
+
 	.apl-statement-section {
 		margin-top: -79px;
 		padding: 42px 0 19px;
@@ -2869,7 +3136,8 @@
 	}
 
 	.apl-interview-content h2,
-	#nav-findings h2 {
+	#nav-findings h2,
+	.apl-interview-findings h2 {
 		font-size: 18px;
 		line-height: 23px;
 	}
@@ -2883,6 +3151,11 @@
 
 	.apl-interview-media {
 		margin-bottom: 12px;
+	}
+
+	.apl-interview-media-grid {
+		gap: 24px;
+		margin-bottom: 16px;
 	}
 
 	.apl-interview-label {
@@ -2962,6 +3235,27 @@
 		grid-template-columns: 1fr;
 		gap: 16px;
 		margin-bottom: 34px;
+	}
+
+	.apl-decision-one .apl-copy-block h2 {
+		font-size: 18px;
+		line-height: 23px;
+		text-transform: none;
+	}
+
+	.apl-decision-process-label {
+		display: none;
+	}
+
+	.apl-decision-one .apl-decision-cards article {
+		min-height: 0;
+		padding: 16px;
+	}
+
+	.apl-decision-one .apl-decision-cards h3 {
+		margin-bottom: 8px;
+		font-size: 16px;
+		line-height: 20px;
 	}
 
 	.apl-decision-cards article {
@@ -3137,6 +3431,15 @@
 		margin-top: 24px;
 	}
 
+	.apl-feedback-note--segment-preview,
+	.apl-feedback-note--segment-before {
+		margin-top: 32px;
+	}
+
+	.apl-segment-create-details {
+		margin-top: 32px;
+	}
+
 	.apl-segment-flow {
 		transform: scale(.7);
 		transform-origin: top left;
@@ -3224,6 +3527,31 @@
 		padding: 16px 12px;
 	}
 
+	.apl-process-stage {
+		padding-top: 12px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.apl-opportunities-heading h2,
+	.apl-future-grid h3 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.apl-opportunity-list article,
+	.apl-future-grid article {
+		min-height: 0;
+		padding: 16px;
+	}
+
+	.apl-opportunity-list p,
+	.apl-future-grid p,
+	.apl-opportunities-summary {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
 	.apl-footer {
 		padding-top: 48px;
 	}
@@ -3233,7 +3561,7 @@
 	}
 
 	.apollo-page #nav-goal {
-		min-height: 1032px;
+		min-height: 712px;
 	}
 
 }
