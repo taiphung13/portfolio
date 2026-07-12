@@ -987,6 +987,7 @@
 
 .apl-opportunities {
 	margin-top: 40px;
+	padding-bottom: 40px;
 }
 
 .apl-opportunities-heading {
@@ -1040,6 +1041,8 @@
 
 .apl-opportunities-summary {
 	margin-top: 24px;
+	color: #404040;
+	font-style: italic;
 }
 
 .apl-decision-section {
