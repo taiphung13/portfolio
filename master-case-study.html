@@ -1,71 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Mental Health Mobile App</title>
-		<link
-			rel="icon"
-			href="assets/images/F95C930C-80C1-4909-BD14-A18202B6D4E8.png"
-			type="image/png"
-		/>
-
-		<meta
-			name="description"
-			content="Product Design based in the United Kingdom"
-		/>
-		<meta property="og:title" content="Manh Tai" />
-		<meta
-			property="og:description"
-			content="Product Design based in the United Kingdom"
-		/>
-		<meta
-			property="og:image"
-			content="https://manhtaiphung.com/assets/images/og/thumb.webp"
-		/>
-		<meta property="og:url" content="https://manhtaiphung.com" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Manh Tai" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Manh Tai" />
-		<meta name="twitter:description" content="Mô tả ngắn gọn về trang." />
-		<meta
-			name="twitter:image"
-			content="https://manhtaiphung.com/assets/images/og/thumb.webp"
-		/>
-		<meta name="twitter:site" content="@yourtwitterhandle" />
-
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-			rel="stylesheet"
-		/>
-		<style type="text/tailwindcss">
-			@theme {
-				--color-8c: #8c8c8c;
-				--color-43: #434343;
-				--color-26: #262626;
-				--color-7a: #7a53f6;
-				--color-18: #1890ff;
-				--color-fb: #fbf7ff;
-				--color-f0: #f0f0f0;
-				--color-26: #262626;
-				--color-e6: #e6f7ff;
-				--color-d9: #d9d9d9;
-				--color-fa: #fafafa;
-				--color-f5: #f5f5f5;
-			}
-		</style>
-		<style>
-			/* Prevent layout shift */
-			body {
-				visibility: hidden;
-			}
-		</style>
-	</head>
-	<body class="study-page">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>YourMood — Mental Health Mobile App | Manh Tai</title>
+ <meta name="description" content="YourMood: researching, designing and testing a mood check-in, reflection and activity journey. A product design case study by Manh Tai." />
+ <link rel="canonical" href="https://manhtaiphung.com/master-case-study.html" />
+ <link rel="icon" href="assets/images/F95C930C-80C1-4909-BD14-A18202B6D4E8.png" type="image/png" />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="css/styles.css" />
+ <link rel="stylesheet" href="css/master-case-study.css" />
+</head>
+<body class="study-page master-case-study-page">
+<a class="cs-skip-link" href="#yourmood">Skip to case study</a>
 		<header class="home-header">
 			<nav class="home-nav home-nav-frame" aria-label="Main navigation">
 				<div class="home-nav-col home-nav-left">
@@ -103,7 +52,7 @@
 			</nav>
 
 			<div id="home-backdrop" class="home-backdrop"></div>
-			<aside id="home-mobile-menu" class="home-mobile-menu" aria-hidden="true">
+			<aside id="home-mobile-menu" class="home-mobile-menu" role="dialog" aria-modal="true" aria-label="Main menu" aria-hidden="true">
 				<button id="home-menu-close" class="home-menu-close" type="button" aria-label="Close menu">&times;</button>
 				<a class="home-brand" href="index.html" aria-label="Home">
 					<img src="assets/images/home/Tai-removebg-preview 1.png" alt="Manh Tai" />
@@ -130,984 +79,500 @@
 			</aside>
 		</header>
 
-		<nav id="side-nav" class="side-nav mental-health-side-nav hidden xl:block" aria-label="Page Sections">
-			<ul>
-				<li><a href="#nav-overview" data-spy="nav-overview" class="side-nav-parent is-active active"><span>Overview</span></a></li>
-				<li><a href="#nav-research" data-spy="nav-research" class="side-nav-parent"><span>Research</span></a></li>
-				<li><a href="#nav-interviews-surveys" data-spy="nav-interviews-surveys" class="side-nav-child" data-parent="nav-research"><span>Interview &amp; Surveys</span></a></li>
-				<li><a href="#nav-affinity" data-spy="nav-affinity" class="side-nav-child" data-parent="nav-research"><span>Affinity Mapping</span></a></li>
-				<li><a href="#nav-competitive" data-spy="nav-competitive" class="side-nav-child" data-parent="nav-research"><span>Competitive Analysis</span></a></li>
-				<li><a href="#nav-features" data-spy="nav-features" class="side-nav-parent"><span>Defining features</span></a></li>
-				<li><a href="#nav-wireframes" data-spy="nav-wireframes" class="side-nav-parent"><span>Wireframes</span></a></li>
-				<li><a href="#nav-early-flows" data-spy="nav-early-flows" class="side-nav-child" data-parent="nav-wireframes"><span>Early User flows, sketching and wireframes</span></a></li>
-				<li><a href="#nav-mockups" data-spy="nav-mockups" class="side-nav-parent"><span>Mockups</span></a></li>
-				<li><a href="#nav-high-fidelity-mocks" data-spy="nav-high-fidelity-mocks" class="side-nav-child" data-parent="nav-mockups"><span>High fidelity mocks</span></a></li>
-				<li><a href="#nav-designing-code" data-spy="nav-designing-code" class="side-nav-child" data-parent="nav-mockups"><span>Designing and code for the app</span></a></li>
-				<li><a href="#nav-testing" data-spy="nav-testing" class="side-nav-parent"><span>Testing</span></a></li>
-				<li><a href="#nav-take-usability-test" data-spy="nav-take-usability-test" class="side-nav-child" data-parent="nav-testing"><span>Take the usability test</span></a></li>
-				<li><a href="#nav-sus-results" data-spy="nav-sus-results" class="side-nav-child" data-parent="nav-testing"><span>Usability (SUS) Test Results Analysis</span></a></li>
-				<li><a href="#nav-user-interview-test" data-spy="nav-user-interview-test" class="side-nav-child" data-parent="nav-testing"><span>User Interview Test</span></a></li>
-				<li><a href="#nav-usability-scenario-1" data-spy="nav-usability-scenario-1" class="side-nav-child" data-parent="nav-testing"><span>Usability Test Scenarios &amp; Results #1</span></a></li>
-				<li><a href="#nav-usability-scenario-2" data-spy="nav-usability-scenario-2" class="side-nav-child" data-parent="nav-testing"><span>Usability Test Scenarios &amp; Results #2</span></a></li>
-				<li><a href="#nav-usability-scenario-3" data-spy="nav-usability-scenario-3" class="side-nav-child" data-parent="nav-testing"><span>Usability Test Scenarios &amp; Results #3</span></a></li>
-				<li><a href="#nav-reflection" data-spy="nav-reflection" class="side-nav-parent"><span>Reflection</span></a></li>
-			</ul>
-		</nav>
+<nav id="side-nav" class="side-nav mental-health-side-nav" aria-label="Page Sections">
+<ul>
+ <li><a href="#yourmood" data-section="yourmood" class="side-nav-parent is-active active" aria-label="Overview"><span>Overview</span></a></li>
+ <li><a href="#surveys" data-section="surveys" class="side-nav-parent" aria-label="Research"><span>Research</span></a></li>
+ <li><a href="#interviews" data-section="interviews" class="side-nav-child" data-parent="surveys" aria-label="Interviews"><span>Interviews</span></a></li>
+ <li><a href="#competitive-analysis" data-section="competitive-analysis" class="side-nav-child" data-parent="surveys" aria-label="Competitive Analysis"><span>Competitive Analysis</span></a></li>
+ <li><a href="#affinity" data-section="affinity" class="side-nav-child" data-parent="surveys" aria-label="Affinity Mapping"><span>Affinity Mapping</span></a></li>
+ <li><a href="#personas" data-section="personas" class="side-nav-child" data-parent="surveys" aria-label="Personas"><span>Personas</span></a></li>
+ <li><a href="#user-journey" data-section="user-journey" class="side-nav-child" data-parent="surveys" aria-label="User Journey"><span>User Journey</span></a></li>
+ <li><a href="#strategy" data-section="strategy" class="side-nav-parent" aria-label="Product Direction"><span>Product Direction</span></a></li>
+ <li><a href="#features" data-section="features" class="side-nav-child" data-parent="strategy" aria-label="Defining Features"><span>Defining Features</span></a></li>
+ <li><a href="#information-architecture" data-section="information-architecture" class="side-nav-parent" aria-label="Wireframes"><span>Wireframes</span></a></li>
+ <li><a href="#interaction-flow" data-section="interaction-flow" class="side-nav-child" data-parent="information-architecture" aria-label="Interaction Flow"><span>Interaction Flow</span></a></li>
+ <li><a href="#sketches" data-section="sketches" class="side-nav-child" data-parent="information-architecture" aria-label="Sketches"><span>Sketches</span></a></li>
+ <li><a href="#design-decisions" data-section="design-decisions" class="side-nav-parent" aria-label="Design Decisions"><span>Design Decisions</span></a></li>
+ <li><a href="#decision-1" data-section="decision-1" class="side-nav-child" data-parent="design-decisions" aria-label="Mood Check-in"><span>Mood Check-in</span></a></li>
+ <li><a href="#decision-2" data-section="decision-2" class="side-nav-child" data-parent="design-decisions" aria-label="Mood Patterns"><span>Mood Patterns</span></a></li>
+ <li><a href="#decision-3" data-section="decision-3" class="side-nav-child" data-parent="design-decisions" aria-label="Activity Creation"><span>Activity Creation</span></a></li>
+ <li><a href="#prototype" data-section="prototype" class="side-nav-parent" aria-label="Prototype"><span>Prototype</span></a></li>
+ <li><a href="#home-notifications" data-section="home-notifications" class="side-nav-child" data-parent="prototype" aria-label="Home &amp; Notifications"><span>Home &amp; Notifications</span></a></li>
+ <li><a href="#activities" data-section="activities" class="side-nav-child" data-parent="prototype" aria-label="Activities"><span>Activities</span></a></li>
+ <li><a href="#usability-testing" data-section="usability-testing" class="side-nav-parent" aria-label="Testing"><span>Testing</span></a></li>
+ <li><a href="#study-results" data-section="study-results" class="side-nav-child" data-parent="usability-testing" aria-label="Usability (SUS) Results"><span>Usability (SUS) Results</span></a></li>
+ <li><a href="#community" data-section="community" class="side-nav-parent" aria-label="Community Exploration"><span>Community Exploration</span></a></li>
+ <li><a href="#delivery" data-section="delivery" class="side-nav-parent" aria-label="Reflection"><span>Reflection</span></a></li>
+ <li><a href="#other-work" data-section="other-work" class="side-nav-parent" aria-label="Other Works"><span>Other Works</span></a></li>
+</ul>
+</nav>
 
-		<main class="text-sm md:text-lg text-26 leading-5 md:leading-7">
-			<img
-				src="./assets/images/master-case-study/cover.webp"
-				alt="Cover"
-				class="mt-[72px] lg:mt-[118px] h-[333.47px] md:!h-[702px] lg:!h-[747px] w-full lg:!w-[1095px] lg:mx-auto lg:rounded-[12px] object-contain"
-			/>
-			<div id="nav-overview" class="scroll-spy-section">
-				<section
-					class="mt-9 md:mt-[52px] pb-6 border-b border-d9 mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto"
-				>
-					<h1
-						class="text-xl md:text-[32px] lg:text-[40px] font-semibold"
-					>
-						Mental Health Mobile App
-					</h1>
-					<div class="mt-2 mb-4 text-sm md:text-base lg:text-[16px]">
-						Master's Programme Case study.
-					</div>
-					<div class="flex items-center justify-between">
-						<div
-							class="rounded-full w-[55px] h-[22px] grid place-items-center text-xs text-[#344054] bg-[#EAECF0]"
-						>
-							FIGMA
-						</div>
-						<div class="flex gap-x-5 justify-end">
-							<span> 2024 </span>
-							<span> Application </span>
-						</div>
-					</div>
-				</section>
-				<section
-					class="mt-6 space-y-3 mx-4 md:!w-[675px] lg:!hidden md:mx-auto"
-				>
-					<h2 class="text-[24px] md:text-[20px] font-semibold">
-						Overview
-					</h2>
-					<p>
-						YourMood is a mood-tracking project, my teammate Kishan
-						and I started from scratch. I was in charge of design,
-						Kishan was in charge of the programming. Together, we
-						both thought of the features and strategy.
-					</p>
-				</section>
-				<h2
-					class="hidden lg:block w-[915px] pt-[40px] mx-auto text-xl md:text-[20px] lg:text-[24px] font-semibold"
-				>
-					Overview
-				</h2>
-				<div
-					class="mt-6 mx-4 md:!w-[675px] lg:!w-[915px] md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8"
-				>
-					<section class="space-y-4 lg:space-y-[46px]">
-						<div class="hidden lg:block space-y-3">
-							<p>
-								YourMood is a mood-tracking project, my teammate
-								Kishan and I started from scratch. I was in
-								charge of design, Kishan was in charge of the
-								programming. Together, we both thought of the
-								features and strategy.
-							</p>
-						</div>
-						<div class="space-y-4">
-							<h2
-								class="text-xl md:text-[24px] lg:text-[24px] font-semibold flex items-center gap-x-2"
-							>
-								<img
-									src="./assets/images/master-case-study/c.png"
-									alt="C Icon"
-									class="size-5"
-								/>
-								<span> Results </span>
-							</h2>
-							<p>
-								<span>
-									From idea to conception, Kishan and I were
-									able to bring YourMood to life in January
-									2025. This fun 4-month pivot from whiteboard
-									to mental health's app resulted in
-								</span>
-								<span class="font-bold">
-									top 5 score in my Master Course.
-								</span>
-							</p>
-						</div>
-					</section>
-					<div
-						class="mb-[30px] border border-d9 bg-fa rounded-[8px] p-4 space-y-4"
-					>
-						<div
-							class="text-base md:text-lg lg:text-2xl font-semibold"
-						>
-							My contributions
-						</div>
-						<div class="flex flex-col gap-4">
-							<p>
-								Designing the end-to-end experience for mobile
-								app.
-							</p>
-							<div class="bg-f0 h-px w-full"></div>
-							<p>Interviewing users, user testing.</p>
-							<div class="bg-f0 h-px w-full"></div>
-							<p>Defining feature.</p>
-							<div class="bg-f0 h-px w-full"></div>
-							<p>Take the usability test</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<img
-				src="./assets/images/master-case-study/process.webp"
-				alt="Process"
-				class="mental-process-image w-full lg:!w-[1015px] lg:mx-auto h-[183px] md:!h-[381px] lg:!h-[381px] lg:mt-[92px] lg:rounded-[12px]"
-			/>
-			<section class="mental-process-panel" aria-labelledby="mental-process-title">
-				<h2 id="mental-process-title" class="mental-process-title">
-					Our Process Details
-				</h2>
-				<div class="mental-process-grid" aria-label="Project process details">
-					<article class="mental-process-column mental-process-column--discovery">
-						<h3>Discovery</h3>
-						<ul>
-							<li>Surveys</li>
-							<li>User Interview</li>
-							<li>Affinity Mapping</li>
-						</ul>
-					</article>
-					<article class="mental-process-column mental-process-column--ideate">
-						<h3>Ideate</h3>
-						<ul>
-							<li>Personas</li>
-							<li>Storyboard</li>
-							<li>User Scenario</li>
-							<li>Hierarchical Task Analysis</li>
-							<li>Competitive Analysis</li>
-						</ul>
-					</article>
-					<article class="mental-process-column mental-process-column--define">
-						<h3>Define</h3>
-						<ul>
-							<li>Key Feature</li>
-							<li>User Journey Map</li>
-							<li>Card Sorting</li>
-							<li>Information Architecture</li>
-							<li>User Flow</li>
-						</ul>
-					</article>
-					<article class="mental-process-column mental-process-column--design">
-						<h3>Design</h3>
-						<ul>
-							<li>Sketching</li>
-							<li>Wireframe</li>
-							<li>Low Fidelity Design</li>
-							<li>Design System</li>
-							<li>High Fidelity Wireframes</li>
-						</ul>
-					</article>
-					<article class="mental-process-column mental-process-column--test">
-						<h3>Test</h3>
-						<ul>
-							<li>Prototying</li>
-							<li>Measure Design</li>
-							<li>Usability Testing</li>
-						</ul>
-					</article>
-				</div>
-			</section>
-			<div
-				id="nav-background"
-				class="scroll-spy-section mt-5 mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto pt-6 border-t border-f0 space-y-[16px]"
-			>
-				<div
-					class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[101px] h-10 font-medium grid place-items-center"
-				>
-					Background
-				</div>
-				<p>
-					Your Mood started out as a collaborative brainstorming
-					whiteboard that reduced the stress to increase the mental
-					health. However, I found myself using it a lot more for trip
-					planning than brainstorming, so Kishan and I decided to
-					pivot and scope it towards planning.
-				</p>
-				<div
-					class="mt-5 flex flex-col md:flex-row items-center gap-5 md:gap-[27px]"
-				>
-					<div
-						class="flex-1 border border-d9 bg-f5 p-4 rounded-[8px] space-y-5"
-					>
-						<div class="flex items-center gap-x-2">
-							<img
-								src="./assets/images/master-case-study/uc.png"
-								alt="Problem"
-								class="size-[18px]"
-							/>
-							<span class="text-base font-semibold">
-								The Problem
-							</span>
-						</div>
-						<ul class="list-disc ml-6 space-y-2">
-							<li>
-								Mental health problems have 39% increased since
-								2018-19. Includes over 1 million children,
-								with 16-year-olds most likely to seek support.
-							</li>
-							<li>
-								The mental health app market is growing at an
-								average annual rate of approximately 17.12% per
-								year in the UK (From $2.1 billion to $10.2
-								billion in 7 years)
-							</li>
-							<li>1 in 9 adults feel stressed every day.</li>
-						</ul>
-					</div>
-					<div
-						class="flex-1 h-fit border border-d9 bg-f5 p-4 rounded-[8px] space-y-5"
-					>
-						<div class="flex items-center gap-x-2">
-							<img
-								src="./assets/images/master-case-study/ck.png"
-								alt="Problem"
-								class="size-[18px]"
-							/>
-							<span class="text-base font-semibold">
-								The Solution
-							</span>
-						</div>
-						<ul class="list-disc ml-6 space-y-2">
-							<li>
-								To create an application that helps build &
-								track mood
-							</li>
-							<li>Encourage / motivate users to take action</li>
-							<li>Create awareness about unhealthy lifestlyle</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+<main class="cs-main">
+<section id="yourmood" class="cs-section cs-hero">
+<div class="cs-hero-copy">
+<h1>YOURMOOD</h1>
+<p>YourMood explores how young adults can check in with their emotions, make sense of mood patterns and find a useful next step.</p>
+<div class="cs-hero-meta"><span>Product Design</span>
+<img src="assets/images/master-case-study/hero-dot.svg" alt="" class="" decoding="async"  /><span>Mobile App</span></div></div>
+<div class="cs-hero-phones">
+<img src="assets/images/master-case-study/hero-breathing.png" srcset="assets/images/master-case-study/hero-breathing.png 562w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="YourMood breathing" width="188" height="426" class="" decoding="async"  />
+<img src="assets/images/master-case-study/hero-community.png" srcset="assets/images/master-case-study/hero-community.png 540w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="YourMood community" width="180" height="420" class="" decoding="async"  />
+<img src="assets/images/master-case-study/hero-meditation.png" srcset="assets/images/master-case-study/hero-meditation.png 562w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="YourMood meditation" width="188" height="427" class="" decoding="async"  />
+<img src="assets/images/master-case-study/hero-activities.png" srcset="assets/images/master-case-study/hero-activities.png 562w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="YourMood activities" width="188" height="427" class="" decoding="async"  />
+<img src="assets/images/master-case-study/hero-session.png" srcset="assets/images/master-case-study/hero-session.png 562w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="YourMood session" width="188" height="427" class="" decoding="async"  /></div>
+</section>
 
-			<!-- Process -->
-				<section class="mt-5">
-					<div
-						class="text-xl md:text-[32px] lg:text-[36px] font-semibold pb-4 border-b border-f0 mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
-					>
-						Process start here
-					</div>
-					<div class="mt-5 md:mt-8 space-y-5 md:space-y-8">
-						<div id="nav-research" class="scroll-spy-section h-px" aria-hidden="true"></div>
-						<!-- Interviews & Surveys -->
-						<div
-							id="nav-interviews-surveys"
-							class="scroll-spy-section space-y-4 lg:space-y-[16px] mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
-						>
-						<div
-							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[101px] h-10 font-medium grid place-items-center"
-						>
-							Research
-						</div>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Interviews & Surveys
-						</h3>
-						<p>
-							Using the open-ended answers in our surveys. Once I
-							was done conducting the quantitative research, I
-							knew that the theme was very personal. Thus I
-							decided to conduct user interviews with specific
-							people through Teams.
-						</p>
-						<img
-							src="./assets/images/master-case-study/is.webp"
-							alt="Interviews & Surveys"
-							class="w-full h-[279.31px] object-contain"
-						/>
-					</div>
-					<!-- Affinity Mapping -->
-					<div
-						id="nav-affinity"
-						class="scroll-spy-section space-y-4 lg:space-y-10 mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto"
-					>
-						<h3 class="text-base md:text-2xl font-semibold lg:space-y-[16px]">
-							Affinity Mapping
-						</h3>
-						<p>
-							=> After the interviews, I organized the data
-							collected using affinity mapping in order to get a
-							a visual view of the research and discover embedded
-							patterns of user thinking. I grouped the data into
-							categories such as age, language, personality
-							traits, motivations, pain points, and goals. These
-							groupings helped me to extract insights and themes
-							to build effectively toward the next steps.
-						</p>
-						<img
-							src="./assets/images/master-case-study/am.webp"
-							alt="Affinity Mapping"
-							class="w-full lg:!w-[891px] lg:mx-auto h-[450px] object-contain"
-						/>
-						<div
-							class="mt-5 border border-d9 bg-f5 p-4 rounded-[8px] space-y-5"
-						>
-							<div class="flex items-center gap-x-2">
-								<img
-									src="./assets/images/master-case-study/idea.png"
-									alt="Idea"
-									class="size-[32px]"
-								/>
-								<span
-									class="text-base md:text-xl font-semibold"
-								>
-									Key Ideas
-								</span>
-							</div>
-							<ul class="list-disc ml-6 space-y-2">
-								<li>
-									Just make something funny not too serious
-								</li>
-								<li>
-									Exercises to calm down, positive quotes,
-									ability to handle situations.
-								</li>
-								<li>Track the mood.</li>
-								<li>
-									Like chat, Talking without knowing personal
-									info just talk about stress and with true
-									feeling.
-								</li>
-								<li>
-									I want the app to help me reduce stress.
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- Competitive Analysis -->
-					<div
-						id="nav-competitive"
-						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-4 pb-3 border-b border-f0"
-					>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Competitive Analysis
-						</h3>
-						<p>
-							I test many of our competitors’ products, such as
-							Headspace, DailyBeans, MoodShift, etc. I created a
-						a 	chart where I wrote down everything I liked and
-							disliked about each product—and things Your Mood
-							could do better.
-						</p>
-						<div class="grid grid-cols-2 gap-x-[19px]">
-							<div
-								class="col-span-1 flex flex-col gap-3 lg:gap-5 justify-between"
-							>
-								<img
-									src="./assets/images/master-case-study/db.webp"
-									alt="Daily Beans"
-									class="w-full h-[92.25px] lg:!h-[293px] flex-1 object-contain"
-								/>
-								<div class="flex-1 space-y-2 mt-auto">
-									<div
-										class="text-base md:text-xl font-semibold"
-									>
-										Daily Beans
-									</div>
-									<p>
-										DailyBeans’s user interface has too many
-										options, overwhelming potential new
-										users.
-									</p>
-								</div>
-							</div>
-							<div
-								class="col-span-1 flex flex-col gap-3 lg:gap-5 justify-between"
-							>
-								<img
-									src="./assets/images/master-case-study/hs.webp"
-									alt="Daily Beans"
-									class="w-full h-[92.25px] lg:!h-[293px] flex-1 object-contain"
-								/>
-								<div class="flex-1 space-y-2 mt-auto">
-									<div
-										class="text-base md:text-xl font-semibold"
-									>
-										Headspace
-									</div>
-									<p>
-										Almost feature is premium so users were
-										confused about what they needed to buy
-										or not.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Defining features -->
-					<div
-						id="nav-features"
-						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-4 pb-8 border-b border-f0"
-					>
-						<div
-							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[134px] h-10 font-medium grid place-items-center whitespace-nowrap"
-						>
-							Defining features
-						</div>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Defining features
-						</h3>
-						<p>
-							When I finished grouping all the thoughts and notes
-							from the interview, my next step was to view the
-							user’s planning at a high-level journey and figure
-							out the jobs to be done at each step of the way.
-							These steps consisted of → Brainstorming → Planning
-							→ Execution. I was able to then narrow down the
-							users’ goals and pain points and shape them into
-							implementable features.
-						</p>
-						<img
-							src="./assets/images/master-case-study/df.webp"
-							alt="Defining features"
-							class="w-full h-[228.81px] object-contain"
-						/>
-						<p
-							class="text-[#595959] gont-medium text-base md:text-2xl"
-						>
-							Quantitative data + Qualitative data = Key features
-						</p>
-						<div class="pt-2 space-y-6">
-							<div class="space-y-5">
-								<div
-									class="bg-f5 border border-d9 rounded-[8px] p-4 space-y-3"
-								>
-									<div
-										class="text-xs md:text-base text-8c font-medium"
-									>
-										1. Mood tracking
-									</div>
-									<div
-										class="text-base md:text-xl font-medium"
-									>
-										Mood tracking and see monthly, weekly,
-										yearly overall insight
-									</div>
-								</div>
-								<div
-									class="bg-f5 border border-d9 rounded-[8px] p-4 space-y-3"
-								>
-									<div
-										class="text-xs md:text-base text-8c font-medium"
-									>
-										2. Activity
-									</div>
-									<div
-										class="text-base md:text-xl font-medium"
-									>
-										Activity such as Meditation, Watching
-										Videos, Breathing
-									</div>
-								</div>
-								<div
-									class="bg-f5 border border-d9 rounded-[8px] p-4 space-y-3"
-								>
-									<div
-										class="text-xs md:text-base text-8c font-medium"
-									>
-										3. Community
-									</div>
-									<div
-										class="text-base md:text-xl font-medium"
-									>
-										Community sections that allow users to
-										talk each other
-									</div>
-								</div>
-								<div
-									class="bg-f5 border border-d9 rounded-[8px] p-4 space-y-3"
-								>
-									<div
-										class="text-xs md:text-base text-8c font-medium"
-									>
-										4. Notifications
-									</div>
-									<div class="text-base font-medium">
-										Receiving notifications for doing
-										related activities when things close
-										to the deadline
-									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<div id="nav-wireframes" class="scroll-spy-section h-px" aria-hidden="true"></div>
-						<!-- Early User flows, sketching, and wireframes -->
-						<div
-							id="nav-early-flows"
-							class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-5 pb-7 border-b border-f0"
-						>
-						<div
-							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[101px] h-10 font-medium grid place-items-center"
-						>
-							Wireframes
-						</div>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Early User flows, sketching, and wireframes
-						</h3>
-						<p>
-							Before I started designing, I began mapping out
-							interaction flows of different parts of the user
-							journey. Below are images of the ‘Getting Started’
-							flow. The main goal was to get the user started
-							planning as soon as possible with the smallest
-							amount of friction.
-						</p>
-						<div
-							class="flex flex-col gap-5 md:gap-10 md:flex-row overflow-hidden"
-						>
-							<img
-								src="./assets/images/master-case-study/eu1.webp"
-								alt="Early User flows 1"
-								class="w-full md:!w-1/2 max-w-full h-[442px] md:!h-[647px] object-contain"
-							/>
-							<img
-								src="./assets/images/master-case-study/eu2.webp"
-								alt="Early User flows 2"
-								class="w-full md:!w-1/2 max-w-full h-[456px] md:!h-[647px] object-contain"
-							/>
-							</div>
-						</div>
-						<div id="nav-mockups" class="scroll-spy-section h-px" aria-hidden="true"></div>
-						<!-- High fidelity mocks -->
-						<div
-							id="nav-high-fidelity-mocks"
-							class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1032px] md:mx-auto space-y-5 pb-3"
-						>
-						<div
-							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[82px] h-[49px] font-medium grid place-items-center"
-						>
-							Mockups
-						</div>
-						<h3 class="text-base md:text-2xl font-semibold">
-							High fidelity mocks
-						</h3>
-						<p>
-							While creating these mocks, Kishan and I met on a
-							regular cadence, (about 4 times a week) to review
-							and get feedback. This would ensure the mocks would
-							go through many rounds of iterations until we landed
-							on something we were both satisfied with.
-						</p>
-						<div class="block md:!hidden space-y-5">
-							<img
-								src="./assets/images/master-case-study/hf1.webp"
-								alt="High fidelity mocks 1"
-								class="w-full h-[380.74px] object-contain"
-							/>
-							<img
-								src="./assets/images/master-case-study/hf2.webp"
-								alt="High fidelity mocks 1"
-								class="w-full h-[385.77px] object-contain"
-							/>
-						</div>
-					</div>
-					<div class="hidden md:block">
-						<img
-							src="./assets/images/master-case-study/hfd.webp"
-							alt="High fidelity mocks"
-							class="w-full md:!w-[675px] lg:!w-[1152px] md:mx-auto h-[645px] object-contain"
-						/>
-					</div>
-					<div class="block md:!hidden">
-						<img
-							src="./assets/images/master-case-study/tc1.webp"
-							alt="Early User flows 3"
-							class="w-full h-[790px] object-contain"
-						/>
-					</div>
-					<div class="hidden md:block">
-						<img
-							src="./assets/images/master-case-study/tc1d.webp"
-							alt="Early User flows"
-							class="w-full h-[797px] object-contain"
-						/>
-					</div>
-					<div
-						class="mx-4 md:!w-[675px] lg:!w-[1169px] md:mx-auto flex flex-wrap justify-center md:justify-between items-center gap-x-[22px] md:gap-x-3 gap-y-[38px]"
-					>
-						<div
-							class="space-y-1 w-[157px] lg:!w-[277px] flex flex-col items-center"
-						>
-							<img
-								src="./assets/images/master-case-study/bll.webp"
-								alt="Breathing List"
-								class="w-[157px] lg:!w-[277px] h-[324px] lg:!h-[574px] object-contain"
-							/>
-							<div class="text-xs font-semibold">
-								Breathing List
-							</div>
-							<p
-								class="text-center text-[9px] font-medium text-[#646466] leading-3"
-							>
-								This screen shows when users click on Meditation
-								on Activity Feature
-							</p>
-						</div>
-						<div
-							class="space-y-1 w-[157px] lg:!w-[277px] flex flex-col items-center"
-						>
-							<img
-								src="./assets/images/master-case-study/btt.webp"
-								alt="Breathing Topic"
-								class="w-[157px] lg:!w-[277px] h-[324px] lg:!h-[574px] object-contain"
-							/>
-							<div class="text-xs font-semibold">
-								Breathing Topic
-							</div>
-							<p
-								class="text-center text-[9px] font-medium text-[#646466] leading-3"
-							>
-								It can be music or a tutorial for users to
-								meditate
-							</p>
-						</div>
-						<div
-							class="space-y-1 w-[157px] lg:!w-[277px] flex flex-col items-center"
-						>
-							<img
-								src="./assets/images/master-case-study/bmm.webp"
-								alt="Breathing music"
-								class="w-[157px] lg:!w-[277px] h-[324px] lg:!h-[574px] object-contain"
-							/>
-							<div class="text-xs font-semibold">
-								Breathing music
-							</div>
-							<p
-								class="text-center text-[9px] font-medium text-[#646466] leading-3"
-							>
-								It can be music or a tutorial for users to
-								meditate
-							</p>
-						</div>
-					</div>
-						<!-- Designing and code for the app -->
-						<div
-							id="nav-designing-code"
-							class="mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 pb-3"
-						>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Designing and coding for the app
-						</h3>
-						<p>
-							Making sure both designer and developer were
-							consistent in terms of design was tricky. The
-							the difference in interactions and the way users would
-							access each function was even trickier. Here’s an
-							example of how we develop the idea from design
-						</p>
-					</div>
-					<div class="">
-						<img
-							src="./assets/images/master-case-study/dac.webp"
-							alt="Designing and code for the app"
-							class="w-full md:!w-[678px] lg:!w-[1006px] md:mx-auto h-[196px] md:!h-[351px] lg:!h-[521px] object-contain"
-							/>
-						</div>
-						<div id="nav-testing" class="scroll-spy-section h-px" aria-hidden="true"></div>
-						<!-- Take the usability test -->
-						<div
-							id="nav-take-usability-test"
-							class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 md:space-y-5 pt-4 pb-3"
-						>
-						<div
-							class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[14px] w-[71px] h-[40px] font-medium grid place-items-center"
-						>
-							Testing
-						</div>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Take the usability test
-						</h3>
-						<p>
-							To validate the designed solution, I conducted
-							usability testing. This testing aimed to assess the
-							the convenience of the current flow, comprehensibility
-							of the provided copy, and areas that require
-							enhancement for better user interaction. The
-							participant criteria I tested remained the same as
-							in previous studies, specifically, individuals who
-							had prior experience with counseling services and
-							those who were seeking counseling for the first
-							time. Usability testing was conducted using Maze as
-							a prototype and Zoom for communication.
-						</p>
-						<div class="flex flex-col md:flex-row gap-4 md:gap-5">
-							<figure class="space-y-4 h-full">
-								<img
-									src="./assets/images/master-case-study/sust.webp"
-									alt="Designing and code for the app"
-									class="w-full h-[278px] md:!h-[303px] lg:!h-[491px] object-contain"
-								/>
-								<figcaption
-									class="text-center text-[14px] font-medium text-[#646466]"
-								>
-									SUS Form
-								</figcaption>
-							</figure>
-							<figure class="space-y-4 h-full">
-								<img
-									src="./assets/images/master-case-study/sus.webp"
-									alt="Designing and code for the app"
-									class="w-full h-[291px] md:!h-[303px] lg:!h-[491px] object-contain"
-								/>
-								<figcaption
-									class="text-center text-[14px] font-medium text-[#646466]"
-								>
-									All the actions have been chosen to test
-								</figcaption>
-							</figure>
-						</div>
-					</div>
-						<!-- Usability (SUS) Test Results Analysis -->
-						<div
-							id="nav-sus-results"
-							class="mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto space-y-4 pb-3"
-						>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Usability (SUS) Test Results Analysis
-						</h3>
-						<p>
-							Results gathered from 6 test participants show an
-							average SUS Score of 70. The above-average (at the
-							50th percentile) is 68. That means a raw SUS above
-							68 is above average and below 68 is below average.
-						</p>
-						<div
-							class="flex flex-col gap-4 md:flex-row-reverse md:gap-10"
-						>
-							<div
-								class="w-full md:!w-[417.15px] lg:!w-[734px] grow-1 shrink-0"
-							>
-								<img
-									src="./assets/images/master-case-study/utra.webp"
-									alt="Designing and code for the app 1"
-									class="w-full md:!w-[417.15px] lg:!w-[734px] h-[278px] md:!h-[156.86px] lg:!h-[276px] object-contain"
-								/>
-								<div
-									class="text-right pr-12 md:pr-16 lg:pr-[162px] text-xs font-medium"
-								>
-									Yourmood score here
-								</div>
-							</div>
-							<p>
-								A SUS of 70 is at the 78th percentile (scoring
-								better than 65% of the scores in the database).
-								A raw SUS of 52 fails at the 20th percentile
-								(scoring worse than 85% of the scores in the
-								database).
-							</p>
-						</div>
-						<div class="flex flex-col gap-4 md:flex-row md:gap-6">
-							<img
-								src="./assets/images/master-case-study/utr1.webp"
-								alt="Designing and code for the app 2"
-								class="w-full md:!w-[450.2px] lg:!w-[688.93px] h-[134px] md:!h-[198.34px] lg:!h-[349px] grow-0 shrink-0 object-contain lg:-mt-20"
-							/>
-							<div
-								class="w-fit h-fit rounded-[16px] ml-auto lg:ml-0 bg-f5 border border-d9 flex gap-x-[19px] lg:gap-x-[56px] md:gap-3 p-4"
-							>
-								<div class="space-y-2">
-									<div class="text-xs">Participants</div>
-									<div class="text-xl font-bold">6</div>
-								</div>
-								<div class="space-y-2">
-									<div class="text-xs whitespace-nowrap">
-										Average Score
-									</div>
-									<div class="text-xl font-bold">70</div>
-								</div>
-							</div>
-						</div>
-					</div>
-						<!-- User Interview Test -->
-						<div
-							id="nav-user-interview-test"
-							class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1239px] 1239px md:mx-auto space-y-4 pb-3"
-						>
-						<h3
-							class="text-base md:text-2xl font-semibold lg:!w-[1015px] lg:mx-auto"
-						>
-							User Interview Test
-						</h3>
-						<p class="lg:!w-[1015px] lg:mx-auto">
-							We use the Maze test website to create 7 actions for
-							users to do in the app and here is what I found:
-						</p>
-						<div class="flex justify-between lg:gap-[72px]">
-							<figure class="space-y-5 flex-1">
-								<img
-									src="./assets/images/master-case-study/uit.webp"
-									alt="User Interview Test"
-									class="w-full h-[168px] lg:!h-[561px] lg:!h-[412px] object-contain"
-								/>
-								<figcaption
-									class="w-5/6 text-[#646466] font-medium mx-auto text-center"
-								>
-									Using Maze to test the app again to check
-									the time users need for an action
-								</figcaption>
-							</figure>
-							<figure
-								class="space-y-5 hidden lg:block lg:!w-[327.53px]"
-							>
-								<img
-									src="./assets/images/master-case-study/ata.webp"
-									alt="All the action have been choosen to test"
-									class="w-[327.53px] h-[587px] object-contain"
-								/>
-								<figcaption
-									class="w-5/6 text-[#646466] font-medium mx-auto text-center"
-								>
-									All the actions have been chosen to test
-								</figcaption>
-							</figure>
-						</div>
-					</div>
-					<!-- Result -->
-					<div
-						id="nav-result"
-						class="scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1239px] md:mx-auto space-y-4 pb-3 lg:-mt-24"
-					>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Result:
-						</h3>
-						<img
-							src="./assets/images/master-case-study/uitr.webp"
-							alt="User Interview Test"
-							class="w-full lg:!w-[812px] h-[155px] lg:!h-[369.09px] object-contain"
-						/>
-					</div>
-						<!-- Usability Test Scenarios & Results #1 -->
-						<div
-							id="nav-usability-scenario-1"
-							class="mx-4 md:!w-[675px] lg:!w-[997.33px] lg:!w-[997.33px] md:mx-auto space-y-4 pb-3"
-						>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Usability Test Scenarios & Results #1
-						</h3>
-						<figure class="space-y-5">
-							<img
-								src="./assets/images/master-case-study/utsr11.webp"
-								alt="Test and obervation"
-								class="w-full h-[168px] lg:!h-[561px] object-contain"
-							/>
-							<figcaption
-								class="w-5/6 text-[#646466] font-medium mx-auto text-center"
-							>
-								Test and observation
-							</figcaption>
-						</figure>
-						<figure class="space-y-5">
-							<img
-								src="./assets/images/master-case-study/utsr12.webp"
-								alt="The solution"
-								class="w-full h-[168px] lg:!h-[561px] object-contain"
-							/>
-							<figcaption
-								class="w-5/6 text-[#646466] font-medium mx-auto text-center"
-							>
-								The solution
-							</figcaption>
-						</figure>
-					</div>
-						<!-- Usability Test Scenarios & Results #2 -->
-						<div
-							id="nav-usability-scenario-2"
-							class="mx-4 md:!w-[675px] lg:!w-[997.33px] md:mx-auto space-y-4 pb-3"
-						>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Usability Test Scenarios & Results #2
-						</h3>
-						<figure class="space-y-5">
-							<img
-								src="./assets/images/master-case-study/utsr21.webp"
-								alt="Test and obervation"
-								class="w-full h-[168px] lg:!h-[561px] object-contain"
-							/>
-							<figcaption
-								class="w-5/6 text-[#646466] font-medium mx-auto text-center"
-							>
-								Test and observation
-							</figcaption>
-						</figure>
-						<figure class="space-y-5">
-							<img
-								src="./assets/images/master-case-study/utsr22.webp"
-								alt="The solution"
-								class="w-full h-[168px] lg:!h-[561px] object-contain"
-							/>
-							<figcaption
-								class="w-5/6 text-[#646466] font-medium mx-auto text-center"
-							>
-								The solution
-							</figcaption>
-						</figure>
-					</div>
-						<!-- Usability Test Scenarios & Results #3 -->
-						<div
-							id="nav-usability-scenario-3"
-							class="mx-4 md:!w-[675px] lg:!w-[997.33px] md:mx-auto space-y-4 pb-3"
-						>
-						<h3 class="text-base md:text-2xl font-semibold">
-							Usability Test Scenarios & Results #3
-						</h3>
-						<figure class="space-y-5">
-							<img
-								src="./assets/images/master-case-study/utsr31.webp"
-								alt="Test and obervation"
-								class="w-full h-[168px] lg:!h-[561px] object-contain"
-							/>
-							<figcaption
-								class="w-5/6 text-[#646466] font-medium mx-auto text-center"
-							>
-								Test and observation
-							</figcaption>
-						</figure>
-						<figure class="space-y-5">
-							<img
-								src="./assets/images/master-case-study/utsr32.webp"
-								alt="The solution"
-								class="w-full h-[168px] lg:!h-[561px] object-contain"
-							/>
-							<figcaption
-								class="w-5/6 text-[#646466] font-medium mx-auto text-center"
-							>
-								The solution
-							</figcaption>
-							</figure>
-						</div>
-						<section
-							id="nav-reflection"
-							class="mental-health-reflection scroll-spy-section mx-4 md:!w-[675px] lg:!w-[1015px] md:mx-auto pt-16 md:pt-20 lg:pt-[96px] pb-20 md:pb-28 lg:pb-[132px]"
-						>
-							<div
-								class="border border-[#389E0D] text-[#389E0D] bg-[#D9f7be] rounded-[4px] text-[20px] w-[126px] h-[56px] font-medium grid place-items-center"
-							>
-								Reflection
-							</div>
-							<p
-								class="mt-12 md:mt-14 lg:mt-[56px] text-[16px] md:text-[20px] lg:text-[24px] leading-[1.6] text-[#303030]"
-							>
-								This project strengthened my ability to design through ambiguity, translate research into product decisions, and iterate with technical constraints in mind. Working end to end from discovery to testing helped me move beyond feature thinking and focus on building a solution that was both usable and feasible. It also reinforced the value of structured collaboration, where design decisions are grounded not only in user insight, but also in delivery realities and measurable outcomes.
-							</p>
-						</section>
-					</div>
-				</section>
+<section id="result" class="cs-section cs-validation">
+<p class="cs-result-label">Result:</p>
+<p>30 survey responses and five interviews informed the prototype. Six usability participants gave an average SUS score of 85/100. Their feedback led me to clarify the mood check-in and activity-creation controls.</p>
+</section>
 
-		</main>
+<section id="project-details" class="cs-section ">
+<dl class="cs-details">
+<div>
+<dt>Role</dt>
+<dd>Product designer</dd></div>
+<div>
+<dt>Team</dt>
+<dd>Designer + developer</dd></div>
+<div>
+<dt>Timeline</dt>
+<dd>Sep 2024–Jan 2025</dd></div>
+<div>
+<dt>Research</dt>
+<dd>30 survey responses, 5 interviews and 6 usability participants</dd></div></dl>
+</section>
 
-		<footer class="about-footer mental-health-footer">
+<section id="overview" class="cs-section cs-overview">
+<div class="cs-copy">
+<p class="cs-eyebrow">Overview</p>
+<h2>Helping people move from a mood check-in to a next step</h2>
+<p>I started YourMood with a question: once someone records how they feel, what would help them decide what to do next?</p>
+<p>I led research, product direction, interaction design, prototyping and usability testing. I worked with a developer to review feasibility and carry the design through to implementation.</p></div>
+<aside class="cs-recognition" aria-label="Project recognition">
+<div class="cs-recognition-label">
+<img src="assets/images/master-case-study/recognition-medal.png" srcset="assets/images/master-case-study/responsive/recognition-medal-64.png 64w, assets/images/master-case-study/responsive/recognition-medal-128.png 128w, assets/images/master-case-study/recognition-medal.png 512w" sizes="30px" alt="" width="512" height="512" class="cs-medal" decoding="async"  />
+<p>Project recognition</p></div>
+<div class="cs-recognition-award">
+<img src="assets/images/master-case-study/innovation-fest.png" srcset="assets/images/master-case-study/responsive/innovation-fest-128.png 128w, assets/images/master-case-study/responsive/innovation-fest-256.png 256w, assets/images/master-case-study/responsive/innovation-fest-512.png 512w, assets/images/master-case-study/responsive/innovation-fest-1024.png 1024w, assets/images/master-case-study/innovation-fest.png 2048w" sizes="(max-width: 1199px) 104px, 121px" alt="YourMood team at Innovation Fest 2025" width="2048" height="1536" class="" decoding="async"  />
+<p><strong>Second Prize,</strong> Advanced and Immersive Technology — Innovation Fest 2025.</p></div>
+<p>Developed as a Master’s project at Birmingham City University.</p></aside>
+</section>
+
+<section id="context" class="cs-section cs-context">
+<div class="cs-copy">
+<p class="cs-eyebrow">Context</p>
+<h2>Recognising a feeling is only the beginning.</h2>
+<p>I focused on adults aged 18–35 who noticed stress or changes in mood but were unsure how to respond. Before defining the product, I explored their reflection habits, what made those habits difficult to sustain and how they chose support.</p></div>
+</section>
+
+<section id="surveys" class="cs-section cs-surveys">
+<div class="cs-copy">
+<p class="cs-eyebrow">Research</p>
+<h2>How people reflected on their mood</h2>
+<p>I began with an anonymous survey to understand how people noticed changes in mood, whether they reflected on them and why wellbeing apps did or did not become part of their routine.</p></div>
+<div class="cs-copy cs-participants">
+<p>Participants</p>
+<p>30 adults aged 18–35 responded:</p>
+<ul>
+<li>17 working professionals</li>
+<li>10 university students</li>
+<li>3 postgraduate students</li>
+</ul>
+<p>The sample included regular app users, people who had stopped using wellbeing apps and people who had never tried one.</p></div>
+<figure class="cs-figure cs-survey-art">
+<img src="assets/images/master-case-study/survey-collage.png" srcset="assets/images/master-case-study/responsive/survey-collage-480.png 480w, assets/images/master-case-study/responsive/survey-collage-768.png 768w, assets/images/master-case-study/responsive/survey-collage-1280.png 1280w, assets/images/master-case-study/responsive/survey-collage-1920.png 1920w, assets/images/master-case-study/responsive/survey-collage-2560.png 2560w, assets/images/master-case-study/survey-collage.png 3380w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(88.0065vw - 140.8104px), 1127px" alt="Survey response charts and written answers from 30 adults" width="1127" height="920" class="" decoding="async"  /></figure>
+<div class="cs-copy">
+<p class="cs-eyebrow">Survey findings</p>
+<h2>Stress and reflection</h2></div>
+<ul>
+<li>80% reported stress or noticeable mood changes several times a week or more.</li>
+<li>30% regularly recorded or reflected on their mood.</li>
+<li>33% had tried mood tracking but stopped.</li>
+<li>73% preferred a check-in under a minute. I had not yet tested completion time.</li>
+</ul>
+<p class="cs-callout">These responses pointed to a gap between noticing a feeling and making time to reflect. I took two questions into interviews: what made habits difficult to sustain, and what would make reflection feel worth the effort?</p>
+</section>
+
+<section id="interviews" class="cs-section ">
+<div class="cs-copy">
+<p class="cs-eyebrow">Research</p>
+<h2>Why reflection habits faded</h2>
+<p>I interviewed five people to understand what lay behind the survey responses and what they needed from support.</p></div>
+<div class="cs-copy cs-stack">
+<p>I asked about:</p>
+<ul>
+<li>What prompted them to reflect</li>
+<li>Why previous wellbeing habits had faded</li>
+<li>How they responded to stress</li>
+<li>What made support feel relevant</li>
+<li>What they felt comfortable sharing</li>
+</ul>
+<p>Trust, cost and choosing support mattered alongside the effort of keeping a reflection habit.</p>
+<p>Four themes emerged:</p></div>
+<div class="cs-interview-grid">
+<article class="cs-interview-card">
+<div class="cs-card-heading">
+<img src="assets/images/master-case-study/interview-theme-1.png" srcset="assets/images/master-case-study/responsive/interview-theme-1-64.png 64w, assets/images/master-case-study/responsive/interview-theme-1-128.png 128w, assets/images/master-case-study/interview-theme-1.png 512w" sizes="28px" alt="" width="512" height="512" class="cs-theme-icon" decoding="async"  />
+<h3>Clear information</h3></div>
+<p>People wanted information they could understand and use. This reinforced the need to explain mood patterns clearly.</p></article>
+<article class="cs-interview-card">
+<div class="cs-card-heading">
+<img src="assets/images/master-case-study/interview-theme-2.png" srcset="assets/images/master-case-study/responsive/interview-theme-2-64.png 64w, assets/images/master-case-study/responsive/interview-theme-2-128.png 128w, assets/images/master-case-study/interview-theme-2.png 512w" sizes="28px" alt="" width="512" height="512" class="cs-theme-icon" decoding="async"  />
+<h3>Choosing support</h3></div>
+<p>Cost and therapist suitability affected choice. Access to professional support needed its own research and design work.</p></article>
+<article class="cs-interview-card">
+<div class="cs-card-heading">
+<img src="assets/images/master-case-study/interview-theme-3.png" srcset="assets/images/master-case-study/responsive/interview-theme-3-64.png 64w, assets/images/master-case-study/responsive/interview-theme-3-128.png 128w, assets/images/master-case-study/interview-theme-3.png 512w" sizes="28px" alt="" width="512" height="512" class="cs-theme-icon" decoding="async"  />
+<h3>Trust and privacy</h3></div>
+<p>People wanted to know how their information would be used. I kept extra check-in detail optional.</p></article>
+<article class="cs-interview-card">
+<div class="cs-card-heading">
+<img src="assets/images/master-case-study/interview-theme-4.png" srcset="assets/images/master-case-study/responsive/interview-theme-4-64.png 64w, assets/images/master-case-study/responsive/interview-theme-4-128.png 128w, assets/images/master-case-study/interview-theme-4.png 512w" sizes="28px" alt="" width="512" height="512" class="cs-theme-icon" decoding="async"  />
+<h3>Flexible support</h3></div>
+<p>People valued flexible support. I explored self-guided activities and left therapy access for further research.</p></article></div>
+</section>
+
+<section id="competitive-analysis" class="cs-section ">
+<div class="cs-copy">
+<p class="cs-eyebrow">Research</p>
+<h2>What existing products offered</h2>
+<p>I reviewed Headspace, DailyBean, MoodShift and BetterHelp to compare their approaches to tracking, content and support. I looked for a useful role YourMood could play.</p></div>
+<table class="cs-competitors"><caption class="cs-sr-only">Comparison of Headspace, DailyBean, MoodShift and BetterHelp</caption>
+<thead>
+<tr>
+<th scope="col">Competitor</th>
+<th scope="col">Strength</th>
+<th scope="col">Gap in the review</th>
+<th scope="col">Design implication</th></tr></thead>
+<tbody>
+<tr>
+<th scope="row">Headspace</th>
+<td data-label="Strength">Guided meditation and educational content</td>
+<td data-label="Gap in the review">Much of the content required payment</td>
+<td data-label="Design implication">Make the value of support clearer</td></tr>
+<tr>
+<th scope="row">DailyBean</th>
+<td data-label="Strength">Simple mood logging</td>
+<td data-label="Gap in the review">Limited guidance after a mood entry</td>
+<td data-label="Design implication">Give mood entries a useful follow-up</td></tr>
+<tr>
+<th scope="row">MoodShift</th>
+<td data-label="Strength">Tools for emotional reflection</td>
+<td data-label="Gap in the review">Mood patterns needed clearer explanation</td>
+<td data-label="Design implication">Explain patterns in plain language</td></tr>
+<tr>
+<th scope="row">BetterHelp</th>
+<td data-label="Strength">Access to online therapy</td>
+<td data-label="Gap in the review">Therapist suitability and cost were difficult to compare</td>
+<td data-label="Design implication">Make support options easier to compare</td></tr></tbody></table>
+<div class="cs-copy cs-stack">
+<h2>The opportunity</h2>
+<p>The comparison helped me focus on the connection between recording a mood and choosing what to do next:</p>
+<p>Check in → Make sense of a pattern → Choose an activity</p></div>
+</section>
+
+<section id="affinity" class="cs-section ">
+<div class="cs-copy">
+<p class="cs-eyebrow">Synthesis</p>
+<h2>Finding patterns across the research</h2>
+<p>I grouped 86 observations and quotes into six clusters, then four themes. This helped me identify recurring needs and decide which problems to address first.</p></div>
+<div class="cs-affinity-grid">
+<article class="cs-affinity-card">
+<p>Theme 1: Frequent changes, inconsistent reflection</p>
+<p>People often noticed stress or mood changes, but few kept a regular reflection habit.</p></article>
+<article class="cs-affinity-card">
+<p>Theme 2: Effort made habits harder to sustain</p>
+<p>Long forms, too many choices and unclear value made wellbeing tools difficult to keep using.</p></article>
+<article class="cs-affinity-card">
+<p>Theme 3: Recording was only a starting point</p>
+<p>People wanted to make sense of their entries, rather than simply keep a mood history.</p></article>
+<article class="cs-affinity-card">
+<p>Theme 4: Support had to fit the situation</p>
+<p>People preferred different ways of coping depending on their mood, circumstances and available time.</p></article></div>
+</section>
+
+<section id="personas" class="cs-section cs-personas">
+<div class="cs-copy">
+<p class="cs-eyebrow">Synthesis</p>
+<h2>Keeping different behaviours in view</h2>
+<p>I used two behavioural archetypes to consider how reflection habits and support needs might differ across the experience.</p></div>
+<figure class="cs-figure ">
+<img src="assets/images/master-case-study/persona-one.png" srcset="assets/images/master-case-study/responsive/persona-one-480.png 480w, assets/images/master-case-study/responsive/persona-one-768.png 768w, assets/images/master-case-study/responsive/persona-one-1280.png 1280w, assets/images/master-case-study/persona-one.png 1904w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="Behavioural archetype 1" width="1904" height="1078" class="" decoding="async"  /></figure>
+<figure class="cs-figure ">
+<img src="assets/images/master-case-study/persona-two.png" srcset="assets/images/master-case-study/responsive/persona-two-480.png 480w, assets/images/master-case-study/responsive/persona-two-768.png 768w, assets/images/master-case-study/responsive/persona-two-1280.png 1280w, assets/images/master-case-study/persona-two.png 1904w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="Behavioural archetype 2" width="1904" height="1078" class="" decoding="async"  /></figure>
+</section>
+
+<section id="user-journey" class="cs-section cs-journey">
+<div class="cs-copy">
+<p class="cs-eyebrow">Synthesis</p>
+<h2>Where the journey stalled</h2>
+<p>I mapped the journey from noticing a mood change to seeking support, looking for moments when effort or uncertainty interrupted progress.</p></div>
+<figure class="cs-figure ">
+<img src="assets/images/master-case-study/user-journey.png" srcset="assets/images/master-case-study/responsive/user-journey-480.png 480w, assets/images/master-case-study/responsive/user-journey-768.png 768w, assets/images/master-case-study/responsive/user-journey-1280.png 1280w, assets/images/master-case-study/responsive/user-journey-1920.png 1920w, assets/images/master-case-study/responsive/user-journey-2560.png 2560w, assets/images/master-case-study/user-journey.png 4096w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="Journey map from noticing a mood change to choosing support" width="4096" height="2427" class="" decoding="async"  /></figure>
+</section>
+
+<section id="strategy" class="cs-section cs-strategy">
+<div class="cs-copy cs-problem">
+<p class="cs-eyebrow cs-icon-label">
+<img src="assets/images/master-case-study/problem-icon.png" srcset="assets/images/master-case-study/responsive/problem-icon-64.png 64w, assets/images/master-case-study/responsive/problem-icon-128.png 128w, assets/images/master-case-study/problem-icon.png 512w" sizes="24px" alt="" width="512" height="512" class="" decoding="async"  />Problem to solve</p>
+<h2>Young adults need a quick, private way to reflect on their emotions and choose a useful next step.</h2></div>
+<div class="cs-copy cs-how-might-we">
+<p class="cs-eyebrow cs-icon-label">
+<img src="assets/images/master-case-study/direction-icon.png" srcset="assets/images/master-case-study/responsive/direction-icon-64.png 64w, assets/images/master-case-study/responsive/direction-icon-128.png 128w, assets/images/master-case-study/direction-icon.png 512w" sizes="24px" alt="" width="512" height="512" class="" decoding="async"  />How might we?</p>
+<h2>How might we help someone move from a brief mood check-in to a useful next step without overwhelming them?</h2></div>
+<div class="cs-copy cs-principles">
+<p class="cs-eyebrow">Product direction</p>
+<h2>How research shaped the direction</h2>
+<p>I used four principles to guide feature choices:</p>
+<ul>
+<li>Keep the first check-in short</li>
+<li>Make extra context optional</li>
+<li>Explain patterns without diagnosing</li>
+<li>Offer activities people can choose</li>
+</ul></div>
+</section>
+
+<section id="features" class="cs-section ">
+<div class="cs-copy">
+<p class="cs-eyebrow">Product scope</p>
+<h2>What to build first</h2></div>
+<div class="cs-feature-grid">
+<article>
+<h3>Core journey</h3>
+<ol>
+<li>Brief mood check-in</li>
+<li>Weekly and monthly mood history</li>
+<li>Plain-language explanations of patterns</li>
+<li>Breathing, meditation and reflection activities</li></ol></article>
+<article>
+<h3>Supporting features</h3>
+<ol>
+<li>Guided journalling</li>
+<li>Optional reminders</li>
+<li>Saved activities</li></ol></article>
+<article>
+<h3>Future opportunities</h3>
+<ol>
+<li>Community discussions</li>
+<li>Wellbeing challenges</li></ol></article></div>
+</section>
+
+<section id="information-architecture" class="cs-section ">
+<div class="cs-copy">
+<p class="cs-eyebrow">Structure</p>
+<h2>Information architecture</h2>
+<p>I organised the app around three goals: check in, understand patterns and choose support. Other features would help people return to that journey.</p></div>
+<figure class="cs-figure ">
+<img src="assets/images/master-case-study/information-architecture.png" srcset="assets/images/master-case-study/responsive/information-architecture-480.png 480w, assets/images/master-case-study/responsive/information-architecture-768.png 768w, assets/images/master-case-study/responsive/information-architecture-1280.png 1280w, assets/images/master-case-study/responsive/information-architecture-1920.png 1920w, assets/images/master-case-study/information-architecture.png 2526w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="YourMood information architecture" width="2526" height="1218" class="" decoding="async"  /></figure>
+</section>
+
+<section id="interaction-flow" class="cs-section ">
+<div class="cs-copy">
+<p class="cs-eyebrow">Interaction flow</p>
+<h2>From check-in to an optional activity</h2>
+<p>Home → Check in → Emotion and intensity → Optional context → Save → Review a pattern → Choose an activity</p></div>
+<figure class="cs-figure ">
+<img src="assets/images/master-case-study/interaction-flow.png" srcset="assets/images/master-case-study/responsive/interaction-flow-480.png 480w, assets/images/master-case-study/responsive/interaction-flow-768.png 768w, assets/images/master-case-study/responsive/interaction-flow-1280.png 1280w, assets/images/master-case-study/responsive/interaction-flow-1920.png 1920w, assets/images/master-case-study/responsive/interaction-flow-2560.png 2560w, assets/images/master-case-study/interaction-flow.png 4096w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="YourMood interaction flow" width="4096" height="3019" class="" decoding="async"  /></figure>
+</section>
+
+<section id="sketches" class="cs-section ">
+<div class="cs-copy">
+<p class="cs-eyebrow">Exploration</p>
+<h2>Balancing speed with useful context</h2>
+<p>I compared a single-screen entry, a guided flow and a card-based dashboard. I chose progressive disclosure so people could record the essentials first and add context if useful. Asking for less would make entry easier, but could limit how much the app could explain.</p></div>
+<div class="cs-sketch-grid">
+<figure class="cs-figure ">
+<img src="assets/images/master-case-study/sketch-one.png" srcset="assets/images/master-case-study/responsive/sketch-one-480.png 480w, assets/images/master-case-study/responsive/sketch-one-768.png 768w, assets/images/master-case-study/sketch-one.png 1200w" sizes="(max-width: 767px) calc(50vw - 24px), (max-width: 1199px) calc(50vw - 52px), (max-width: 1439px) calc(50vw - 100px), 620px" alt="Early sketches exploring mood entry and dashboard" width="1200" height="1600" class="" decoding="async"  /></figure>
+<figure class="cs-figure ">
+<img src="assets/images/master-case-study/sketch-two.png" srcset="assets/images/master-case-study/responsive/sketch-two-480.png 480w, assets/images/master-case-study/responsive/sketch-two-768.png 768w, assets/images/master-case-study/sketch-two.png 1200w" sizes="(max-width: 767px) calc(50vw - 24px), (max-width: 1199px) calc(50vw - 52px), (max-width: 1439px) calc(50vw - 100px), 620px" alt="Early sketches exploring activity and reflection flows" width="1200" height="1600" class="" decoding="async"  /></figure></div>
+</section>
+
+<section id="design-decisions" class="cs-section cs-decisions">
+<article id="decision-1" class="cs-decision">
+<div class="cs-copy">
+<p class="cs-eyebrow">Design decision 1</p>
+<h2>Make check-in easy to find</h2>
+<p>I had focused on making check-in brief. Testing revealed an earlier obstacle: people needed to find the entry point before they could use the flow.</p></div>
+<div class="cs-evidence-grid">
+<div>
+<h3>What I observed</h3>
+<p>The plus in the bottom navigation did not clearly suggest mood check-in. Participants had difficulty finding it, although completing the entry was easier once they did.</p></div>
+<div>
+<h3>What I changed</h3>
+<p>I added a clear home-screen prompt, changed the navigation icon and explored an introductory hint. These revisions made the purpose of the entry point more explicit.</p></div></div>
+<figure class="cs-figure cs-comparison ">
+<picture>
+<source media="(max-width: 767px)" srcset="assets/images/master-case-study/responsive/decision-check-in-mobile-480.png 480w, assets/images/master-case-study/responsive/decision-check-in-mobile-768.png 768w, assets/images/master-case-study/decision-check-in-mobile.png 1074w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="1074" height="1145" />
+<source media="(max-width: 1199px)" srcset="assets/images/master-case-study/responsive/decision-check-in-tablet-480.png 480w, assets/images/master-case-study/responsive/decision-check-in-tablet-768.png 768w, assets/images/master-case-study/responsive/decision-check-in-tablet-1280.png 1280w, assets/images/master-case-study/responsive/decision-check-in-tablet-1920.png 1920w, assets/images/master-case-study/decision-check-in-tablet.png 2220w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="2220" height="1384" />
+<img src="assets/images/master-case-study/decision-check-in.png" srcset="assets/images/master-case-study/responsive/decision-check-in-480.png 480w, assets/images/master-case-study/responsive/decision-check-in-768.png 768w, assets/images/master-case-study/responsive/decision-check-in-1280.png 1280w, assets/images/master-case-study/responsive/decision-check-in-1920.png 1920w, assets/images/master-case-study/responsive/decision-check-in-2560.png 2560w, assets/images/master-case-study/decision-check-in.png 3840w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="Before and revised mood check-in entry points" width="1280" height="503" class="" decoding="async"  /></picture>
+<figcaption>Original screen and proposed revision. The revision still needs retesting.</figcaption></figure>
+<div class="cs-copy cs-stack">
+<h3>Trade-off and next test</h3>
+<p>The extra entry point improves visibility but adds to the home screen. I would test the prompt, icon and introductory hint separately to understand which helps people start.</p></div></article>
+<article id="decision-2" class="cs-decision">
+<div class="cs-copy">
+<p class="cs-eyebrow">Design decision 2</p>
+<h2>Make mood patterns clearer</h2>
+<p>The research suggested that keeping a record was only part of the need. People also wanted to understand what their entries might tell them.</p></div>
+<div class="cs-evidence-grid">
+<div>
+<h3>What informed the direction</h3>
+<p>The early dashboard showed recent entries, but a chart alone left its meaning open to interpretation. Its data was illustrative.</p></div>
+<div>
+<h3>How I would develop it</h3>
+<p>Pair mood history with a plain-language explanation of the period and measure shown. Describe patterns carefully, without implying a diagnosis or a cause.</p></div></div>
+<figure class="cs-figure cs-comparison cs-comparison-patterns">
+<picture>
+<source media="(max-width: 767px)" srcset="assets/images/master-case-study/responsive/decision-patterns-mobile-480.png 480w, assets/images/master-case-study/responsive/decision-patterns-mobile-768.png 768w, assets/images/master-case-study/decision-patterns-mobile.png 1074w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 444px, 492px" width="1074" height="1158" />
+<source media="(max-width: 1199px)" srcset="assets/images/master-case-study/responsive/decision-patterns-tablet-480.png 480w, assets/images/master-case-study/responsive/decision-patterns-tablet-768.png 768w, assets/images/master-case-study/responsive/decision-patterns-tablet-1280.png 1280w, assets/images/master-case-study/decision-patterns-tablet.png 1332w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 444px, 492px" width="1332" height="1400" />
+<img src="assets/images/master-case-study/decision-patterns.png" srcset="assets/images/master-case-study/responsive/decision-patterns-480.png 480w, assets/images/master-case-study/responsive/decision-patterns-768.png 768w, assets/images/master-case-study/responsive/decision-patterns-1280.png 1280w, assets/images/master-case-study/decision-patterns.png 1476w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 444px, 492px" alt="Original mood history and proposed summary: 20 check-ins, 8 happy, 4 calm, 4 okay, 2 low and 2 anxious; illustrative data, not a diagnosis" width="492" height="508" class="" decoding="async"  /></picture>
+<figcaption>Original screen and proposed revision with illustrative data. The revision still needs retesting.</figcaption></figure>
+<div class="cs-copy cs-stack">
+<h3>Trade-off and next test</h3>
+<p>A short summary can hide nuance. I would validate the calculations and test how people interpret the chart before connecting it to activity suggestions.</p></div></article>
+<article id="decision-3" class="cs-decision">
+<div class="cs-copy">
+<p class="cs-eyebrow">Design decision 3</p>
+<h2>Say what the activity button does</h2>
+<p>Activity creation exposed a similar problem. The plus icon left people to work out what the control meant, so I made its purpose explicit.</p></div>
+<div class="cs-evidence-grid">
+<div>
+<h3>What I observed</h3>
+<p>The unlabelled plus did not consistently communicate activity creation. Participants took different routes to find it.</p></div>
+<div>
+<h3>What I changed</h3>
+<p>I added “Create new activity” so the button explained its action. This addressed the ambiguity directly while keeping the control within the activity list.</p></div></div>
+<figure class="cs-figure cs-comparison ">
+<picture>
+<source media="(max-width: 767px)" srcset="assets/images/master-case-study/responsive/decision-activity-mobile-480.png 480w, assets/images/master-case-study/responsive/decision-activity-mobile-768.png 768w, assets/images/master-case-study/decision-activity-mobile.png 1074w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="1074" height="1145" />
+<source media="(max-width: 1199px)" srcset="assets/images/master-case-study/responsive/decision-activity-tablet-480.png 480w, assets/images/master-case-study/responsive/decision-activity-tablet-768.png 768w, assets/images/master-case-study/responsive/decision-activity-tablet-1280.png 1280w, assets/images/master-case-study/responsive/decision-activity-tablet-1920.png 1920w, assets/images/master-case-study/decision-activity-tablet.png 2220w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="2220" height="1384" />
+<img src="assets/images/master-case-study/decision-activity.png" srcset="assets/images/master-case-study/responsive/decision-activity-480.png 480w, assets/images/master-case-study/responsive/decision-activity-768.png 768w, assets/images/master-case-study/responsive/decision-activity-1280.png 1280w, assets/images/master-case-study/responsive/decision-activity-1920.png 1920w, assets/images/master-case-study/responsive/decision-activity-2560.png 2560w, assets/images/master-case-study/decision-activity.png 3840w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="Before and revised activity creation control" width="1280" height="503" class="" decoding="async"  /></picture>
+<figcaption>Original screen and proposed revision. The revision still needs retesting.</figcaption></figure>
+<div class="cs-copy cs-stack">
+<h3>Trade-off and next test</h3>
+<p>The label takes more space but reduces the need to interpret an icon. I would test whether people can create an activity from a task prompt that does not name the button.</p></div></article>
+</section>
+
+<section id="prototype" class="cs-section ">
+<div class="cs-copy">
+<p class="cs-eyebrow">Prototype</p>
+<h2>Putting the journey into a prototype</h2>
+<p>I brought mood entry, reflection and activities into an interactive prototype. I also explored community as a future option. The next step was to test whether people understood the main actions and could find their way through them.</p></div>
+</section>
+
+<section id="home-notifications" class="cs-section ">
+<div class="cs-desktop-art">
+<figure class="cs-figure cs-home-annotated">
+<picture><source media="(min-width: 1200px)" srcset="assets/images/master-case-study/responsive/home-annotated-480.png 480w, assets/images/master-case-study/responsive/home-annotated-768.png 768w, assets/images/master-case-study/responsive/home-annotated-1280.png 1280w, assets/images/master-case-study/responsive/home-annotated-1920.png 1920w, assets/images/master-case-study/responsive/home-annotated-2560.png 2560w, assets/images/master-case-study/home-annotated.png 3456w" sizes="(max-width: 1439px) calc(90vw - 144px), 1152px" width="3456" height="1935" /><img src="assets/images/master-case-study/empty.svg" alt="Annotated Home and Notifications screens" width="1152" height="645" class="" decoding="async"  /></picture></figure></div>
+<div class="cs-home-walkthrough">
+<article>
+<h3>Home</h3>
+<picture><source media="(max-width: 1199px)" srcset="assets/images/master-case-study/home-phone.png 474w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="474" height="981" /><img src="assets/images/master-case-study/empty.svg" alt="Home screen" width="158" height="327" class="cs-phone" decoding="async"  /></picture>
+<div class="cs-walk-note">
+<h4>Daily check-ins</h4>
+<p>Review the mood entries recorded that day</p></div>
+<div class="cs-walk-note">
+<h4>Mood history</h4>
+<p>Illustrative data; chart calculations need validation</p></div>
+<div class="cs-walk-note">
+<h4>Mood check-in</h4>
+<p>Record how you feel at that moment</p></div></article>
+<article>
+<h3>Notifications</h3>
+<picture><source media="(max-width: 1199px)" srcset="assets/images/master-case-study/notifications-phone.png 474w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="474" height="981" /><img src="assets/images/master-case-study/empty.svg" alt="Notifications screen" width="158" height="327" class="cs-phone" decoding="async"  /></picture>
+<div class="cs-walk-note">
+<h4>Preview a reply</h4>
+<p>Read a reply from its notification</p></div>
+<div class="cs-walk-note">
+<h4>Conversation updates</h4>
+<p>See updates from channels and conversations</p></div></article></div>
+</section>
+
+<section id="activities" class="cs-section ">
+<div class="cs-desktop-art">
+<figure class="cs-figure cs-breathing-annotated">
+<picture><source media="(min-width: 1200px)" srcset="assets/images/master-case-study/responsive/breathing-annotated-480.png 480w, assets/images/master-case-study/responsive/breathing-annotated-768.png 768w, assets/images/master-case-study/responsive/breathing-annotated-1280.png 1280w, assets/images/master-case-study/responsive/breathing-annotated-1920.png 1920w, assets/images/master-case-study/responsive/breathing-annotated-2560.png 2560w, assets/images/master-case-study/breathing-annotated.png 3507w" sizes="(max-width: 1439px) calc(91.328vw - 146.1248px), 1169px" width="3507" height="2001" /><img src="assets/images/master-case-study/empty.svg" alt="Choose an activity, explore its details and start a guided session" width="1169" height="667" class="" decoding="async"  /></picture></figure></div>
+<div class="cs-activity-walkthrough">
+<article>
+<h3>Choose an activity</h3>
+<picture><source media="(max-width: 1199px)" srcset="assets/images/master-case-study/choose-activity-phone.png 630w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="630" height="1306" /><img src="assets/images/master-case-study/empty.svg" alt="Choose an activity" width="210" height="436" class="cs-phone" decoding="async"  /></picture>
+<p>Browse the available activities</p></article>
+<article>
+<h3>Explore an activity</h3>
+<picture><source media="(max-width: 1199px)" srcset="assets/images/master-case-study/explore-activity-phone.png 474w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="474" height="983" /><img src="assets/images/master-case-study/empty.svg" alt="Explore an activity" width="158" height="328" class="cs-phone" decoding="async"  /></picture>
+<p>Find out what the session involves</p></article>
+<article>
+<h3>Start a session</h3>
+<picture><source media="(max-width: 1199px)" srcset="assets/images/master-case-study/session-phone.png 474w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="474" height="983" /><img src="assets/images/master-case-study/empty.svg" alt="Start a session" width="158" height="328" class="cs-phone" decoding="async"  /></picture>
+<p>Follow the guided session at your own pace</p></article></div>
+</section>
+
+<section id="usability-testing" class="cs-section ">
+<div class="cs-copy">
+<p class="cs-eyebrow">Usability testing</p>
+<h2>Testing the main actions</h2>
+<p>Six participants completed seven tasks in Maze, followed by discussion over Zoom. I reviewed where they hesitated, how they interpreted labels and which actions were difficult to find.</p></div>
+</section>
+
+<section id="study-results" class="cs-section cs-study-results">
+<h2>What the study showed</h2>
+<p class="cs-result-copy">The average SUS score was 85/100 across six participants. Task observations also revealed unclear controls, which informed decisions 1 and 3. A follow-up test is needed to assess the revisions.</p>
+<div class="cs-study-layout">
+<p class="cs-study-note">SUS reflects how usable the prototype felt. Some task prompts named interface controls, which may have helped discovery. I would use neutral, goal-based prompts in the next round.</p>
+<div class="cs-score" role="img" aria-label="Average SUS score 85 out of 100 from six participants. Revised controls require retesting.">
+<h3>Average SUS score: 85/100</h3>
+<div class="cs-score-track"><span></span></div>
+<p>Six participants · prototype usability study</p>
+<p>The revised controls still need retesting</p></div>
+<p>YourMood: 85/100</p>
+<dl class="cs-study-stats">
+<div>
+<dt>Participants</dt>
+<dd>6</dd></div>
+<div>
+<dt>Average SUS</dt>
+<dd>85</dd></div></dl>
+<div class="cs-score-interpretation">
+<h3>How I interpret the result</h3>
+<p>Average SUS: 85/100 from six participants. The revisions still need retesting.</p></div></div>
+</section>
+
+<section id="community" class="cs-section cs-community">
+<h2 class="cs-community-heading">Community / exploratory direction</h2>
+<picture>
+<source media="(max-width: 767px)" srcset="assets/images/master-case-study/responsive/community-mobile-480.png 480w, assets/images/master-case-study/responsive/community-mobile-768.png 768w, assets/images/master-case-study/community-mobile.png 1074w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="1074" height="689" />
+<source media="(max-width: 1199px)" srcset="assets/images/master-case-study/responsive/community-tablet-480.png 480w, assets/images/master-case-study/responsive/community-tablet-768.png 768w, assets/images/master-case-study/responsive/community-tablet-1280.png 1280w, assets/images/master-case-study/responsive/community-tablet-1920.png 1920w, assets/images/master-case-study/community-tablet.png 2220w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" width="2220" height="1333" />
+<img src="assets/images/master-case-study/community-desktop.png" srcset="assets/images/master-case-study/responsive/community-desktop-480.png 480w, assets/images/master-case-study/responsive/community-desktop-768.png 768w, assets/images/master-case-study/responsive/community-desktop-1280.png 1280w, assets/images/master-case-study/responsive/community-desktop-1920.png 1920w, assets/images/master-case-study/responsive/community-desktop-2560.png 2560w, assets/images/master-case-study/community-desktop.png 3840w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="Original comment interface and exploratory reply view; comment submission needs further work" width="1280" height="720" class="" decoding="async"  /></picture>
+<p class="cs-community-note">Community remained exploratory: the revision made replies more visible, but comment submission still needs a clearer action and a follow-up test.</p>
+</section>
+
+<section id="delivery" class="cs-section ">
+<div class="cs-copy">
+<p class="cs-eyebrow">Delivery and reflection</p>
+<h2>What I would do next</h2>
+<p>I worked with a developer on components, interaction states and implementation. The project taught me to test essential actions before expanding scope. Next, I would focus on check-in, reflection and one activity, then test whether people can find value and return to the journey.</p></div>
+<figure class="cs-figure ">
+<img src="assets/images/master-case-study/delivery-art.png" srcset="assets/images/master-case-study/responsive/delivery-art-480.png 480w, assets/images/master-case-study/responsive/delivery-art-768.png 768w, assets/images/master-case-study/responsive/delivery-art-1280.png 1280w, assets/images/master-case-study/responsive/delivery-art-1920.png 1920w, assets/images/master-case-study/responsive/delivery-art-2560.png 2560w, assets/images/master-case-study/delivery-art.png 3840w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1439px) calc(100vw - 160px), 1280px" alt="Working through implementation together, with the resulting interface" width="1280" height="605" class="" decoding="async"  /></figure>
+</section>
+
+<section id="other-work" class="cs-section cs-other-work">
+<h2>MY OTHER WORKS</h2>
+<div class="cs-project-grid">
+<a class="cs-project-card wip-link" href="#">
+<figure class="cs-figure ">
+<img src="assets/images/master-case-study/project-pharmacy.png" srcset="assets/images/master-case-study/responsive/project-pharmacy-480.png 480w, assets/images/master-case-study/responsive/project-pharmacy-768.png 768w, assets/images/master-case-study/responsive/project-pharmacy-1280.png 1280w, assets/images/master-case-study/project-pharmacy.png 1824w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(50vw - 52px), (max-width: 1439px) calc(50vw - 112px), 608px" alt="Scaling pharmacy onboarding across mobile and POS" width="875" height="512" class="" decoding="async"  /></figure>
+<h3>Scaling pharmacy onboarding across mobile and POS</h3>
+<p>Helping drive 1,000+ active users in 14 days across 1,000+ pharmacy chains</p></a>
+<a class="cs-project-card" href="aperia-design-system.html">
+<figure class="cs-figure ">
+<img src="assets/images/master-case-study/project-design-systems.png" srcset="assets/images/master-case-study/responsive/project-design-systems-480.png 480w, assets/images/master-case-study/responsive/project-design-systems-768.png 768w, assets/images/master-case-study/responsive/project-design-systems-1280.png 1280w, assets/images/master-case-study/project-design-systems.png 1824w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(50vw - 52px), (max-width: 1439px) calc(50vw - 112px), 608px" alt="Design systems for speed at scale" width="608" height="362" class="" decoding="async"  /></figure>
+<h3>Design systems for speed at scale</h3>
+<p>Built reusable components and guidance for fintech products, increasing build speed by 30%</p></a></div>
+</section>
+</main>
+<footer class="about-footer mental-health-footer">
 			<div class="about-shell about-footer-inner">
 				<div class="about-footer-copy">
 					<p class="about-footer-title">THANKS FOR STOPPING BY!</p>
@@ -1120,13 +585,7 @@
 				</div>
 			</div>
 		</footer>
-
-		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				document.body.style.visibility = 'visible';
-			});
-		</script>
-		<script src="js/index.js"></script>
-	</body>
+<script src="js/index.js"></script>
+<script src="js/master-case-study.js"></script>
+</body>
 </html>
